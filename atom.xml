@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>阿Ben同学</title>
   <id>http://www.ben7z.com</id>
-  <updated>2019-01-09T13:59:41+08:00</updated>
+  <updated>2019-01-15T13:52:09+08:00</updated>
   <subtitle>一个社交媒体实验者与思考者</subtitle>
   <link href="http://www.ben7z.com"></link>
   <author>
     <name>阿Ben同学</name>
   </author>
+  <entry>
+    <title>《深度工作》读书笔记</title>
+    <updated>2019-01-15T12:45:00+08:00</updated>
+    <id>tag:www.ben7z.com,2019-01-15:/deep_work.html</id>
+    <content type="html">&lt;p&gt;尊重时间，改变工作习惯。&lt;/p&gt;&#xA;</content>
+    <link href="http://www.ben7z.com/deep_work.html"></link>
+    <author>
+      <name>阿Ben</name>
+    </author>
+  </entry>
   <entry>
     <title>2019 年个人 Flag</title>
     <updated>2019-01-09T01:02:00+08:00</updated>
