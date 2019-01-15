@@ -44,28 +44,6 @@
     var root = '';
 </script>
 
-<script type="text/javascript">
-    var conn, reloadTimer, connectTimer;
-    var connect = function() {
-        conn = new WebSocket('ws://' + location.host + '/live');
-        conn.onmessage = function(event) {
-            if (event.data === 'change') {
-                if (reloadTimer) clearTimeout(reloadTimer);
-                reloadTimer = setTimeout(function() {
-                    window.location.reload();
-                }, 200);
-            }
-        };
-        conn.onclose = function() {
-            if (connectTimer) clearTimeout(connectTimer);
-            connectTimer = setTimeout(function() {
-                connect();
-            }, 1000);
-        };
-    };
-    connect();
-</script>
-
 
         <meta name="keywords" content="成长,">
         <meta name="description" content="2019 年书单">
@@ -101,8 +79,9 @@
 <p><strong>方法</strong></p>
 
 <ul>
+<li>穷查理宝典</li>
 <li>斯坦福的人生设计课</li>
-<li>深度工作</li>
+<li><del>深度工作</del></li>
 <li>思维力</li>
 <li>正念的奇迹</li>
 <li>华杉讲透孙子兵法</li>
