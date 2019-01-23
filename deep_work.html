@@ -44,6 +44,28 @@
     var root = '';
 </script>
 
+<script type="text/javascript">
+    var conn, reloadTimer, connectTimer;
+    var connect = function() {
+        conn = new WebSocket('ws://' + location.host + '/live');
+        conn.onmessage = function(event) {
+            if (event.data === 'change') {
+                if (reloadTimer) clearTimeout(reloadTimer);
+                reloadTimer = setTimeout(function() {
+                    window.location.reload();
+                }, 200);
+            }
+        };
+        conn.onclose = function() {
+            if (connectTimer) clearTimeout(connectTimer);
+            connectTimer = setTimeout(function() {
+                connect();
+            }, 1000);
+        };
+    };
+    connect();
+</script>
+
 
         <meta name="keywords" content="读书笔记,">
         <meta name="description" content="《深度工作》读书笔记">
@@ -80,7 +102,7 @@
 
 <p><strong>浮浅工作（Shallow Work）</strong>：对认知要求不高的事务性任务，往往在受到干扰的情况下开展。此类工作通常不会为世界创造太多新价值，且容易复制。</p>
 
-<p><strong>实习生法则</strong>：要让一个刚毕业还没有在该领域接受特别训练的大学生完成这项工作需要多久（几个月）？</p>
+<p><strong>实习生法则</strong>：要让一个刚毕业还没有在该领域接受特别训练的大学生完成这项工作需要多久（几个月）？越是实习生能够轻松完成的工作，越是浮浅，也越容易被取代。</p>
 
 <h3>深度工作是有价值的</h3>
 
@@ -285,8 +307,13 @@
                 </section>
                 <section class="recommend">
                     
+                    <section class="nav prev more">
+                        <div class="head">上篇文章</div>
+                        <a class="link" href="/mi6.html">小米 6 玩机心得</a>
+                    </section>
                     
-                    <section class="nav next">
+                    
+                    <section class="nav next more">
                         <div class="head">下篇文章</div>
                         <a class="link" href="/2019_book.html">2019 年书单</a>
                     </section>

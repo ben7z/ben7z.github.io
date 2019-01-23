@@ -67,10 +67,10 @@
 </script>
 
 
-        <meta name="keywords" content="成长,">
-        <meta name="description" content="2019 年书单">
+        <meta name="keywords" content="技术,">
+        <meta name="description" content="小米 6 玩机心得">
         <meta name="author" content="阿Ben">
-        <title>2019 年书单</title>
+        <title>小米 6 玩机心得</title>
     </head>
     <body>
         <article class="container">
@@ -87,85 +87,99 @@
 </header>
 
             <article class="main article">
-                <h1 class="title">2019 年书单</h1>
+                <h1 class="title">小米 6 玩机心得</h1>
                 <section class="info">
                     <span class="avatar" style="background-image: url(/images/avatar.png);"></span>
                     <a class="name" href="/about.me.html">阿Ben</a>
                     
-                    <span class="date" data-time="1547398800"><span class="from"></span></span>
+                    <span class="date" data-time="1548251580"><span class="from"></span></span>
                     
-                    <span class="tags"><a class="tag" href="/tag/%e6%88%90%e9%95%bf/index.html">成长</a></span>
+                    <span class="tags"><a class="tag" href="/tag/%e6%8a%80%e6%9c%af/index.html">技术</a></span>
                 </section>
-                <article class="content"><p>（持续更新）</p>
+                <article class="content"><p>这篇文章是我 2018 年入手小米 6 后做的一些体验记录。</p>
 
-<p><strong>方法</strong></p>
+<h2>解锁 BootLoader</h2>
 
-<ul>
-<li>穷查理宝典</li>
-<li>斯坦福的人生设计课</li>
-<li><del>深度工作</del></li>
-<li>思维力</li>
-<li>正念的奇迹</li>
-<li>华杉讲透孙子兵法</li>
-<li>解谜腾讯帝国</li>
-<li>新零售：低价高效的数据赋能之路</li>
-<li>今日简史</li>
-<li>零售的哲学</li>
-<li>巨婴国</li>
-<li>掌控谈话</li>
-</ul>
+<p><em>解锁 BootLoader 会清空手机上的所有数据，在此之前确保你已经备份好所有资料。</em></p>
 
-<p><strong>传播</strong></p>
+<ol>
+<li>访问<a href="http://www.miui.com/unlock/index.html">小米手机解锁官网</a>，申请解锁权限；</li>
+<li>等待解锁申请通过（通常需要 2-3 天；</li>
+<li>获得解锁权限后，再次访问上面👆那个网站，下载解锁工具（Windows；</li>
+<li>进入 <strong>设置 - 开发者选项 - 设备解锁状态</strong> 中绑定账号和设备；</li>
+<li>手动进入 BootLoader 模式（关机后，同时按住开机键和音量下键）；</li>
+<li>通过 USB 连接手机，点击 “解锁”按钮。</li>
+</ol>
 
-<ul>
-<li>数码人类学</li>
-<li>大众传媒与现代文学</li>
-<li>大众传媒研究导论</li>
-<li>传播效果研究：起源、发展与应用</li>
-<li>创新的扩散</li>
-<li>肥皂剧、性和香烟：美国广告200年经典范例</li>
-<li>少数派广告（重读）</li>
-<li>实效的广告</li>
-<li>数字麦克卢汉</li>
-</ul>
+<h2>刷入第三方 Recovery</h2>
 
-<p><strong>人文</strong></p>
+<p>推荐刷入目前最好的第三方 Rec 软件 TWRP。</p>
+
+<p>工具：</p>
 
 <ul>
-<li>风险社会</li>
-<li>景观社会</li>
-<li>下流社会</li>
-<li>后现代公共政策</li>
-<li>后现代主义与大众文化</li>
-<li>消费文化与后现代主义</li>
-<li>大众文化研究</li>
-<li>现代性的五副面孔</li>
-<li>白领——美国的中产阶级</li>
-<li>信心时代三部曲</li>
+<li><a href="https://dl.twrp.me/sagit/">TWRP</a></li>
 </ul>
 
-<p><strong>设计</strong></p>
+<p>步骤：</p>
+
+<ol>
+<li>下载 TWRP 最新版（适配小米 6），文件名称形式如 twrp-x.x.x-x-sagit.img；</li>
+<li>将文件包放置在电脑根目录，将手机连接至电脑；</li>
+<li>打开 Windows 命令行或 Mac 终端，输入 <code>adb reboot bootloader</code>；</li>
+<li>等待手机进入 BootLoader 模式，在电脑上输入 <code>fastboot devices</code>；</li>
+<li>在电脑上输入 <code>fastboot flash recovery twrp-x.x.x-x-sagit.img</code>，刷入 TWRP。</li>
+</ol>
+
+<h2>刷 Lineage OS</h2>
+
+<p>Lineage OS 是我最喜欢的一款近安卓原生系统，目前也支持小米 6 了。需要注意的是，Lineage OS 不支持 Mipay 因此也不支持小米的 NFC 公交卡功能，暂时没有找到解决的方法。</p>
+
+<p>工具：</p>
 
 <ul>
-<li>原研哉的设计世界</li>
-<li>视觉思维</li>
-<li>导演艺术构思</li>
-<li>绘画的故事</li>
-<li>52个创意绘画实验</li>
+<li><a href="https://androidfilehost.com/?w=files&amp;flid=200437">MIUI 底包</a>（解决基带适配问题）</li>
+<li><a href="https://download.lineageos.org/sagit">Lineage OS 小米 6</a></li>
+<li><a href="https://download.lineageos.org/extras">Lineage OS 官方 root 插件</a>(arm64)</li>
 </ul>
 
-<p><strong>写作</strong></p>
+<p>步骤：</p>
+
+<ol>
+<li>在手机关机状态下长按 <strong>音量加</strong>+<strong>电源键</strong> 一直到屏幕上出现小米 Logo；</li>
+<li>进入 TWRP 主界面，选择 <strong>Wipe</strong>；</li>
+<li>选择 <strong>Format Data</strong> 格式化手机；</li>
+<li>回到原来的目录，选择 <strong>Advance Wipe</strong>，在接下来的界面选择 <strong>Cache</strong> 和 <strong>System</strong>，然后滑动；</li>
+<li>回到主界面，选择 <strong>Advance</strong> - <strong>ADB Sideload</strong>，然后滑动；</li>
+<li>将刷机包放在电脑根目录下，使用 <code>adb sideload filename.zip</code> 依次刷入：
 
 <ul>
-<li>如何阅读一本书（重读）</li>
-<li>如何谈论一本你还没读过的书</li>
-<li>如何成为顶级记者：美联社新闻报道手册</li>
-<li>全能记者必备：新闻采集、写作和编辑的基本技能</li>
-<li>文学描写辞典</li>
-<li>色彩描写词典</li>
-<li>门萨的娼妓</li>
-<li>痴人之爱</li>
+<li>MIUI 底包</li>
+<li>Lineage OS</li>
+<li>Lineage OS 官方 root 插件</li>
+</ul></li>
+<li>重启手机。</li>
+</ol>
+
+<h2>MIUI 稳定版 Root</h2>
+
+<p>MIUI 稳定版省电系统漏洞少，但又想 Root 享受更多权限，怎么办？这时候只需要使用第三方 Rec 刷入 SuperSu 来使用第三方 Root。</p>
+
+<p>工具：</p>
+
+<ul>
+<li><a href="http://www.supersu.com/">SuperSu</a></li>
+<li>360一键Root</li>
 </ul>
+
+<p>步骤：</p>
+
+<ol>
+<li>使用 TWRP 刷入 SuperSu；</li>
+<li>重启手机，打开 <strong>超级授权</strong> - <strong>设置</strong> - <strong>启用多用户授权</strong>，打勾，退出；</li>
+<li>下载安装 360一键Root，超级授权同意，选择 <strong>一键 Root</strong>，成功后，退出，卸载；</li>
+<li>重启手机，使用 TWRP 再次刷入 SuperSu，至此完全获得 Root 权限。</li>
+</ol>
 </article>
                 <section class="author">
                     <div class="avatar" style="background-image: url(/images/avatar.png);"></div>
@@ -174,15 +188,10 @@
                 </section>
                 <section class="recommend">
                     
-                    <section class="nav prev more">
-                        <div class="head">上篇文章</div>
-                        <a class="link" href="/deep_work.html">《深度工作》读书笔记</a>
-                    </section>
                     
-                    
-                    <section class="nav next more">
+                    <section class="nav next">
                         <div class="head">下篇文章</div>
-                        <a class="link" href="/2019_flag.html">2019 年个人 Flag</a>
+                        <a class="link" href="/deep_work.html">《深度工作》读书笔记</a>
                     </section>
                     
                 </section>

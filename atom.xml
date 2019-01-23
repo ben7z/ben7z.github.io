@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>阿Ben同学</title>
   <id>http://www.ben7z.com</id>
-  <updated>2019-01-15T22:37:11+08:00</updated>
+  <updated>2019-01-23T22:05:27+08:00</updated>
   <subtitle>一个社交媒体实验者与思考者</subtitle>
   <link href="http://www.ben7z.com"></link>
   <author>
     <name>阿Ben同学</name>
   </author>
+  <entry>
+    <title>小米 6 玩机心得</title>
+    <updated>2019-01-23T21:53:00+08:00</updated>
+    <id>tag:www.ben7z.com,2019-01-23:/mi6.html</id>
+    <content type="html">&lt;p&gt;偶尔技术宅。&lt;/p&gt;&#xA;</content>
+    <link href="http://www.ben7z.com/mi6.html"></link>
+    <author>
+      <name>阿Ben</name>
+    </author>
+  </entry>
   <entry>
     <title>《深度工作》读书笔记</title>
     <updated>2019-01-15T12:45:00+08:00</updated>
