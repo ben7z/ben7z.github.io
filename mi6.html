@@ -180,6 +180,22 @@
 <li>下载安装 360一键Root，超级授权同意，选择 <strong>一键 Root</strong>，成功后，退出，卸载；</li>
 <li>重启手机，使用 TWRP 再次刷入 SuperSu，至此完全获得 Root 权限。</li>
 </ol>
+
+<h2>解决淘宝在 Xposed 下闪退问题</h2>
+
+<p>工具：</p>
+
+<ul>
+<li>RE 文件管理器</li>
+</ul>
+
+<p>步骤：</p>
+
+<ol>
+<li>找到目录：/data/data/com.taobao.taobao/files/bundleBaseline；</li>
+<li>如果淘宝已经有闪退现象了那么这里面就会生成两个文件：lock 和 updateInfo，删除；</li>
+<li>设置 bundleBaseline 文件夹的权限为 0500，或取消打勾写，搞定。</li>
+</ol>
 </article>
                 <section class="author">
                     <div class="avatar" style="background-image: url(/images/avatar.png);"></div>
