@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>阿Ben同学</title>
   <id>http://www.ben7z.com</id>
-  <updated>2019-02-07T21:41:36+08:00</updated>
+  <updated>2019-02-08T11:05:59+08:00</updated>
   <subtitle>一个社交媒体实验者与思考者</subtitle>
   <link href="http://www.ben7z.com"></link>
   <author>
@@ -9,8 +9,8 @@
   </author>
   <entry>
     <title>营销洞察课笔记</title>
-    <updated>2019-02-07T18:16:00+08:00</updated>
-    <id>tag:www.ben7z.com,2019-02-07:/insight.html</id>
+    <updated>2019-02-08T11:05:00+08:00</updated>
+    <id>tag:www.ben7z.com,2019-02-08:/insight.html</id>
     <content type="html">&lt;p&gt;营销策划最根本、最基础的一步就是营销洞察。&lt;/p&gt;&#xA;</content>
     <link href="http://www.ben7z.com/insight.html"></link>
     <author>
