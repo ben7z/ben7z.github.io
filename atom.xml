@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>阿Ben同学</title>
-  <id>http://www.ben7z.com</id>
-  <updated>2019-02-12T11:38:40+08:00</updated>
-  <subtitle>一个社交媒体实验者与思考者</subtitle>
-  <link href="http://www.ben7z.com"></link>
+  <id>http://www.aben.ml</id>
+  <updated>2019-02-15T15:59:45+08:00</updated>
+  <subtitle>乏善可陈</subtitle>
+  <link href="http://www.aben.ml"></link>
   <author>
     <name>阿Ben同学</name>
   </author>
   <entry>
+    <title>2018手机行业逆周期</title>
+    <updated>2019-02-14T11:05:00+08:00</updated>
+    <id>tag:www.aben.ml,2019-02-14:/trend.html</id>
+    <content type="html">&lt;p&gt;手机行业营销趋于理性，营销开始围绕产品和功能展开。&lt;/p&gt;&#xA;</content>
+    <link href="http://www.aben.ml/trend.html"></link>
+    <author>
+      <name>阿Ben</name>
+    </author>
+  </entry>
+  <entry>
     <title>营销洞察课笔记</title>
     <updated>2019-02-08T11:05:00+08:00</updated>
-    <id>tag:www.ben7z.com,2019-02-08:/insight.html</id>
+    <id>tag:www.aben.ml,2019-02-08:/insight.html</id>
     <content type="html">&lt;p&gt;营销策划最根本、最基础的一步就是营销洞察。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.ben7z.com/insight.html"></link>
+    <link href="http://www.aben.ml/insight.html"></link>
     <author>
       <name>阿Ben</name>
     </author>
@@ -20,9 +30,9 @@
   <entry>
     <title>《下流社会》读书笔记</title>
     <updated>2019-02-06T11:08:00+08:00</updated>
-    <id>tag:www.ben7z.com,2019-02-06:/lower.html</id>
+    <id>tag:www.aben.ml,2019-02-06:/lower.html</id>
     <content type="html">&lt;p&gt;越来越多人松松垮垮地生活着，因为这样的生活态度毕竟来得轻松些。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.ben7z.com/lower.html"></link>
+    <link href="http://www.aben.ml/lower.html"></link>
     <author>
       <name>阿Ben</name>
     </author>
@@ -30,9 +40,9 @@
   <entry>
     <title>《睡眠革命》读书笔记</title>
     <updated>2019-02-04T18:16:00+08:00</updated>
-    <id>tag:www.ben7z.com,2019-02-04:/sleep.html</id>
+    <id>tag:www.aben.ml,2019-02-04:/sleep.html</id>
     <content type="html">&lt;p&gt;如何让你的睡眠更高效。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.ben7z.com/sleep.html"></link>
+    <link href="http://www.aben.ml/sleep.html"></link>
     <author>
       <name>阿Ben</name>
     </author>
@@ -40,9 +50,9 @@
   <entry>
     <title>小米 6 玩机心得</title>
     <updated>2019-01-23T21:53:00+08:00</updated>
-    <id>tag:www.ben7z.com,2019-01-23:/mi6.html</id>
+    <id>tag:www.aben.ml,2019-01-23:/mi6.html</id>
     <content type="html">&lt;p&gt;偶尔技术宅。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.ben7z.com/mi6.html"></link>
+    <link href="http://www.aben.ml/mi6.html"></link>
     <author>
       <name>阿Ben</name>
     </author>
@@ -50,9 +60,9 @@
   <entry>
     <title>《深度工作》读书笔记</title>
     <updated>2019-01-15T12:45:00+08:00</updated>
-    <id>tag:www.ben7z.com,2019-01-15:/deep_work.html</id>
+    <id>tag:www.aben.ml,2019-01-15:/deep_work.html</id>
     <content type="html">&lt;p&gt;尊重时间，改变工作习惯。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.ben7z.com/deep_work.html"></link>
+    <link href="http://www.aben.ml/deep_work.html"></link>
     <author>
       <name>阿Ben</name>
     </author>
@@ -60,9 +70,9 @@
   <entry>
     <title>2019 年书单</title>
     <updated>2019-01-14T01:00:00+08:00</updated>
-    <id>tag:www.ben7z.com,2019-01-14:/2019_book.html</id>
+    <id>tag:www.aben.ml,2019-01-14:/2019_book.html</id>
     <content type="html">&lt;p&gt;另一个 Flag。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.ben7z.com/2019_book.html"></link>
+    <link href="http://www.aben.ml/2019_book.html"></link>
     <author>
       <name>阿Ben</name>
     </author>
@@ -70,9 +80,9 @@
   <entry>
     <title>2019 年个人 Flag</title>
     <updated>2019-01-09T01:02:00+08:00</updated>
-    <id>tag:www.ben7z.com,2019-01-09:/2019_flag.html</id>
+    <id>tag:www.aben.ml,2019-01-09:/2019_flag.html</id>
     <content type="html">&lt;p&gt;一步一个脚印。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.ben7z.com/2019_flag.html"></link>
+    <link href="http://www.aben.ml/2019_flag.html"></link>
     <author>
       <name>阿Ben</name>
     </author>
@@ -80,9 +90,9 @@
   <entry>
     <title>这不是一份广告提案模板</title>
     <updated>2016-11-25T15:30:00+08:00</updated>
-    <id>tag:www.ben7z.com,2016-11-25:/how_to_write_a_proposal.html</id>
+    <id>tag:www.aben.ml,2016-11-25:/how_to_write_a_proposal.html</id>
     <content type="html">&lt;p&gt;这是一篇新手指南，老司机可以自动忽略。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.ben7z.com/how_to_write_a_proposal.html"></link>
+    <link href="http://www.aben.ml/how_to_write_a_proposal.html"></link>
     <author>
       <name>阿Ben</name>
     </author>
