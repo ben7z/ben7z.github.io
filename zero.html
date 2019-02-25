@@ -67,10 +67,10 @@
 </script>
 
 
-        <meta name="keywords" content="技术,">
-        <meta name="description" content="小米 6 玩机心得">
+        <meta name="keywords" content="学习笔记,杨不坏系列,">
+        <meta name="description" content="圈层化时代，如何从零到一做品牌">
         <meta name="author" content="阿Ben">
-        <title>小米 6 玩机心得</title>
+        <title>圈层化时代，如何从零到一做品牌</title>
     </head>
     <body>
         <article class="container">
@@ -87,128 +87,66 @@
 </header>
 
             <article class="main article">
-                <h1 class="title">小米 6 玩机心得</h1>
+                <h1 class="title">圈层化时代，如何从零到一做品牌</h1>
                 <section class="info">
                     <span class="avatar" style="background-image: url(/images/avatar.png);"></span>
                     <a class="name" href="/about.me.html">阿Ben</a>
                     
                     <span class="date" data-time="1551059580"><span class="from"></span></span>
                     
-                    <span class="tags"><a class="tag" href="/tag/%e6%8a%80%e6%9c%af/index.html">技术</a></span>
+                    <span class="tags"><a class="tag" href="/tag/%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0/index.html">学习笔记</a><a class="tag" href="/tag/%e6%9d%a8%e4%b8%8d%e5%9d%8f%e7%b3%bb%e5%88%97/index.html">杨不坏系列</a></span>
                 </section>
-                <article class="content"><p>这篇文章是我 2018 年入手小米 6 后做的一些体验记录。</p>
+                <article class="content"><p><a href="https://mp.weixin.qq.com/s/HuGyNos-QbCZIDkEZ6l7tw">杨不坏《方法论：从0-1做品牌》</a></p>
 
-<h2>解锁 BootLoader</h2>
+<h2>现状洞察</h2>
 
-<p><em>解锁 BootLoader 会清空手机上的所有数据，在此之前确保你已经备份好所有资料。</em></p>
+<h3>1. 圈层固化</h3>
 
-<ol>
-<li>访问<a href="http://www.miui.com/unlock/index.html">小米手机解锁官网</a>，申请解锁权限；</li>
-<li>等待解锁申请通过（通常需要 2-3 天；</li>
-<li>获得解锁权限后，再次访问上面👆那个网站，下载解锁工具（Windows；</li>
-<li>进入 <strong>设置 - 开发者选项 - 设备解锁状态</strong> 中绑定账号和设备；</li>
-<li>手动进入 BootLoader 模式（关机后，同时按住开机键和音量下键）；</li>
-<li>通过 USB 连接手机，点击 “解锁”按钮。</li>
-</ol>
-
-<h2>刷入第三方 Recovery</h2>
-
-<p>推荐刷入目前最好的第三方 Rec 软件 TWRP。</p>
-
-<p>工具：</p>
+<p>当代生活的真相就是圈层固化 or 认知茧房，大多数人以为自己关注的就是全世界关注的，自己看到的就是全世界看到的。</p>
 
 <ul>
-<li><a href="https://dl.twrp.me/sagit/">TWRP</a></li>
+<li>比如有一些人以为现在遍地都是大学生，但启示本科生只占全国总人口的7%。</li>
+<li>比如你每天刷2小时抖音，就会发现三天刷到的内容是差不多的，同质化很严重，抖音用户认为全世界都看抖音。但只要关闭抖音看一下别人，就会发现一个辽阔的世界。</li>
 </ul>
 
-<p>步骤：</p>
+<h3>2. 舆论灰犀牛</h3>
+
+<p>由于认知圈层化，传播量和舆论并不是划等号的。非主流文化有可能在影响主流之前，率先在小众圈层中繁荣兴起。<strong>一个产品，沉默的积累用户，沉默的传播，不惊动舆论。做得好，这将是很好的战略隐蔽期。</strong></p>
+
+<p>比如快手在发展初期在舆论上没有任何声音，一个用户量过亿且活跃度极高的庞然大物，就这样沉默着，舆论对其视而不见。</p>
+
+<h2>品牌方法论</h2>
+
+<p>品牌是甲方与消费者达成的共识。甲方如何获得更多的消费者认同，达成更广泛的共识呢？利用圈层洞察，可以分为三步：</p>
 
 <ol>
-<li>下载 TWRP 最新版（适配小米 6），文件名称形式如 twrp-x.x.x-x-sagit.img；</li>
-<li>将文件包放置在电脑根目录，将手机连接至电脑；</li>
-<li>打开 Windows 命令行或 Mac 终端，输入 <code>adb reboot bootloader</code>；</li>
-<li>等待手机进入 BootLoader 模式，在电脑上输入 <code>fastboot devices</code>；</li>
-<li>在电脑上输入 <code>fastboot flash recovery twrp-x.x.x-x-sagit.img</code>，刷入 TWRP。</li>
+<li>圈层共识</li>
+<li>大众定调</li>
+<li>大众传播</li>
 </ol>
 
-<h2>刷 Lineage OS</h2>
+<h3>1. 圈层共识</h3>
 
-<p>Lineage OS 是我最喜欢的一款近安卓原生系统，目前也支持小米 6 了。需要注意的是，Lineage OS 不支持 Mipay 因此也不支持小米的 NFC 公交卡功能，暂时没有找到解决的方法。</p>
+<p>由于圈层固化，所以只达成圈层共识，不惊动大众舆论，是理论可行的。圈层共识分两部分，1. 通过圈层卖货，2. 积累圈层口碑。</p>
 
-<p>工具：</p>
+<p>比如喜茶第一家店在广东省江门市九中街，是中国的一个犄角旮旯，直到三年之后才进入省会城市广州。喜茶在进入大众视野前，在区域市场（圈层市场）沉淀了足够久的时间，最终进入大众视野时，成为网红品牌。再如很多电商爆款，在成为大众爆款之前，往往已经是某个小众圈层的爆款了。</p>
 
-<ul>
-<li><a href="https://androidfilehost.com/?w=files&amp;flid=200437">MIUI 底包</a>（解决基带适配问题）</li>
-<li><a href="https://download.lineageos.org/sagit">Lineage OS 小米 6</a></li>
-<li><a href="https://download.lineageos.org/extras">Lineage OS 官方 root 插件</a>（arm64）</li>
-</ul>
+<h3>2. 大众定调</h3>
 
-<p>步骤：</p>
+<p>当一个产品在核心圈层内获得了足够好的口碑，就需要考虑如何在大众舆论亮相了。这个定调可能是第三方公关的形式，但一定是要甲方亲自操盘。</p>
 
 <ol>
-<li>在手机关机状态下长按 <strong>音量加</strong>+<strong>电源键</strong> 一直到屏幕上出现小米 Logo；</li>
-<li>进入 TWRP 主界面，选择 <strong>Wipe</strong>；</li>
-<li>选择 <strong>Format Data</strong> 格式化手机；</li>
-<li>回到原来的目录，选择 <strong>Advance Wipe</strong>，在接下来的界面选择 <strong>Cache</strong> 和 <strong>System</strong>，然后滑动；</li>
-<li>回到主界面，选择 <strong>Advance</strong> - <strong>ADB Sideload</strong>，然后滑动；</li>
-<li>将刷机包放在电脑根目录下，使用 <code>adb sideload filename.zip</code> 依次刷入：
-
-<ul>
-<li>MIUI 底包</li>
-<li>Lineage OS</li>
-<li>Lineage OS 官方 root 插件</li>
-</ul></li>
-<li>重启手机。</li>
+<li>密切关注大众舆论，一旦出现负面定调，正面定调内容及时补救；</li>
+<li>定调掌握在品牌手中，打破圈层壁垒，进入大众空间。</li>
 </ol>
 
-<h2>MIUI 稳定版 Root</h2>
+<p>比如快手在大众视野的亮相，是自媒体“X博士”《底层残酷物语：一个视频软件里的中国农村》，正是由于这一篇，把快手的调性确立为 Low 的，残酷的，底层的。快手最大的败笔在于，大众定调权没有掌握在自己手中。</p>
 
-<p>MIUI 稳定版省电系统漏洞少，但又想 Root 享受更多权限，怎么办？这时候只需要使用第三方 Rec 刷入 SuperSu 来使用第三方 Root。</p>
+<h3>3. 大众传播</h3>
 
-<p>工具：</p>
+<p>为什么要先在前面做这么多，才开始进行大众传播？</p>
 
-<ul>
-<li><a href="http://www.supersu.com/">SuperSu</a></li>
-<li>360一键Root</li>
-</ul>
-
-<p>步骤：</p>
-
-<ol>
-<li>使用 TWRP 刷入 SuperSu；</li>
-<li>重启手机，打开 <strong>超级授权</strong> - <strong>设置</strong> - <strong>启用多用户授权</strong>，打勾，退出；</li>
-<li>下载安装 360一键Root，超级授权同意，选择 <strong>一键 Root</strong>，成功后，退出，卸载；</li>
-<li>重启手机，使用 TWRP 再次刷入 SuperSu，至此完全获得 Root 权限。</li>
-</ol>
-
-<h2>解决淘宝在 Xposed 下闪退问题</h2>
-
-<p>工具：</p>
-
-<ul>
-<li>RE 文件管理器</li>
-</ul>
-
-<p>步骤：</p>
-
-<ol>
-<li>找到目录：/data/data/com.taobao.taobao/files/bundleBaseline；</li>
-<li>如果淘宝已经有闪退现象了那么这里面就会生成两个文件：lock 和 updateInfo，删除；</li>
-<li>设置 bundleBaseline 文件夹的权限为 0500，或取消打勾写，搞定。</li>
-</ol>
-
-<h2>超级省电的 DynamicWIPE</h2>
-
-<p>酷安 yc 大神的调度的 DynamicWIPE 方案，个人轻中度使用一天电量还剩 58%，可以说非常耐用了。</p>
-
-<p>工具：</p>
-
-<ul>
-<li><a href="./images/tasker.apk">Tasker</a></li>
-<li><a href="https://github.com/Sherlockwoo/DynamicWIPE">DynamicWIPE</a></li>
-</ul>
-
-<p>步骤见 DynamicWIPE Github 项目页面。</p>
+<p>做大众传播，消费者看到回去搜索口碑，如果是正向的，马上就会下单了。如果没有足够群众基础，追求所谓的“爆款”，很容易忽然过气，而且极有可能导致负面定调，非常危险。<strong>这需要前两个阶段的沉淀，因为前面做圈层共识与大众定调，是为了形成品牌共识。</strong>这两步做完，一个有产品、有口碑、有调性、有共识、完整的品牌就放在那里了。此时做大众传播，大家看到的是一个品牌，而不只是一个产品。</p>
 </article>
                 <section class="author">
                     <div class="avatar" style="background-image: url(/images/avatar.png);"></div>
@@ -219,13 +157,13 @@
                     
                     <section class="nav prev more">
                         <div class="head">上篇文章</div>
-                        <a class="link" href="/sleep.html">《睡眠革命》读书笔记</a>
+                        <a class="link" href="/mi6.html">小米 6 玩机心得</a>
                     </section>
                     
                     
                     <section class="nav next more">
                         <div class="head">下篇文章</div>
-                        <a class="link" href="/zero.html">圈层化时代，如何从零到一做品牌</a>
+                        <a class="link" href="/deep_work.html">《深度工作》读书笔记</a>
                     </section>
                     
                 </section>
