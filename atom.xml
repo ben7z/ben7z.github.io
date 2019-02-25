@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>阿Ben同学</title>
   <id>http://www.aben.ml</id>
-  <updated>2019-02-15T15:59:45+08:00</updated>
+  <updated>2019-02-25T10:14:22+08:00</updated>
   <subtitle>乏善可陈</subtitle>
   <link href="http://www.aben.ml"></link>
   <author>
@@ -49,8 +49,8 @@
   </entry>
   <entry>
     <title>小米 6 玩机心得</title>
-    <updated>2019-01-23T21:53:00+08:00</updated>
-    <id>tag:www.aben.ml,2019-01-23:/mi6.html</id>
+    <updated>2019-02-25T09:53:00+08:00</updated>
+    <id>tag:www.aben.ml,2019-02-25:/mi6.html</id>
     <content type="html">&lt;p&gt;偶尔技术宅。&lt;/p&gt;&#xA;</content>
     <link href="http://www.aben.ml/mi6.html"></link>
     <author>
