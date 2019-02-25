@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>阿Ben同学</title>
   <id>http://www.aben.ml</id>
-  <updated>2019-02-25T23:47:26+08:00</updated>
+  <updated>2019-02-25T23:50:24+08:00</updated>
   <subtitle>乏善可陈</subtitle>
   <link href="http://www.aben.ml"></link>
   <author>
     <name>阿Ben同学</name>
   </author>
+  <entry>
+    <title>圈层化时代，如何从零到一做品牌</title>
+    <updated>2019-02-25T23:49:00+08:00</updated>
+    <id>tag:www.aben.ml,2019-02-25:/zero.html</id>
+    <content type="html">&lt;p&gt;没有确定的阳关道，只有不确定的独木桥。&lt;/p&gt;&#xA;</content>
+    <link href="http://www.aben.ml/zero.html"></link>
+    <author>
+      <name>阿Ben</name>
+    </author>
+  </entry>
   <entry>
     <title>2018手机行业逆周期</title>
     <updated>2019-02-14T11:05:00+08:00</updated>
@@ -53,16 +63,6 @@
     <id>tag:www.aben.ml,2019-02-25:/mi6.html</id>
     <content type="html">&lt;p&gt;偶尔技术宅。&lt;/p&gt;&#xA;</content>
     <link href="http://www.aben.ml/mi6.html"></link>
-    <author>
-      <name>阿Ben</name>
-    </author>
-  </entry>
-  <entry>
-    <title>圈层化时代，如何从零到一做品牌</title>
-    <updated>2019-02-25T09:53:00+08:00</updated>
-    <id>tag:www.aben.ml,2019-02-25:/zero.html</id>
-    <content type="html">&lt;p&gt;没有确定的阳关道，只有不确定的独木桥。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.aben.ml/zero.html"></link>
     <author>
       <name>阿Ben</name>
     </author>
