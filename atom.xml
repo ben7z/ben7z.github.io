@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>阿Ben同学</title>
   <id>http://www.aben.ml</id>
-  <updated>2019-02-25T23:50:24+08:00</updated>
+  <updated>2019-02-26T13:40:18+08:00</updated>
   <subtitle>乏善可陈</subtitle>
   <link href="http://www.aben.ml"></link>
   <author>
     <name>阿Ben同学</name>
   </author>
+  <entry>
+    <title>如何让媒介投放更加高效</title>
+    <updated>2019-02-26T12:49:00+08:00</updated>
+    <id>tag:www.aben.ml,2019-02-26:/media.html</id>
+    <content type="html">&lt;p&gt;制造认知穹顶。&lt;/p&gt;&#xA;</content>
+    <link href="http://www.aben.ml/media.html"></link>
+    <author>
+      <name>阿Ben</name>
+    </author>
+  </entry>
   <entry>
     <title>圈层化时代，如何从零到一做品牌</title>
     <updated>2019-02-25T23:49:00+08:00</updated>
@@ -93,16 +103,6 @@
     <id>tag:www.aben.ml,2019-01-09:/2019_flag.html</id>
     <content type="html">&lt;p&gt;一步一个脚印。&lt;/p&gt;&#xA;</content>
     <link href="http://www.aben.ml/2019_flag.html"></link>
-    <author>
-      <name>阿Ben</name>
-    </author>
-  </entry>
-  <entry>
-    <title>这不是一份广告提案模板</title>
-    <updated>2016-11-25T15:30:00+08:00</updated>
-    <id>tag:www.aben.ml,2016-11-25:/how_to_write_a_proposal.html</id>
-    <content type="html">&lt;p&gt;这是一篇新手指南，老司机可以自动忽略。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.aben.ml/how_to_write_a_proposal.html"></link>
     <author>
       <name>阿Ben</name>
     </author>
