@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>阿Ben同学</title>
   <id>http://www.aben.ml</id>
-  <updated>2019-03-18T11:33:10+08:00</updated>
+  <updated>2019-03-18T17:28:37+08:00</updated>
   <subtitle>乏善可陈</subtitle>
   <link href="http://www.aben.ml"></link>
   <author>
     <name>阿Ben同学</name>
   </author>
   <entry>
+    <title>《深度工作》读书笔记</title>
+    <updated>2019-03-18T12:45:00+08:00</updated>
+    <id>tag:www.aben.ml,2019-03-18:/deep_work.html</id>
+    <content type="html">&lt;p&gt;尊重时间，改变工作习惯。&lt;/p&gt;&#xA;</content>
+    <link href="http://www.aben.ml/deep_work.html"></link>
+    <author>
+      <name>阿Ben</name>
+    </author>
+  </entry>
+  <entry>
+    <title>没有策略，就不要刷屏</title>
+    <updated>2019-03-17T23:49:00+08:00</updated>
+    <id>tag:www.aben.ml,2019-03-17:/strategy.html</id>
+    <content type="html">&lt;p&gt;做营销，创意不重要。&lt;/p&gt;&#xA;</content>
+    <link href="http://www.aben.ml/strategy.html"></link>
+    <author>
+      <name>阿Ben</name>
+    </author>
+  </entry>
+  <entry>
     <title>to B 品牌不做传播</title>
-    <updated>2019-03-04T23:49:00+08:00</updated>
-    <id>tag:www.aben.ml,2019-03-04:/tob.html</id>
+    <updated>2019-03-16T23:49:00+08:00</updated>
+    <id>tag:www.aben.ml,2019-03-16:/tob.html</id>
     <content type="html">&lt;p&gt;品牌与传播是两个词。&lt;/p&gt;&#xA;</content>
     <link href="http://www.aben.ml/tob.html"></link>
     <author>
@@ -83,26 +103,6 @@
     <id>tag:www.aben.ml,2019-02-08:/insight.html</id>
     <content type="html">&lt;p&gt;营销策划最根本、最基础的一步就是营销洞察。&lt;/p&gt;&#xA;</content>
     <link href="http://www.aben.ml/insight.html"></link>
-    <author>
-      <name>阿Ben</name>
-    </author>
-  </entry>
-  <entry>
-    <title>《下流社会》读书笔记</title>
-    <updated>2019-02-06T11:08:00+08:00</updated>
-    <id>tag:www.aben.ml,2019-02-06:/lower.html</id>
-    <content type="html">&lt;p&gt;越来越多人松松垮垮地生活着，因为这样的生活态度毕竟来得轻松些。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.aben.ml/lower.html"></link>
-    <author>
-      <name>阿Ben</name>
-    </author>
-  </entry>
-  <entry>
-    <title>《睡眠革命》读书笔记</title>
-    <updated>2019-02-04T18:16:00+08:00</updated>
-    <id>tag:www.aben.ml,2019-02-04:/sleep.html</id>
-    <content type="html">&lt;p&gt;如何让你的睡眠更高效。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.aben.ml/sleep.html"></link>
     <author>
       <name>阿Ben</name>
     </author>
