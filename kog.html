@@ -117,6 +117,16 @@
 <li>将游戏打开，进入冒险模式，稷下战场，阵容调整界面。</li>
 <li>运行命令 <code>python kog.py</code> 即可。</li>
 </ol>
+
+<h2>ADB无线连接Android</h2>
+
+<ol>
+<li>确保手机开启了usb调试</li>
+<li>用usb线把手机和电脑连接起来</li>
+<li>执行命令：<code>adb tcpip 5555</code></li>
+<li>找到手机的IP地址，执行：<code>adb connect 192.168.1.100:5555</code></li>
+<li>连接成功，查看连接设备：<code>adb devices</code></li>
+</ol>
 </article>
                 <section class="author">
                     <div class="avatar" style="background-image: url(/images/avatar.png);"></div>
