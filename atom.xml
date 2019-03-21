@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>阿Ben同学</title>
   <id>http://www.aben.ml</id>
-  <updated>2019-03-20T13:27:49+08:00</updated>
+  <updated>2019-03-21T17:25:03+08:00</updated>
   <subtitle>乏善可陈</subtitle>
   <link href="http://www.aben.ml"></link>
   <author>
     <name>阿Ben同学</name>
   </author>
+  <entry>
+    <title>品牌号学习笔记</title>
+    <updated>2019-03-21T12:49:00+08:00</updated>
+    <id>tag:www.aben.ml,2019-03-21:/brandhub.html</id>
+    <content type="html">&lt;p&gt;品牌新零售平台。&lt;/p&gt;&#xA;</content>
+    <link href="http://www.aben.ml/brandhub.html"></link>
+    <author>
+      <name>阿Ben</name>
+    </author>
+  </entry>
   <entry>
     <title>《深度工作》读书笔记</title>
     <updated>2019-03-18T12:45:00+08:00</updated>
@@ -93,16 +103,6 @@
     <id>tag:www.aben.ml,2019-02-14:/trend.html</id>
     <content type="html">&lt;p&gt;手机行业营销趋于理性，营销开始围绕产品和功能展开。&lt;/p&gt;&#xA;</content>
     <link href="http://www.aben.ml/trend.html"></link>
-    <author>
-      <name>阿Ben</name>
-    </author>
-  </entry>
-  <entry>
-    <title>营销洞察课笔记</title>
-    <updated>2019-02-08T11:05:00+08:00</updated>
-    <id>tag:www.aben.ml,2019-02-08:/insight.html</id>
-    <content type="html">&lt;p&gt;营销策划最根本、最基础的一步就是营销洞察。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.aben.ml/insight.html"></link>
     <author>
       <name>阿Ben</name>
     </author>
