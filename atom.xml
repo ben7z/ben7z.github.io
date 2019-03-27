@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>阿Ben同学</title>
   <id>http://www.aben.ml</id>
-  <updated>2019-03-22T13:56:26+08:00</updated>
+  <updated>2019-03-27T13:13:28+08:00</updated>
   <subtitle>乏善可陈</subtitle>
   <link href="http://www.aben.ml"></link>
   <author>
     <name>阿Ben同学</name>
   </author>
+  <entry>
+    <title>郑也夫的社会学专题笔记</title>
+    <updated>2019-03-27T12:49:00+08:00</updated>
+    <id>tag:www.aben.ml,2019-03-27:/sociology.html</id>
+    <content type="html">&lt;p&gt;人类文明和世界观。&lt;/p&gt;&#xA;</content>
+    <link href="http://www.aben.ml/sociology.html"></link>
+    <author>
+      <name>阿Ben</name>
+    </author>
+  </entry>
   <entry>
     <title>品牌号学习笔记</title>
     <updated>2019-03-21T12:49:00+08:00</updated>
@@ -93,16 +103,6 @@
     <id>tag:www.aben.ml,2019-02-24:/ybh.html</id>
     <content type="html">&lt;p&gt;持续更新。&lt;/p&gt;&#xA;</content>
     <link href="http://www.aben.ml/ybh.html"></link>
-    <author>
-      <name>阿Ben</name>
-    </author>
-  </entry>
-  <entry>
-    <title>2018手机行业逆周期</title>
-    <updated>2019-02-14T11:05:00+08:00</updated>
-    <id>tag:www.aben.ml,2019-02-14:/trend.html</id>
-    <content type="html">&lt;p&gt;手机行业营销趋于理性，营销开始围绕产品和功能展开。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.aben.ml/trend.html"></link>
     <author>
       <name>阿Ben</name>
     </author>
