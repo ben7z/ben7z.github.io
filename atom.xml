@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>阿Ben同学</title>
   <id>http://www.aben.ml</id>
-  <updated>2019-03-28T13:49:13+08:00</updated>
+  <updated>2019-04-03T12:03:50+08:00</updated>
   <subtitle>乏善可陈</subtitle>
   <link href="http://www.aben.ml"></link>
   <author>
     <name>阿Ben同学</name>
   </author>
+  <entry>
+    <title>高阶用户运营与大规模用户运营体系搭建</title>
+    <updated>2019-04-03T12:49:00+08:00</updated>
+    <id>tag:www.aben.ml,2019-04-03:/operation.html</id>
+    <content type="html">&lt;p&gt;运营实际上是一个“销售岗+管理岗“。&lt;/p&gt;&#xA;</content>
+    <link href="http://www.aben.ml/operation.html"></link>
+    <author>
+      <name>阿Ben</name>
+    </author>
+  </entry>
   <entry>
     <title>郑也夫的社会学专题笔记</title>
     <updated>2019-03-27T12:49:00+08:00</updated>
@@ -93,16 +103,6 @@
     <id>tag:www.aben.ml,2019-02-25:/zero.html</id>
     <content type="html">&lt;p&gt;没有确定的阳关道，只有不确定的独木桥。&lt;/p&gt;&#xA;</content>
     <link href="http://www.aben.ml/zero.html"></link>
-    <author>
-      <name>阿Ben</name>
-    </author>
-  </entry>
-  <entry>
-    <title>合辑：杨不坏系列学习笔记</title>
-    <updated>2019-02-24T23:49:00+08:00</updated>
-    <id>tag:www.aben.ml,2019-02-24:/ybh.html</id>
-    <content type="html">&lt;p&gt;持续更新。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.aben.ml/ybh.html"></link>
     <author>
       <name>阿Ben</name>
     </author>
