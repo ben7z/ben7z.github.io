@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>阿Ben同学</title>
   <id>http://www.aben.ml</id>
-  <updated>2019-04-08T13:45:39+08:00</updated>
+  <updated>2019-05-31T15:28:00+08:00</updated>
   <subtitle>乏善可陈</subtitle>
   <link href="http://www.aben.ml"></link>
   <author>
     <name>阿Ben同学</name>
   </author>
+  <entry>
+    <title>在 Mac 上压制带字幕的视频</title>
+    <updated>2019-05-30T21:53:00+08:00</updated>
+    <id>tag:www.aben.ml,2019-05-30:/video.html</id>
+    <content type="html">&lt;p&gt;视频真的烦。&lt;/p&gt;&#xA;</content>
+    <link href="http://www.aben.ml/video.html"></link>
+    <author>
+      <name>阿Ben</name>
+    </author>
+  </entry>
   <entry>
     <title>高阶用户运营与大规模用户运营体系搭建</title>
     <updated>2019-04-03T12:49:00+08:00</updated>
@@ -93,16 +103,6 @@
     <id>tag:www.aben.ml,2019-02-26:/media.html</id>
     <content type="html">&lt;p&gt;制造认知穹顶。&lt;/p&gt;&#xA;</content>
     <link href="http://www.aben.ml/media.html"></link>
-    <author>
-      <name>阿Ben</name>
-    </author>
-  </entry>
-  <entry>
-    <title>圈层化时代，品牌如何从零到一</title>
-    <updated>2019-02-25T23:49:00+08:00</updated>
-    <id>tag:www.aben.ml,2019-02-25:/zero.html</id>
-    <content type="html">&lt;p&gt;没有确定的阳关道，只有不确定的独木桥。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.aben.ml/zero.html"></link>
     <author>
       <name>阿Ben</name>
     </author>
