@@ -44,6 +44,28 @@
     var root = '';
 </script>
 
+<script type="text/javascript">
+    var conn, reloadTimer, connectTimer;
+    var connect = function() {
+        conn = new WebSocket('ws://' + location.host + '/live');
+        conn.onmessage = function(event) {
+            if (event.data === 'change') {
+                if (reloadTimer) clearTimeout(reloadTimer);
+                reloadTimer = setTimeout(function() {
+                    window.location.reload();
+                }, 200);
+            }
+        };
+        conn.onclose = function() {
+            if (connectTimer) clearTimeout(connectTimer);
+            connectTimer = setTimeout(function() {
+                connect();
+            }, 1000);
+        };
+    };
+    connect();
+</script>
+
 
         <meta name="keywords" content="乏善可陈">
         <meta name="description" content="乏善可陈">
@@ -63,58 +85,44 @@
   </ul>
 </header>
 
-            <article class="main tag">
-                <header class="site">
-                    <h1 class="title">阿Ben同学</h1>
-                    <h2 class="subtitle">乏善可陈</h2>
+            <article class="main page">
+                <header class="header site">
+                    
+                        <img class="logo" src="/images/avatar.png" />
+                        <h1 class="title">阿Ben同学</h1>
+                        <h2 class="subtitle">乏善可陈</h2>
+                        <div class="search-wrap">
+  <input id="search" class="search" placeholder="搜索..." data-root="">
+  <svg class="icon" width="25" height="25" viewBox="0 0 25 25"><path d="M20.067 18.933l-4.157-4.157a6 6 0 1 0-.884.884l4.157 4.157a.624.624 0 1 0 .884-.884zM6.5 11c0-2.62 2.13-4.75 4.75-4.75S16 8.38 16 11s-2.13 4.75-4.75 4.75S6.5 13.62 6.5 11z"></path></svg>
+</div>
+
+                    
                 </header>
-                <header class="header">
-                    <span class="title">标签 -</span>
-                    <span class="subtitle">21 篇文章</span>
-                </header>
-                <ul class="tag-list clearfix">
+                <ul class="article-list">
                     
-                    <li class="tag-item">
-                        <a class="tag-name" href="/tag/%e6%9d%a8%e4%b8%8d%e5%9d%8f%e7%b3%bb%e5%88%97/index.html">杨不坏系列<span class="tag-count"> (7)</span></a>
-                    </li>
-                    
-                    <li class="tag-item">
-                        <a class="tag-name" href="/tag/%e8%af%bb%e4%b9%a6%e7%ac%94%e8%ae%b0/index.html">读书笔记<span class="tag-count"> (4)</span></a>
-                    </li>
-                    
-                    <li class="tag-item">
-                        <a class="tag-name" href="/tag/%e6%8a%80%e6%9c%af/index.html">技术<span class="tag-count"> (3)</span></a>
-                    </li>
-                    
-                    <li class="tag-item">
-                        <a class="tag-name" href="/tag/%e7%bd%91%e8%af%be%e7%ac%94%e8%ae%b0/index.html">网课笔记<span class="tag-count"> (2)</span></a>
-                    </li>
-                    
-                    <li class="tag-item">
-                        <a class="tag-name" href="/tag/%e6%88%90%e9%95%bf/index.html">成长<span class="tag-count"> (2)</span></a>
-                    </li>
-                    
-                    <li class="tag-item">
-                        <a class="tag-name" href="/tag/%e6%b7%98%e5%ae%9d/index.html">淘宝<span class="tag-count"> (1)</span></a>
-                    </li>
-                    
-                    <li class="tag-item">
-                        <a class="tag-name" href="/tag/%e5%be%97%e5%88%b0/index.html">得到<span class="tag-count"> (1)</span></a>
-                    </li>
-                    
-                    <li class="tag-item">
-                        <a class="tag-name" href="/tag/%e5%b9%bf%e5%91%8a/index.html">广告<span class="tag-count"> (1)</span></a>
-                    </li>
-                    
-                    <li class="tag-item">
-                        <a class="tag-name" href="/tag/%e5%88%9b%e6%84%8f/index.html">创意<span class="tag-count"> (1)</span></a>
-                    </li>
-                    
-                    <li class="tag-item">
-                        <a class="tag-name" href="/tag/%e4%b8%89%e8%8a%82%e8%af%be/index.html">三节课<span class="tag-count"> (1)</span></a>
+                    <li class="article">
+                        <a class="title" href="/how_to_write_a_proposal.html">这不是一份广告提案模板</a>
+                        <div class="cover" style="background-image:url(/images/proposal.jpg);"></div>
+                        <section class="preview content"><p>这是一篇新手指南，老司机可以自动忽略。</p>
+</section>
+                        <section class="info">
+                            <span class="avatar" style="background-image: url(/images/avatar.png);"></span>
+                            <a class="name" href="/about.me.html">阿Ben</a>
+                            
+                            <span class="date" data-time="1480059000"><span class="from"></span></span>
+                            
+                            <span class="tags">
+                            <a class="tag" href="/tag/%e5%b9%bf%e5%91%8a/index.html">广告</a><a class="tag" href="/tag/%e5%88%9b%e6%84%8f/index.html">创意</a>
+                            </span>
+                        </section>
                     </li>
                     
                 </ul>
+                <section class="page-nav">
+                    <a class="prev" href="/page2.html">上一页</a>
+                    <span class="nav">3 / 3</span>
+                    
+                </section>
             </article>
         </article>
         <footer class="footer">

@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>阿Ben同学</title>
   <id>http://www.aben.ml</id>
-  <updated>2019-06-03T14:20:53+08:00</updated>
+  <updated>2019-06-11T11:50:45+08:00</updated>
   <subtitle>乏善可陈</subtitle>
   <link href="http://www.aben.ml"></link>
   <author>
     <name>阿Ben同学</name>
   </author>
+  <entry>
+    <title>MacBook 的一些使用技巧</title>
+    <updated>2019-06-11T11:00:00+08:00</updated>
+    <id>tag:www.aben.ml,2019-06-11:/macbook.html</id>
+    <content type="html">&lt;p&gt;生产工具。&lt;/p&gt;&#xA;</content>
+    <link href="http://www.aben.ml/macbook.html"></link>
+    <author>
+      <name>阿Ben</name>
+    </author>
+  </entry>
   <entry>
     <title>在 Mac 上压制带字幕的视频</title>
     <updated>2019-05-30T21:53:00+08:00</updated>
@@ -93,16 +103,6 @@
     <id>tag:www.aben.ml,2019-03-03:/luckin.html</id>
     <content type="html">&lt;p&gt;以更加体系化的思维，放大创意的价值。&lt;/p&gt;&#xA;</content>
     <link href="http://www.aben.ml/luckin.html"></link>
-    <author>
-      <name>阿Ben</name>
-    </author>
-  </entry>
-  <entry>
-    <title>如何让媒介投放更加高效</title>
-    <updated>2019-02-26T12:49:00+08:00</updated>
-    <id>tag:www.aben.ml,2019-02-26:/media.html</id>
-    <content type="html">&lt;p&gt;制造认知穹顶。&lt;/p&gt;&#xA;</content>
-    <link href="http://www.aben.ml/media.html"></link>
     <author>
       <name>阿Ben</name>
     </author>

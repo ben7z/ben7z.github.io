@@ -68,9 +68,9 @@
 
 
         <meta name="keywords" content="技术,">
-        <meta name="description" content="在 Mac 上压制带字幕的视频">
+        <meta name="description" content="MacBook 的一些使用技巧">
         <meta name="author" content="阿Ben">
-        <title>在 Mac 上压制带字幕的视频</title>
+        <title>MacBook 的一些使用技巧</title>
     </head>
     <body>
         <article class="container">
@@ -87,50 +87,56 @@
 </header>
 
             <article class="main article">
-                <h1 class="title">在 Mac 上压制带字幕的视频</h1>
+                <h1 class="title">MacBook 的一些使用技巧</h1>
                 <section class="info">
                     <span class="avatar" style="background-image: url(/images/avatar.png);"></span>
                     <a class="name" href="/about.me.html">阿Ben</a>
                     
-                    <span class="date" data-time="1559224380"><span class="from"></span></span>
+                    <span class="date" data-time="1560222000"><span class="from"></span></span>
                     
                     <span class="tags"><a class="tag" href="/tag/%e6%8a%80%e6%9c%af/index.html">技术</a></span>
                 </section>
-                <article class="content"><p>工具：</p>
+                <article class="content"><h2>日历设置为 24 小时制</h2>
 
-<ul>
-<li><a href="http://www.jubler.org">Jubler</a>：文字字幕编辑工具</li>
-<li><a href="https://mkvtoolnix.download/macos/">MKVToolNix</a>：字幕封装工具</li>
-<li><a href="https://handbrake.fr/downloads.php">HandBrake</a>：视频压缩软件</li>
-</ul>
+<p>习惯使用 24 小时制的时间，但 Mac 的日历默认使用 12 小时制，如下午 10 点，既不习惯，也不方便。</p>
+
+<p>方法：</p>
+
+<p>日历时间显示是跟随系统时间的，因此只需要在系统设置中的 <em>语言与区域</em> 设置勾选 24 小时制即可调整。</p>
+
+<h2>显示与隐藏所有文件</h2>
+
+<p>显示：在终端中输入</p>
+
+<p><code>defaults write com.apple.finder AppleShowAllFiles -bool true</code></p>
+
+<p>隐藏：在终端中输入</p>
+
+<p><code>defaults write com.apple.finder AppleShowAllFiles -bool false</code></p>
+
+<h2>微软雅黑字体标准体与粗体无法同时使用</h2>
+
+<p>微软雅黑字体有标准体和粗体两种字体，但在 Mac 系统中无法同时使用。要么只能用标准体，粗体报错；要么就是能用粗体，标准体无法使用。很偶然找到了以下MAC技巧，问题终于得以解决。</p>
 
 <p>步骤：</p>
 
 <ol>
-<li>使用 Jubler 将 srt 字幕文件转换成 ass 格式；</li>
-<li>使用 MKVToolNix 封装 ass 字幕文件：
-
-<ul>
-<li>导入视频源文件和 ass 字幕</li>
-<li>仅保留视频、音频、ass字幕这三个频道</li>
-<li>点击 start muxing 开始封装</li>
-</ul></li>
-<li>使用 HandBrake 压缩视频：
-
-<ul>
-<li>打开 Handbrake 导入封装好的视频</li>
-<li>video 属性选择 h.264 1800kbps</li>
-<li>audio 属性选择 aac 192kbps</li>
-<li>subtitle 属性加载字幕轨道，并选择 Burned In</li>
-<li>x.264 高级设置，想要追求质量可按此设置</li>
-</ul></li>
+<li>下载 <a href="http://pan.baidu.com/s/1qWHISLQ">微软雅黑forMac.zip</a>；</li>
+<li>打开Finder，按shift+command+G组合键；</li>
+<li>在对话框中输入：/Library/Fonts ，把之前的微软雅黑字体删除（名称如：Microsoft Yahei.ttf、msyh.ttf 和 msyhbd.ttf），再把下载好的字体解压后复制到Fonts文件夹，重启电脑后就大功告成了。</li>
 </ol>
 
-<p>视频教程：</p>
+<h2>安装任何来源软件</h2>
 
-<ul>
-<li><a href="https://www.bilibili.com/video/av5480766/">在Mac上使用handbrake压制带字幕的视频</a></li>
-</ul>
+<p>安装绿色软件时，系统默认会阻止，有时需要允许安装任何来源软件。</p>
+
+<p>步骤：</p>
+
+<ol>
+<li>打开系统设置中的 *安全性与隐私*，查看 <em>允许从以下位置下载的应用</em> 设置，尝试将其设置为 *App Store 和被认可的开发者*，如还是不能安装，进入下一步；</li>
+<li>在终端中输入：<code>sudo spctl --master-disable</code>；</li>
+<li>安装完毕后，回到 *安全性与隐私*，将 <em>任何来源</em> 改为其他的选项，等需要的时候再次开启。</li>
+</ol>
 </article>
                 <section class="author">
                     <div class="avatar" style="background-image: url(/images/avatar.png);"></div>
@@ -139,15 +145,10 @@
                 </section>
                 <section class="recommend">
                     
-                    <section class="nav prev more">
-                        <div class="head">上篇文章</div>
-                        <a class="link" href="/macbook.html">MacBook 的一些使用技巧</a>
-                    </section>
                     
-                    
-                    <section class="nav next more">
+                    <section class="nav next">
                         <div class="head">下篇文章</div>
-                        <a class="link" href="/operation.html">高阶用户运营与大规模用户运营体系搭建</a>
+                        <a class="link" href="/video.html">在 Mac 上压制带字幕的视频</a>
                     </section>
                     
                 </section>
