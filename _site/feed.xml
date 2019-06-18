@@ -1,599 +1,1453 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Stack Problems</title>
-    <description>My Personal Stack Problems</description>
+    <title>叨叨</title>
+    <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Jun 2019 10:15:09 +0800</pubDate>
-    <lastBuildDate>Mon, 17 Jun 2019 10:15:09 +0800</lastBuildDate>
+    <pubDate>Tue, 18 Jun 2019 13:11:23 +0800</pubDate>
+    <lastBuildDate>Tue, 18 Jun 2019 13:11:23 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>Top 10 Python libraries of 2016</title>
-        <description>&lt;p&gt;Last year, we did a recap with what we thought were the &lt;a href=&quot;https://tryolabs.com/blog/2015/12/15/top-10-python-libraries-of-2015/&quot;&gt;best Python libraries of 2015&lt;/a&gt;, which was widely shared within the Python community (see post in&lt;a href=&quot;https://www.reddit.com/r/Python/comments/3wyiuv/top_10_python_libraries_of_2015/&quot;&gt;r/Python&lt;/a&gt;). A year has gone by, and again it is time to give due credit for the awesome work that has been done by the &lt;strong&gt;open source community&lt;/strong&gt; this year.&lt;/p&gt;
+        <title>MacBook 的一些使用技巧</title>
+        <description>&lt;h2 id=&quot;日历设置为-24-小时制&quot;&gt;日历设置为 24 小时制&lt;/h2&gt;
 
-&lt;p&gt;Again, we try to avoid most established choices such as Django, Flask, etc. that are kind of standard nowadays. Also, some of these libraries date prior to 2016, but either they had an explosion in popularity this year or we think they are great enough to deserve the spot. Here we go!&lt;/p&gt;
+&lt;p&gt;习惯使用 24 小时制的时间，但 Mac 的日历默认使用 12 小时制，如下午 10 点，既不习惯，也不方便。&lt;/p&gt;
 
-&lt;h2 id=&quot;1-zappa&quot;&gt;1. &lt;a href=&quot;https://www.zappa.io/&quot;&gt;Zappa&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;方法：&lt;/p&gt;
 
-&lt;p&gt;Since the release of &lt;a href=&quot;https://aws.amazon.com/lambda/details/&quot;&gt;AWS Lambda&lt;/a&gt; (and &lt;a href=&quot;https://cloud.google.com/functions/docs/&quot;&gt;others&lt;/a&gt; that &lt;a href=&quot;https://azure.microsoft.com/en-us/services/functions/&quot;&gt;have&lt;/a&gt; &lt;a href=&quot;https://www.ibm.com/cloud-computing/bluemix/openwhisk&quot;&gt;followed&lt;/a&gt;), all the rage has been about &lt;a href=&quot;http://martinfowler.com/articles/serverless.html&quot;&gt;serverless architectures&lt;/a&gt;. These allow microservices to be deployed in the cloud, in a fully managed environment where one doesn’t have to care about managing any server, but is assigned stateless, ephemeral &lt;em&gt;computing containers&lt;/em&gt; that are fully managed by a provider. With this paradigm, events (such as a traffic spike) can trigger the execution of more of these &lt;em&gt;containers&lt;/em&gt; and therefore give the possibility to handle “infinite” horizontal scaling.&lt;/p&gt;
+&lt;p&gt;日历时间显示是跟随系统时间的，因此只需要在系统设置中的 &lt;em&gt;语言与区域&lt;/em&gt; 设置勾选 24 小时制即可调整。&lt;/p&gt;
 
-&lt;p&gt;Zappa is &lt;strong&gt;the serverless framework for Python&lt;/strong&gt;, although (at least for the moment) it only has support for AWS Lambda and AWS API Gateway. It makes building so-architectured apps very simple, freeing you from most of the tedious setup you would have to do through the AWS Console or API, and has all sort of commands to ease deployment and managing different environments.&lt;/p&gt;
+&lt;h2 id=&quot;显示与隐藏所有文件&quot;&gt;显示与隐藏所有文件&lt;/h2&gt;
 
-&lt;h2 id=&quot;2-sanic--uvloop&quot;&gt;2. &lt;a href=&quot;https://github.com/channelcat/sanic&quot;&gt;Sanic&lt;/a&gt; + &lt;a href=&quot;https://magic.io/blog/uvloop-blazing-fast-python-networking/&quot;&gt;uvloop&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;显示：在终端中输入&lt;/p&gt;
 
-&lt;p&gt;Who said Python couldn’t be fast? Apart from competing for the &lt;a href=&quot;http://knowyourmeme.com/memes/sanic-hegehog&quot;&gt;best name&lt;/a&gt; of a software library ever, Sanic also competes for the fastest Python web framework ever, and appears to be the winner by a clear margin. It is a Flask-like Python 3.5+ web server that is designed for speed. Another library, &lt;em&gt;uvloop&lt;/em&gt;, is an ultra fast drop-in replacement for &lt;em&gt;asyncio&lt;/em&gt;’s event loop that uses &lt;a href=&quot;https://github.com/libuv/libuv&quot;&gt;libuv&lt;/a&gt; under the hood. Together, these two things make a great combination!&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;defaults write com.apple.finder AppleShowAllFiles -bool true&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;According to the Sanic author’s &lt;a href=&quot;https://github.com/channelcat/sanic#benchmarks&quot;&gt;benchmark&lt;/a&gt;, &lt;em&gt;uvloop&lt;/em&gt; could power this beast to handle more than &lt;strong&gt;33k requests/s&lt;/strong&gt; which is just insane (and faster than &lt;em&gt;node.js&lt;/em&gt;). Your code can benefit from the new &lt;em&gt;async/await&lt;/em&gt; syntax so it will look neat too; besides we love the Flask-style API. Make sure to give Sanic a try, and if you are using &lt;em&gt;asyncio&lt;/em&gt;, you can surely benefit from &lt;em&gt;uvloop&lt;/em&gt; with very little change in your code!&lt;/p&gt;
+&lt;p&gt;隐藏：在终端中输入&lt;/p&gt;
 
-&lt;h2 id=&quot;3-asyncpg&quot;&gt;3. &lt;a href=&quot;https://github.com/MagicStack/asyncpg&quot;&gt;asyncpg&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;defaults write com.apple.finder AppleShowAllFiles -bool false&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;In line with recent developments for the &lt;em&gt;asyncio&lt;/em&gt; framework, the folks from&lt;a href=&quot;https://magic.io/&quot;&gt;MagicStack&lt;/a&gt; bring us this efficient asynchronous (currently CPython 3.5 only) database interface library designed specifically for PostgreSQL. It has zero dependencies, meaning there is no need to have &lt;em&gt;libpq&lt;/em&gt; installed. In contrast with &lt;em&gt;psycopg2&lt;/em&gt; (the most popular PostgreSQL adapter for Python) which exchanges data with the database server in text format, &lt;em&gt;asyncpg&lt;/em&gt; implements PostgreSQL &lt;strong&gt;binary I/O protocol&lt;/strong&gt;, which not only allows support for generic types but also comes with numerous performance benefits.&lt;/p&gt;
+&lt;h2 id=&quot;微软雅黑字体标准体与粗体无法同时使用&quot;&gt;微软雅黑字体标准体与粗体无法同时使用&lt;/h2&gt;
 
-&lt;p&gt;The benchmarks are clear: &lt;em&gt;asyncpg&lt;/em&gt; is on average, at least &lt;strong&gt;3x faster&lt;/strong&gt; than &lt;em&gt;psycopg2&lt;/em&gt; (or &lt;em&gt;aiopg&lt;/em&gt;), and faster than the &lt;em&gt;node.js&lt;/em&gt; and &lt;em&gt;Go&lt;/em&gt; implementations.&lt;/p&gt;
+&lt;p&gt;微软雅黑字体有标准体和粗体两种字体，但在 Mac 系统中无法同时使用。要么只能用标准体，粗体报错；要么就是能用粗体，标准体无法使用。很偶然找到了以下MAC技巧，问题终于得以解决。&lt;/p&gt;
 
-&lt;h2 id=&quot;4-boto3&quot;&gt;4. &lt;a href=&quot;https://github.com/boto/boto3&quot;&gt;boto3&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;If you have your infrastructure on AWS or otherwise make use of their services (such as S3), you should be very happy that &lt;a href=&quot;https://github.com/boto/boto&quot;&gt;boto&lt;/a&gt;, the Python interface for AWS API, got a completely rewrite from the ground up. The great thing is that you don’t need to migrate your app all at once: you can use &lt;em&gt;boto3&lt;/em&gt; and &lt;em&gt;boto&lt;/em&gt; (2) &lt;em&gt;at the same time&lt;/em&gt;; for example using boto3 only for new parts of your application.&lt;/p&gt;
-
-&lt;p&gt;The new implementation is much &lt;strong&gt;more consistent&lt;/strong&gt; between different services, and since it uses a data-driven approach to generate classes at runtime from JSON description files, it will always get fast updates. No more lagging behind new Amazon API features, move to &lt;em&gt;boto3&lt;/em&gt;!&lt;/p&gt;
-
-&lt;h2 id=&quot;5-tensorflow&quot;&gt;5. &lt;a href=&quot;https://www.tensorflow.org/&quot;&gt;TensorFlow&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Do we even need an introduction here? Since it was released by Google in November 2015, this library has gained a huge momentum and has become the #1 trendiest GitHub Python repository. In case you have been living under a rock for the past year, TensorFlow is a library for &lt;strong&gt;numerical computation&lt;/strong&gt; using data flow graphs, which can run over GPU or CPU.&lt;/p&gt;
-
-&lt;p&gt;We have quickly witnessed it become a trend in the Machine Learning community (especially Deep Learning, see our post on &lt;a href=&quot;https://tryolabs.com/blog/2016/11/18/10-main-takeaways-from-mlconf/&quot;&gt;10 main takeaways from MLconf&lt;/a&gt;), not only growing its uses in research but also being widely used in production applications. If you are doing Deep Learning and want to use it through a higher level interface, you can try using it as a backend for &lt;a href=&quot;https://keras.io/&quot;&gt;Keras&lt;/a&gt; (which made it to last years post) or the newer &lt;a href=&quot;https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/slim&quot;&gt;TensorFlow-Slim&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;6-gym--universe&quot;&gt;6. &lt;a href=&quot;https://gym.openai.com/&quot;&gt;gym&lt;/a&gt; + &lt;a href=&quot;https://universe.openai.com/&quot;&gt;universe&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;If you are into AI, you surely have heard about the &lt;a href=&quot;https://openai.com/&quot;&gt;OpenAI&lt;/a&gt; non-profit artificial intelligence research company (backed by Elon Musk et al.). The researchers have open sourced some Python code this year! Gym is a toolkit for developing and comparing &lt;a href=&quot;https://en.wikipedia.org/wiki/Reinforcement_learning&quot;&gt;reinforcement learning&lt;/a&gt; algorithms. It consists of an open-source library with a collection of test problems (environments) that can be used to test reinforcement learning algorithms, and a site and API that allows to compare the performance of trained algorithms (agents). Since it doesn’t care about the implementation of the agent, you can build them with the computation library of your choice: bare numpy, TensorFlow, Theano, etc.&lt;/p&gt;
-
-&lt;p&gt;We also have the recently released &lt;em&gt;universe&lt;/em&gt;, a software platform for researching into &lt;strong&gt;general intelligence&lt;/strong&gt; across games, websites and other applications. This fits perfectly with &lt;em&gt;gym&lt;/em&gt;, since it allows any real-world application to be turned into a &lt;em&gt;gym&lt;/em&gt; environment. Researchers hope that this limitless possibility will &lt;strong&gt;accelerate research&lt;/strong&gt; into smarter agents that can solve general purpose tasks.&lt;/p&gt;
-
-&lt;h2 id=&quot;7-bokeh&quot;&gt;7. &lt;a href=&quot;http://bokeh.pydata.org/&quot;&gt;Bokeh&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;You may be familiar with some of the libraries Python has to offer for data visualization; the most popular of which are &lt;a href=&quot;http://matplotlib.org/&quot;&gt;matplotlib&lt;/a&gt; and &lt;a href=&quot;http://seaborn.pydata.org/&quot;&gt;seaborn&lt;/a&gt;. Bokeh, however, is created for &lt;strong&gt;interactive visualization&lt;/strong&gt;, and targets modern web browsers for the presentation. This means Bokeh can create a plot which lets you_explore_ the data from a web browser. The great thing is that it integrates tightly with &lt;a href=&quot;https://jupyter.org/&quot;&gt;Jupyter Notebooks&lt;/a&gt;, so you can use it with your probably go-to tool for your research. There is also an optional server component, &lt;code class=&quot;highlighter-rouge&quot;&gt;bokeh-server&lt;/code&gt;, with many powerful capabilities like server-side downsampling of large dataset (no more slow network tranfers/browser!), streaming data, transformations, etc.&lt;/p&gt;
-
-&lt;p&gt;Make sure to check the &lt;a href=&quot;http://bokeh.pydata.org/en/latest/docs/gallery.html&quot;&gt;gallery&lt;/a&gt; for examples of what you can create. They look awesome!&lt;/p&gt;
-
-&lt;h2 id=&quot;8-blaze&quot;&gt;8. &lt;a href=&quot;https://blaze.readthedocs.io/en/latest/index.html&quot;&gt;Blaze&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Sometimes, you want to run &lt;strong&gt;analytics&lt;/strong&gt; over a dataset too big to fit your computer’s RAM. If you cannot rely on numpy or Pandas, you usually turn to other tools like PostgreSQL, MongoDB, Hadoop, Spark, or many others. Depending on the use case, one or more of these tools can make sense, each with their own strengths and weaknesses. The problem? There is a big overhead here because you need to learn how each of these systems work and how to insert data in the proper form.&lt;/p&gt;
-
-&lt;p&gt;Blaze provides a &lt;strong&gt;uniform interface&lt;/strong&gt; that abstracts you away from several database technologies. At the core, the library provides a way to &lt;strong&gt;express computations&lt;/strong&gt;. Blaze itself doesn’t actually do any computation: it just knows how to instruct a specific &lt;em&gt;backend&lt;/em&gt; who will be in charge of performing it. There is so much more to Blaze (thus the ecosystem), as libraries that have come out of its development. For example, &lt;a href=&quot;http://dask.pydata.org/en/latest/&quot;&gt;Dask&lt;/a&gt; implements a drop-in replacement for NumPy array that can handle content larger than memory and leverage multiple cores, and also comes with dynamic task scheduling. Interesting stuff.&lt;/p&gt;
-
-&lt;h2 id=&quot;9-arrow&quot;&gt;9. &lt;a href=&quot;https://github.com/crsmithdev/arrow&quot;&gt;arrow&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;There is a famous saying that there are only two hard problems in Computer Science: cache invalidation and naming things. I think the saying is clearly missing one thing: &lt;strong&gt;managing datetimes&lt;/strong&gt;. If you have ever tried to do that in Python, you will know that the standard library has a gazillion modules and types: &lt;code class=&quot;highlighter-rouge&quot;&gt;datetime&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;calendar&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;tzinfo&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;timedelta&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;relativedelta&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;pytz&lt;/code&gt;, etc. Worse, it is timezone naive by default.&lt;/p&gt;
-
-&lt;p&gt;Arrow is “datetime for humans”, offering a sensible approach to creating, manipulating, formatting and converting dates, times, and timestamps. It is a&lt;strong&gt;replacement&lt;/strong&gt; for the &lt;code class=&quot;highlighter-rouge&quot;&gt;datetime&lt;/code&gt; type that supports Python 2 or 3, and provides a much nicer interface as well as filling the gaps with new functionality (such as&lt;code class=&quot;highlighter-rouge&quot;&gt;humanize&lt;/code&gt;). Even if you don’t really &lt;em&gt;need&lt;/em&gt; arrow, using it can greatly reduce the boilerplate in your code.&lt;/p&gt;
-
-&lt;h2 id=&quot;10-hug&quot;&gt;10. &lt;a href=&quot;http://www.hug.rest/&quot;&gt;hug&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Expose your internal API externally, drastically simplifying &lt;strong&gt;Python API&lt;/strong&gt;development. Hug is a next-generation Python 3 (only) library that will provide you with the cleanest way to create HTTP REST APIs in Python. It is not a web framework per se (although that is a function it performs exceptionally well), but only focuses on exposing idiomatically correct and standard internal Python APIs externally. The idea is simple: you define logic and structure once, and you can expose your API through &lt;strong&gt;multiple means&lt;/strong&gt;. Currently, it supports exposing REST API or command line interface.&lt;/p&gt;
-
-&lt;p&gt;You can use type annotations that let &lt;em&gt;hug&lt;/em&gt; not only generate &lt;strong&gt;documentation&lt;/strong&gt; for your API but also provide with &lt;strong&gt;validation&lt;/strong&gt; and clean error messages that will make your life (and your API user’s) a lot easier. Hug is built on &lt;a href=&quot;https://github.com/falconry/falcon&quot;&gt;Falcon’s&lt;/a&gt; high performance HTTP library, which means you can deploy this to production using any wsgi-compatible server such as &lt;a href=&quot;http://gunicorn.org/&quot;&gt;gunicorn&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Follow the discussion of this post on: &lt;a href=&quot;https://www.reddit.com/r/Python/comments/5jf64k/top_10_python_libraries_of_2016/&quot;&gt;Reddit&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;em&gt;Original source:&lt;/em&gt; &lt;a href=&quot;https://tryolabs.com/blog/2016/12/20/top-10-python-libraries-of-2016/&quot;&gt;&lt;em&gt;https://tryolabs.com/blog/2016/12/20/top-10-python…&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 29 Dec 2016 19:34:10 +0800</pubDate>
-        <link>http://localhost:4000/python/django/2016/12/29/top-10-python-libraries-of-2016.html</link>
-        <guid isPermaLink="true">http://localhost:4000/python/django/2016/12/29/top-10-python-libraries-of-2016.html</guid>
-        
-        
-        <category>python</category>
-        
-        <category>django</category>
-        
-      </item>
-    
-      <item>
-        <title>get Month Name [CF]</title>
-        <description>&lt;p&gt;Map the given integer to a month.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;For &lt;code class=&quot;highlighter-rouge&quot;&gt;mo = 1&lt;/code&gt;, the output should be &lt;code class=&quot;highlighter-rouge&quot;&gt;getMonthName(mo) = &quot;Jan&quot;&lt;/code&gt;,&lt;/li&gt;
-  &lt;li&gt;For &lt;code class=&quot;highlighter-rouge&quot;&gt;mo = 0&lt;/code&gt;, the output should be &lt;code class=&quot;highlighter-rouge&quot;&gt;getMonthName(mo) = &quot;invalid month&quot;&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Input/Output&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;[time limit] 4000ms (py)&lt;/li&gt;
-  &lt;li&gt;[input] integer mo (A non-negative integer).&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Constraints:&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;0 ≤ mo ≤ 15&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;[output] string&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;A &lt;code class=&quot;highlighter-rouge&quot;&gt;3&lt;/code&gt;-letter abbreviation of month number &lt;code class=&quot;highlighter-rouge&quot;&gt;mo&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;invalid month&quot;&lt;/code&gt; if the month doesn’t exist.&lt;/p&gt;
-
-&lt;p&gt;Here are abbreviations of all months:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;My Solution:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getMonthName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;months&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Jan&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Feb&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Mar&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Apr&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-        &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;May&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Jun&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Jul&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Aug&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-        &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Sep&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Oct&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Nov&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Dec&quot;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mo&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;months&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;months&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;invalid month&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Result Tests&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getMonthName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;&quot;Jan&quot;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getMonthName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;&quot;invalid month&quot;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Sat, 11 Jun 2016 04:43:45 +0800</pubDate>
-        <link>http://localhost:4000/python/codefights/2016/06/11/get-month-name-cf.html</link>
-        <guid isPermaLink="true">http://localhost:4000/python/codefights/2016/06/11/get-month-name-cf.html</guid>
-        
-        
-        <category>python</category>
-        
-        <category>codefights</category>
-        
-      </item>
-    
-      <item>
-        <title>Find the number of even digits in the given integer [CF]</title>
-        <description>&lt;p&gt;Find the number of even digits in the given integer.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;For &lt;code class=&quot;highlighter-rouge&quot;&gt;n = 1010&lt;/code&gt;, the output should be &lt;code class=&quot;highlighter-rouge&quot;&gt;numberOfEvenDigits(n) = 2&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;For &lt;code class=&quot;highlighter-rouge&quot;&gt;n = 123&lt;/code&gt;, the output should be &lt;code class=&quot;highlighter-rouge&quot;&gt;numberOfEvenDigits(n) = 1&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Input/Output&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;[time limit] 4000ms (py)&lt;/li&gt;
-  &lt;li&gt;[input] integer n (A positive integer).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Constraints:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;1 ≤ n ≤ 106.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;[output] integer&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;My Solution:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;numberOfEvenDigits&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isdigit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Rests Tests:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;n: 1010
-Output: 2
-
-n: 123
-Output: 1
-
-n: 135
-Output: 0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Sat, 11 Jun 2016 04:39:03 +0800</pubDate>
-        <link>http://localhost:4000/python/codefights/2016/06/11/find-the-number-of-even-digits-in-the-given-integer-cf.html</link>
-        <guid isPermaLink="true">http://localhost:4000/python/codefights/2016/06/11/find-the-number-of-even-digits-in-the-given-integer-cf.html</guid>
-        
-        
-        <category>python</category>
-        
-        <category>codefights</category>
-        
-      </item>
-    
-      <item>
-        <title>Find Substrings for line Encoding [CF]</title>
-        <description>&lt;p&gt;Given a string, return its encoding defined as follows:&lt;/p&gt;
-
-&lt;p&gt;First, the string is divided into the least possible number of disjoint &lt;strong&gt;substrings&lt;/strong&gt; consisting of identical characters
-for example, &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;aabbbc&quot;&lt;/code&gt; is divided into &lt;code class=&quot;highlighter-rouge&quot;&gt;[&quot;aa&quot;, &quot;bbb&quot;, &quot;c&quot;]&lt;/code&gt;
-Next, each substring with length greater than one is replaced with a concatenation of its length and the repeating character
-for example, substring &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;bbb&quot;&lt;/code&gt; is replaced by &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;3b&quot;&lt;/code&gt;
-Finally, all the new strings are concatenated together in the same order and a new string is returned.&lt;/p&gt;
-
-&lt;h4 id=&quot;substring&quot;&gt;SUBSTRING&lt;/h4&gt;
-
-&lt;p&gt;A &lt;strong&gt;substring&lt;/strong&gt; of a string &lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt; is another string &lt;code class=&quot;highlighter-rouge&quot;&gt;S'&lt;/code&gt; that occurs in &lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt;. For example, &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;Fights&quot;&lt;/code&gt; is a substring of &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;CodeFights&quot;&lt;/code&gt;, but &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;CoFi&quot;&lt;/code&gt; isn’t.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;For &lt;code class=&quot;highlighter-rouge&quot;&gt;s = &quot;aabbbc&quot;&lt;/code&gt;, the output should be &lt;code class=&quot;highlighter-rouge&quot;&gt;lineEncoding(s) = &quot;2a3bc&quot;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Input/Output&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;[time limit] 4000ms (py)&lt;/li&gt;
-  &lt;li&gt;[input] string s (String consisting of lowercase English letters.)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;Constraints:&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;4 ≤ s.length ≤ 15.&lt;/code&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;[output] string (Encoded version of s.)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;re&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;lineEncoding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;grub&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;finditer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;r&quot;(\w)\1*&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;numb&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;numb&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Result Tests:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;aabbbc&quot;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lineEncoding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;&quot;2a3bc&quot;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;abbcabb&quot;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lineEncoding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;&quot;a2bca2b&quot;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;abcd&quot;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lineEncoding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;&quot;abcd&quot;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Sat, 11 Jun 2016 04:04:23 +0800</pubDate>
-        <link>http://localhost:4000/python/codefights/2016/06/11/find-substrings-for-line-encoding-cf.html</link>
-        <guid isPermaLink="true">http://localhost:4000/python/codefights/2016/06/11/find-substrings-for-line-encoding-cf.html</guid>
-        
-        
-        <category>python</category>
-        
-        <category>codefights</category>
-        
-      </item>
-    
-      <item>
-        <title>CensorThis - Censor the words [CF]</title>
-        <description>&lt;p&gt;Author Question: &lt;strong&gt;Argaen&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Code Fights Weekly has gained popularity in the past months and is receiving lots of fan letters. Unfortunately, some of the readers use offensive words and the editor wants to keep the magazine family friendly.&lt;/p&gt;
-
-&lt;p&gt;To manage this, you have been asked to implement a censorship algorithm. You will be given the fan letter &lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt; and a list of &lt;code class=&quot;highlighter-rouge&quot;&gt;forbiddenWords&lt;/code&gt;. Your algorithm should replace all occurrences of the forbidden words in the text with sequences of asterisks of the same length.&lt;/p&gt;
-
-&lt;p&gt;Be careful to censor only words, no one want to see &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;classic&quot;&lt;/code&gt; spelled as &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;cl***ic&quot;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;For text = “The cat does not like the fire” and
-forbiddenWords = [“cat”,”fire”], the output should be
-`CensorThis(text, forbiddenWords) = “The &lt;strong&gt;* does not like the **&lt;/strong&gt;”.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;[input] string text&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Text to censor, composed of mixed case English words separated by a single whitespace character each.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;[input] array.string forbiddenWords&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The list of words to censor, all in lowercase.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;[output] string&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The censored text. Its length should be the same as the length of text.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CensorThis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;forbiddenWords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;*&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lower&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;forbiddenWords&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Test 1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;text: &quot;The cat does not like the fire&quot;
-forbiddenWords: [&quot;cat&quot;, &quot;fire&quot;]
-Expected Output: &quot;The *** does not like the ****&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Test 2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;text: &quot;The cat does not like the therapy&quot;
-forbiddenWords: [&quot;the&quot;,  &quot;like&quot;]
-Expected Output: &quot;*** cat does not **** *** therapy&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Test 3&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;text: &quot;Python is the BEST programming language and LOLCODE is the Worst&quot;
-forbiddenWords: [&quot;worst&quot;, &quot;best&quot;]
-Expected Output: &quot;Python is the **** programming language and LOLCODE is the *****&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Test 4&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;text: &quot;A bald eagle is a worthy adversary&quot;
-forbiddenWords: [&quot;bald&quot;, &quot;a&quot;]
-Expected Output: &quot;* **** eagle is * worthy adversary&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Test 5&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;text: &quot;The MAGIC words are fiz buzz and plaf&quot;
-forbiddenWords: []
-Expected Output: &quot;The MAGIC words are fiz buzz and plaf&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Test 6&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;text: &quot;The MAGIC words are fiz buzz and plaf&quot;
-forbiddenWords: [&quot;fluzz&quot;, &quot;z&quot;, &quot;ping&quot;, &quot;narf&quot;, &quot;tedd&quot;, &quot;troz&quot;, &quot;zort&quot;]
-Expected Output: &quot;The MAGIC words are fiz buzz and plaf&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Thanks to &lt;strong&gt;GOD&lt;/strong&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 22 May 2016 05:17:54 +0800</pubDate>
-        <link>http://localhost:4000/python/codefights/2016/05/22/censorthis-censor-the-words-cf.html</link>
-        <guid isPermaLink="true">http://localhost:4000/python/codefights/2016/05/22/censorthis-censor-the-words-cf.html</guid>
-        
-        
-        <category>python</category>
-        
-        <category>codefights</category>
-        
-      </item>
-    
-      <item>
-        <title>notPaired [CF]</title>
-        <description>&lt;p&gt;Author Question: &lt;strong&gt;Lepluto&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In Numberland, every integer living there has a soulmate which is the exact same number. To prevent family disasters, the Numberland mayor made sure that there is no more than two of a certain number. However, he clearly forgot to create a pair for one of the numbers, making it very sad and lonely. Given the array representing Numberland’s citizens, your task is to find which number you need to add to the array so that everyone has a pair.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;notPaired([1, 2, 1]) = 2&lt;/code&gt;&lt;/p&gt;
-
-    &lt;p&gt;2 is the only number in the sequence that appears once.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;notPaired([1, 3, 5, 7, 9, 7, 5, 3, 1]) = 9&lt;/code&gt;&lt;/p&gt;
-
-    &lt;p&gt;9 is the only number in the sequence that appears once.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Input/Output&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;[input] array.integer numberland&lt;/strong&gt;
-  1 ≤ numberland.length ≤ 100&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;[output] integer&lt;/strong&gt;
-  The final soulmate you need to add to Numberland in order to make everyone happy.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;notPaired&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numberland&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numberland&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numberland&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;
-
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;notPaired&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Sun, 22 May 2016 05:10:03 +0800</pubDate>
-        <link>http://localhost:4000/python/codefights/2016/05/22/notpaired-cf.html</link>
-        <guid isPermaLink="true">http://localhost:4000/python/codefights/2016/05/22/notpaired-cf.html</guid>
-        
-        
-        <category>python</category>
-        
-        <category>codefights</category>
-        
-      </item>
-    
-      <item>
-        <title>Reverse Bit [CF]</title>
-        <description>&lt;p&gt;Author Question: &lt;strong&gt;Giappi&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I have an integer number, which I want to reverse by following steps:&lt;/p&gt;
+&lt;p&gt;步骤：&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Convert the number into binary string.&lt;/li&gt;
-  &lt;li&gt;Reverse binary string.&lt;/li&gt;
-  &lt;li&gt;Convert the reversed binary string back to integer.&lt;/li&gt;
+  &lt;li&gt;下载 &lt;a href=&quot;http://pan.baidu.com/s/1qWHISLQ&quot;&gt;微软雅黑forMac.zip&lt;/a&gt;；&lt;/li&gt;
+  &lt;li&gt;打开Finder，按shift+command+G组合键；&lt;/li&gt;
+  &lt;li&gt;在对话框中输入：/Library/Fonts ，把之前的微软雅黑字体删除（名称如：Microsoft Yahei.ttf、msyh.ttf 和 msyhbd.ttf），再把下载好的字体解压后复制到Fonts文件夹，重启电脑后就大功告成了。&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Can you help me write a function to do it ?&lt;/p&gt;
+&lt;h2 id=&quot;安装任何来源软件&quot;&gt;安装任何来源软件&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;安装绿色软件时，系统默认会阻止，有时需要允许安装任何来源软件。&lt;/p&gt;
 
-&lt;p&gt;For &lt;code class=&quot;highlighter-rouge&quot;&gt;x = 234&lt;/code&gt;, the output should be &lt;code class=&quot;highlighter-rouge&quot;&gt;ReverseBit(x) = 87&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;步骤：&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;23410 = 111010102 =&amp;gt; 010101112 = 8710&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Input/Output&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;打开系统设置中的 &lt;em&gt;安全性与隐私&lt;/em&gt;，查看 &lt;em&gt;允许从以下位置下载的应用&lt;/em&gt; 设置，尝试将其设置为 &lt;em&gt;App Store 和被认可的开发者&lt;/em&gt;，如还是不能安装，进入下一步；&lt;/li&gt;
+  &lt;li&gt;在终端中输入：&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo spctl --master-disable&lt;/code&gt;；&lt;/li&gt;
+  &lt;li&gt;安装完毕后，回到 &lt;em&gt;安全性与隐私&lt;/em&gt;，将 &lt;em&gt;任何来源&lt;/em&gt; 改为其他的选项，等需要的时候再次开启。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Tue, 11 Jun 2019 11:00:00 +0800</pubDate>
+        <link>http://localhost:4000/ybh/2019/06/11/macbook.html</link>
+        <guid isPermaLink="true">http://localhost:4000/ybh/2019/06/11/macbook.html</guid>
+        
+        
+        <category>Ybh</category>
+        
+      </item>
+    
+      <item>
+        <title>在 Mac 上压制带字幕的视频</title>
+        <description>&lt;p&gt;工具：&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;[input] integer x&lt;/strong&gt;
-A non-negative integer.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;[output] integer&lt;/strong&gt;
-x reversed as described above.&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.jubler.org&quot;&gt;Jubler&lt;/a&gt;：文字字幕编辑工具&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mkvtoolnix.download/macos/&quot;&gt;MKVToolNix&lt;/a&gt;：字幕封装工具&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://handbrake.fr/downloads.php&quot;&gt;HandBrake&lt;/a&gt;：视频压缩软件&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;步骤：&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ReverseBit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'0b'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;reverse_text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;reverse_text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reverse_text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reverse_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;ol&gt;
+  &lt;li&gt;使用 Jubler 将 srt 字幕文件转换成 ass 格式；&lt;/li&gt;
+  &lt;li&gt;使用 MKVToolNix 封装 ass 字幕文件：
+    &lt;ul&gt;
+      &lt;li&gt;导入视频源文件和 ass 字幕&lt;/li&gt;
+      &lt;li&gt;仅保留视频、音频、ass字幕这三个频道&lt;/li&gt;
+      &lt;li&gt;点击 start muxing 开始封装&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;使用 HandBrake 压缩视频：
+    &lt;ul&gt;
+      &lt;li&gt;打开 Handbrake 导入封装好的视频&lt;/li&gt;
+      &lt;li&gt;video 属性选择 h.264 1800kbps&lt;/li&gt;
+      &lt;li&gt;audio 属性选择 aac 192kbps&lt;/li&gt;
+      &lt;li&gt;subtitle 属性加载字幕轨道，并选择 Burned In&lt;/li&gt;
+      &lt;li&gt;x.264 高级设置，想要追求质量可按此设置&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ReverseBit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;234&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;mi&quot;&gt;87&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;视频教程：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.bilibili.com/video/av5480766/&quot;&gt;在Mac上使用handbrake压制带字幕的视频&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>Sun, 22 May 2016 05:04:23 +0800</pubDate>
-        <link>http://localhost:4000/python/codefights/2016/05/22/reverse-bit-cf.html</link>
-        <guid isPermaLink="true">http://localhost:4000/python/codefights/2016/05/22/reverse-bit-cf.html</guid>
+        <pubDate>Thu, 30 May 2019 21:53:00 +0800</pubDate>
+        <link>http://localhost:4000/tech/2019/05/30/video.html</link>
+        <guid isPermaLink="true">http://localhost:4000/tech/2019/05/30/video.html</guid>
         
         
-        <category>python</category>
-        
-        <category>codefights</category>
+        <category>Tech</category>
         
       </item>
     
       <item>
-        <title>Python Simple Ciphertext</title>
-        <description>&lt;p&gt;Simply how to make a ciphertext only with 1 line. in this sample, the plaintext is result encoded from hexa. and then, just changing all integer &lt;code class=&quot;highlighter-rouge&quot;&gt;3&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;6&lt;/code&gt; and also otherwise from &lt;code class=&quot;highlighter-rouge&quot;&gt;6&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;3&lt;/code&gt;.&lt;/p&gt;
+        <title>高阶用户运营与大规模用户运营体系搭建</title>
+        <description>&lt;h2 id=&quot;1讲--概述&quot;&gt;1讲 | 概述&lt;/h2&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#hex_encode = 'summonagus'.encode('hex')&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hex_encode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'73756d6d6f6e61677573'&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chip&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isdigit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isdigit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hex_encode&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; 
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hex_encode&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;'73756d6d6f6e61677573'&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chip&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;'76753d3d3f3e31377576'&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; 
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;11-理解用户运营与大规模用户管理的本质&quot;&gt;1.1 理解用户运营与“大规模用户管理”的本质&lt;/h3&gt;
+
+&lt;h4 id=&quot;我们到底该如何理解运营&quot;&gt;我们到底该如何理解运营？&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;运营实际上是一个“销售岗+管理岗”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;销售：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;单点的用户获取&lt;/li&gt;
+  &lt;li&gt;单点的收入增长&lt;/li&gt;
+  &lt;li&gt;单个活动的效果&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;管理：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;流量运营&lt;/li&gt;
+  &lt;li&gt;渠道运营&lt;/li&gt;
+  &lt;li&gt;店铺运营&lt;/li&gt;
+  &lt;li&gt;用户运营&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;做好用户价值管理需要关注的本质问题&quot;&gt;做好“用户价值管理”需要关注的本质问题&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;可监测可被评估&lt;/strong&gt;：如何监测和评估一款产品的平均单体用户价值&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;可驱动可被影响&lt;/strong&gt;：从哪些角度来驱动用户价值的提升？通过哪些方法和工具来影响用户价值的提升？&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;如何监测和评估&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./images/op1.png&quot; alt=&quot;如何对产品的用户价值进行监测和评估&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;如何驱动和影响&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./images/op2.png&quot; alt=&quot;如何驱动平均单体客户价值的提升&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;两类可依赖的提升用户价值的方法&quot;&gt;两类可依赖的提升用户价值的方法&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;小规模：偏集中式运营，更多靠人肉、靠互动、靠情感，一般用于验证+重点用户的运营；&lt;/li&gt;
+  &lt;li&gt;大规模：偏策略式运营，更多靠规则、靠机制、靠系统，一般用于做大体量用户的运营。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;大规模用户运营的初阶状态和高阶状态&quot;&gt;大规模用户运营的初阶状态和高阶状态&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;初阶：关注表层、单点&lt;/strong&gt;（依靠人为完成）&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;提升用户留存率&lt;/li&gt;
+  &lt;li&gt;用户促活&lt;/li&gt;
+  &lt;li&gt;用户召回&amp;amp;唤醒&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;高阶：关注内核、体系搭建&lt;/strong&gt;（依靠机制、系统完成）&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;用户运营模型梳理+用户运营体系的搭建（大量策略）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;12-大规模用户运营体系的3个子系统&quot;&gt;1.2 大规模用户运营体系的3个子系统&lt;/h3&gt;
+
+&lt;h4 id=&quot;什么是用户运营体系&quot;&gt;什么是“用户运营体系”？&lt;/h4&gt;
+
+&lt;p&gt;首先我们得知道面向大规模用户的运营，存在哪些常见的系统（或较为成熟的工作方法）可以为我们所用。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;大规模用户运营中的三大子系统（工作方法）&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;用户生命周期管理&lt;/li&gt;
+  &lt;li&gt;用户分层（分类）运营系统&lt;/li&gt;
+  &lt;li&gt;用户行为激励系统&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以上三大系统均可独立应用，且均可对于一款产品的用户价值提升起到显著作用。&lt;/p&gt;
+
+&lt;h4 id=&quot;用户生命周期管理系统&quot;&gt;用户生命周期管理系统&lt;/h4&gt;
+
+&lt;p&gt;对站内海量数据样本进行分析，界定出一个用户从接触产品到最后放弃产品的典型周期，并定义出关键节点和关键用户行为，做好相应的预警和干预。&lt;/p&gt;
+
+&lt;h4 id=&quot;用户分层分类运营系统&quot;&gt;用户分层（分类）运营系统&lt;/h4&gt;
+
+&lt;p&gt;按照站内用户的贡献度、用户角色、喜好等对于用户进行划分，定义好用户角色，并给面向不同用户制定针对性的运营策略，以及提升平均用户价值。通常要重点做好核心高价值用户的维系。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./images/op3.png&quot; alt=&quot;用户分层运营系统&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;用户行为激励系统&quot;&gt;用户行为激励系统&lt;/h4&gt;
+
+&lt;p&gt;竞争或优势&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;竞争图谱&lt;/li&gt;
+  &lt;li&gt;排行榜&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;荣誉或身份&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;等级权益&lt;/li&gt;
+  &lt;li&gt;成就勋章&lt;/li&gt;
+  &lt;li&gt;标签&lt;/li&gt;
+  &lt;li&gt;称号&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;特权或权益&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;权益池&lt;/li&gt;
+  &lt;li&gt;积分兑换&lt;/li&gt;
+  &lt;li&gt;红包、礼品、福利等&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;./images/op4.png&quot; alt=&quot;小红书的用户行为激励系统&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;总结&quot;&gt;总结&lt;/h4&gt;
+
+&lt;p&gt;所有大用户体量的产品都可能需要用到上述方法中的一种或者多种来进行用户管理，同一种系统在不同产品的表现可能会不同。&lt;/p&gt;
+
+&lt;p&gt;上述三大子系统，即可独立应用，也可复合应用。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./images/op5.png&quot; alt=&quot;一个成熟的用户运营系统&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;13-关于留存促活与召回&quot;&gt;1.3 关于留存、促活与召回&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;留存：增加首次使用后此后还会继续使用的用户比例；核心指标：次日留存、7日留存、30日留存等；&lt;/li&gt;
+  &lt;li&gt;促活：增加目前用户的活跃度，如提升访问时间、发帖量等；核心指标：通常把每日有访问定义为一个有效的DAU用户；&lt;/li&gt;
+  &lt;li&gt;召回：通过有效信息触达手段推送信息给已经流失的用户，引导用户重新完成访问或使用；核心指标：召回用户数。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;所有产品都需要关注留存、活跃吗？&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;del&gt;猫眼电影用户次日留存很差，要不要管？&lt;/del&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;del&gt;世纪佳缘用户活跃度很差，要不要管？&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;留存活跃指标对不同产品的意义&quot;&gt;留存&amp;amp;活跃指标对不同产品的意义&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;./images/op6.png&quot; alt=&quot;留存&amp;amp;活跃指标对不同产品的意义&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;如何判断该以多长时间周期来关注留存问题&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;用户可能会因为哪些原因留存率低&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;产品价值不足/不明确or服务能力不足 → 设定服务边界or快速探索稳定的产品价值点&lt;/li&gt;
+  &lt;li&gt;未能引导用户去体验到产品的核心服务或核心价值，让用户惊喜&lt;/li&gt;
+  &lt;li&gt;用户不匹配 → 调整推广策略or产品机制&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;围绕产品核心价值提升留存的3种核心思路&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;功能/服务留存：找到实现用户留存的功能点，通过强化、补贴方式吸引用户使用&lt;/li&gt;
+  &lt;li&gt;内容留存：发现+创造优质内容，并做好优质内容的推送&lt;/li&gt;
+  &lt;li&gt;社交/互动留存：帮助用户缔结更多有效的关系或制造更多的互动&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;** 分析&amp;amp;提升用户留存的基本操作步骤 **&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;明确要重点看的留存指标颗粒度&lt;/li&gt;
+  &lt;li&gt;找到可能影响留存的元素，进行对比分析（&lt;em&gt;分别从时间、功能、内容或互动行为差异等维护入手进行数据对比，进行分析&lt;/em&gt;）&lt;/li&gt;
+  &lt;li&gt;完成数据分析，找到线索，制定运营方案or策略，强化有效线索&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;案例：多米音乐的留存提升分析思路&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;基于时间：发现数据中某两天的次日留存率较低 → 挖掘用户属性及行为数据&lt;/li&gt;
+  &lt;li&gt;基于功能：点击「喜欢」大于三次留存率较高 → 点击「喜欢」小于三次的留存率如何？&lt;/li&gt;
+  &lt;li&gt;综合分析：点击「喜欢」大于三次，加入一个兴趣社区 → 点击「喜欢」小于三次且无社区留存率如何？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;如何提升活跃&quot;&gt;如何提升活跃？&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;放大活跃抓手：找到那些一定能够帮助用户活跃的功能点，并加强引导；常见：关系链、内容匹配、爆点功能/服务/话题等；&lt;/li&gt;
+  &lt;li&gt;用户激励：针对我们希望发生的用户行为进行激励；&lt;/li&gt;
+  &lt;li&gt;周期性活动：定期举办活动刺激用户参与，以便于用户更好养成使用习惯和依赖。&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>Sat, 21 May 2016 15:32:04 +0800</pubDate>
-        <link>http://localhost:4000/python/security/2016/05/21/python-simple-ciphertext.html</link>
-        <guid isPermaLink="true">http://localhost:4000/python/security/2016/05/21/python-simple-ciphertext.html</guid>
+        <pubDate>Wed, 03 Apr 2019 12:49:00 +0800</pubDate>
+        <link>http://localhost:4000/sanjieke/2019/04/03/operation.html</link>
+        <guid isPermaLink="true">http://localhost:4000/sanjieke/2019/04/03/operation.html</guid>
         
         
-        <category>python</category>
-        
-        <category>security</category>
+        <category>Sanjieke</category>
         
       </item>
     
       <item>
-        <title>Python Crazy Decrypter has been Released</title>
-        <description>&lt;p&gt;Hello gays, this night i want to share my Python Crazy Decrypter tool. Python Crazy Decrypter is real crazy tool to decrypt md5, sha1, sha224, sha256, sha384, and sha512 with Brute Force method. Like most hashes Decrypter we know used the database to check the hash is valid or not.&lt;/p&gt;
+        <title>郑也夫的社会学专题笔记</title>
+        <description>&lt;h2 id=&quot;01讲--发刊词游击队员之歌&quot;&gt;01讲 | 发刊词：游击队员之歌&lt;/h2&gt;
 
-&lt;p&gt;This Python Crazy Decrypter tool use the brute force method with complete charachters or with custom charachters choices, and with Hash Type Checker. But, of course it will spend a long time if the result of hash have a very long length, coz this use the brute force method.&lt;/p&gt;
+&lt;p&gt;课表：&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Example Usage&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;文明的生物学基础&lt;/li&gt;
+  &lt;li&gt;文明是副产品&lt;/li&gt;
+  &lt;li&gt;城市文明的摇篮&lt;/li&gt;
+  &lt;li&gt;文明沉淀在语言中&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ crazy_decrypter -a 2f2ec1296695a9fb3251bbc94a2e0cef -c ichp 4 4
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;一文明的生物学基础&quot;&gt;一、文明的生物学基础&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Example Proccess&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;02讲--达尔文当代第一学科之父&quot;&gt;02讲 | 达尔文：当代第一学科之父&lt;/h2&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   *** Please drink your coffee first! ***
-    Python Crazy Decrypter 0.0.4
+&lt;p&gt;过去五百年当中， 哪位是人类思想界的王者？达尔文。&lt;/p&gt;
 
-CTRL+C to Exit!
-Charachters to try : ichp
-Min-length         : 3
-Max-length         : 4
-Type Decrypt found : md5
-Trying with        : iipc - 373fa60ea77f4695bc05fbc1b49d40e3
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;达尔文与马克思&quot;&gt;达尔文与马克思&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;Example Result&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在《共产党宣言》问世前十年，进化论思想已经在29岁的达尔文大脑中形成。他自己知道那是大逆不道的异端，乃至他的思想笔记放在了抽屉中尘封了20年。&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Decrypt found : chip
-Type Decrypt  : md5
-End time      : 06:53:06
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;马克思在给恩格斯的信中说：&lt;strong&gt;《物种起源》为我们的思想提供了自然史的基础。&lt;/strong&gt;恩格斯在马克思的悼词中说：&lt;strong&gt;正像达尔文发现有机界的发展规律一样，马克思发现了人类历史的发展规律。&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;For more you can checkout on our repository: &lt;a href=&quot;https://github.com/agusmakmun/Crazy-Decrypter&quot;&gt;https://github.com/agusmakmun/Crazy-Decrypter&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;两者的学说性质不同：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;相比之下达尔文的学科是个基础学科，基础学科更容易对它的上位学科发生影响。&lt;/li&gt;
+  &lt;li&gt;在认识和透视人性上，还有哪个学科能比生物学更具有优势？&lt;strong&gt;达尔文的思想是几百年来，在人类认知的历史上最大的一场革命。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;达尔文与爱因斯坦&quot;&gt;达尔文与爱因斯坦&lt;/h3&gt;
+
+&lt;p&gt;物理学对人类社会的解释来得太间接了，而生物学给予的帮助太直接了。因此，今天唱主角的是生物学家、心理学家、历史学家、社会学家。&lt;/p&gt;
+
+&lt;h2 id=&quot;03讲--屡遭误解的自然选择&quot;&gt;03讲 | 屡遭误解的自然选择&lt;/h2&gt;
+
+&lt;h3 id=&quot;误解一用进废退&quot;&gt;误解一：用进废退&lt;/h3&gt;
+
+&lt;p&gt;&lt;del&gt;长颈鹿脖子长的解释是，长颈鹿要伸着脖子去够树上的树叶。（拉马克的观点）&lt;/del&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;体细胞的变形影响不了基因。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;误解二种间竞争发挥了更大作用&quot;&gt;误解二：种间竞争发挥了更大作用&lt;/h3&gt;
+
+&lt;p&gt;&lt;del&gt;狮子、老虎一直想捕捉羚羊，所以羚羊只有往快了跑。（拉马克的观点）&lt;/del&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;其实是种内竞争决定了谁是适者。天敌，其实只是羚羊生存环境当中的一个因素。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;误解三自然选择&quot;&gt;误解三：自然选择&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;人工选择、市场选择（看不见的人）都是有意志、有目的的；但自然选择是没有意志、没有目的的。&lt;/li&gt;
+  &lt;li&gt;自然选择是偶然的，基因变异是偶然的，环境变化也是偶然的。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;04讲--性选择炫耀的生物学根据&quot;&gt;04讲 | 性选择：炫耀的生物学根据&lt;/h2&gt;
+
+&lt;p&gt;适应就是生存和繁衍，后者是关键。适应靠两个方式来完成:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;综合适应能力。所谓综合能力，就是能逃避天敌，能适应水，能善于寻找食物等。&lt;/li&gt;
+  &lt;li&gt;性吸引力。有了性吸引力，繁衍就不成问题了，就可以赢得更多交配权。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;但是提升性吸引力其实是有代价的。尽管有代价，但是收益更大。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;炫耀是动物的本能，本质上是为了适应“性选择”，所以不可能被消灭。&lt;/strong&gt;解决的办法是置换，你可以把炫耀置换到你认为更有价值的事情上。&lt;/p&gt;
+
+&lt;h2 id=&quot;05讲--两性繁殖与三种婚配方式&quot;&gt;05讲 | 两性繁殖与三种婚配方式&lt;/h2&gt;
+
+&lt;p&gt;两性繁殖能造就多样性，所以它是这个世界上存在的一种繁衍方式。&lt;strong&gt;月经是灵长目动物的共性，是灵长目动物与其他哺乳类动物的分水岭。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;三种排卵方式：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;排卵期有明显征兆；&lt;/li&gt;
+  &lt;li&gt;排卵期有轻微征兆；&lt;/li&gt;
+  &lt;li&gt;排卵期无征兆。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;有征兆性垄断&quot;&gt;有征兆:性垄断&lt;/h3&gt;
+
+&lt;p&gt;「杀戮论」：刚上任的新的首领会把老首领正在哺乳期的子女杀掉，可以使老首领的妻妾马上就终止哺乳期，迅速和自己交配、生育。&lt;/p&gt;
+
+&lt;h3 id=&quot;无征兆&quot;&gt;无征兆：&lt;/h3&gt;
+
+&lt;p&gt;「多父亲理论」：排卵期无征兆，雌性有机会跟首领之外的雄性交配。新首领上任就不会杀掉老首领的子女，那里面可能也有自己的子女。&lt;/p&gt;
+
+&lt;p&gt;「居家理论」：排卵期无征兆向一夫一妻制演化，雄性要不让别的雄性染指配偶，雌性希望雄性参与养育后代。一拍即合，子女就能享受双亲抚育。&lt;/p&gt;
+
+&lt;h2 id=&quot;06讲--祖先是群婚还是一夫一妻&quot;&gt;06讲 | 祖先是群婚，还是一夫一妻？&lt;/h2&gt;
+
+&lt;p&gt;灵长目动物的婚配方式是由群婚向垄断制，也就是多偶制，再向一夫一妻制进化。&lt;/p&gt;
+
+&lt;p&gt;人类是如何从群婚走向了一夫一妻制？可能是因为石制武器的出现了，打破了肌肉的绝对力量对比，首领妥协了。人类最终走向了一夫一妻制，这是人类平权民主运动的第一章。&lt;/p&gt;
+
+&lt;p&gt;其他灵长目动物要么是群婚，要么是分离的一夫一妻制。人类是唯一一种以一夫一妻制群体生活的物种。小家庭镶嵌在大群体之中，部分历史阶段备以少数男性的多妻。&lt;/p&gt;
+
+&lt;h2 id=&quot;07讲--外婚制的世纪大争论及其意义&quot;&gt;07讲 | 外婚制的世纪大争论及其意义&lt;/h2&gt;
+
+&lt;p&gt;何为外婚？就是本氏族的男子与外边其他氏族的女子通婚，不与本氏族的女子通婚。换句话说，直系血亲禁止通婚，这应该是人类的第一号禁令。&lt;/p&gt;
+
+&lt;p&gt;外婚制的起源有两种理论，一是性倾向，即人类倾向觉得远处的异性对自己更有吸引力；二是团体秩序的维护，因为团体中近亲间的通婚，将瓦解团体的秩序。&lt;/p&gt;
+
+&lt;p&gt;外婚制的意义有二：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;造就了第一种血亲之外的关系（姻亲），拓展了人类广泛的关系；&lt;/li&gt;
+  &lt;li&gt;完成了人类远距离的基因交换，避免了人类进化过程中分裂成亚种。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;08讲--同性恋的基因何以能保存下来&quot;&gt;08讲 | 同性恋的基因何以能保存下来&lt;/h2&gt;
+
+&lt;p&gt;灵长目顶级专家瓦尔认为，在动物的世界里没有完全的同性恋者，也没有完全的异性恋者，二者是并存的。（双性恋）&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;积极功能：通过同性恋可以操练性能力；&lt;/li&gt;
+  &lt;li&gt;消极功能：同性恋是一个排遣郁闷的方式。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;但为什么有的人类只有同性倾向？（而不是像其他灵长目动物是双性的）&lt;/p&gt;
+
+&lt;p&gt;一个观点是，同性恋不完全是基因注定的，少年期性倾向是弹性的、可变更的，但有一部分人经过少年期的刻印，过后就不能变更了。&lt;/p&gt;
+
+&lt;h2 id=&quot;09讲--面孔美的规律性&quot;&gt;09讲 | 面孔美的规律性&lt;/h2&gt;
+
+&lt;h3 id=&quot;对称是美&quot;&gt;对称是美&lt;/h3&gt;
+
+&lt;p&gt;因为我们人类乃至所有动物的身体结构都是对称。其实人们的嘴大多数都是歪的，只是程度不同。很对称其实是稀罕的，而只要极其对称就能构成美。&lt;/p&gt;
+
+&lt;h3 id=&quot;平均是美&quot;&gt;平均是美&lt;/h3&gt;
+
+&lt;p&gt;因为平均会让一个物种里美和丑的距离缩小，有利于两性的吸引和繁衍。比如在雄孔雀这里极值是美，但在人类当中不是胸最大的才是美，应该是胸较大的才是美。&lt;/p&gt;
+
+&lt;h2 id=&quot;10讲--人体美的追求与浪费&quot;&gt;10讲 | 人体美的追求与浪费&lt;/h2&gt;
+
+&lt;h3 id=&quot;人体美的追求&quot;&gt;人体美的追求&lt;/h3&gt;
+
+&lt;p&gt;人体美的功能就是让两性结合，自然选择要让两性最容易结合，所以女性最美的时候和生育力最强的时候同时来临，并且此时男性对美的判断力最低。&lt;/p&gt;
+
+&lt;p&gt;人类在最美的时期恋爱是天赋和本能，晚恋是违背人的天性的，也是对人体美的浪费。&lt;/p&gt;
+
+&lt;h3 id=&quot;为什么对人体美的追求越来越高&quot;&gt;为什么对人体美的追求越来越高？&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;结婚和恋爱年龄的推迟，需要靠强的、美的刺激才能来吸引他；&lt;/li&gt;
+  &lt;li&gt;阶级分化，选择的余地变多了；&lt;/li&gt;
+  &lt;li&gt;媒体宣传导致的意淫造成了现代人对人体美过分的追求。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;11讲--人类是早产儿是幼态持续的物种&quot;&gt;11讲 | 人类是早产儿，是幼态持续的物种&lt;/h2&gt;
+
+&lt;p&gt;哺乳动物在多个生理特征上存在着相关性：寿命更长的往往头颅更大，每胎产子率更小，孕期更长且出生时成熟度更高。但是人类的孕期是比较短的，而人类出生时的成熟度也是低的。&lt;/p&gt;
+
+&lt;p&gt;人类为何成为早产儿？人类的头颅是巨无霸，我们毫无疑问享受了这个优势，但是直立行走限制了人类髋骨的宽度，宫颈的尺寸跟不上头颅的尺寸的进化，人类不得不在完全发育成熟前分娩，人类成了早产儿。&lt;/p&gt;
+
+&lt;p&gt;人类发育成熟需要13到14年，这种长期保持幼年状态的特征叫“幼态持续”。幼态持续是人类进行教育的前提，人类是习得性的物种，不是依赖本能生存。&lt;/p&gt;
+
+&lt;h2 id=&quot;12讲--利己亲缘利他和互惠利他&quot;&gt;12讲 | 利己、亲缘利他和互惠利他&lt;/h2&gt;
+
+&lt;h3 id=&quot;利己天助自助者&quot;&gt;利己：天助自助者&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;利己是基本的行为策略。&lt;/strong&gt;因为个人的冷暖、温饱自己最清楚，他人帮助管理那是隔靴搔痒，一定是低效率的。但人类很早就开始过上了非血缘关系的群体生活，100%的利己主义者，在团体生活中不会是适者。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;达尔文说，性本能、亲子本能、社会本能，这三个本能是利他的来源。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;亲缘利他&quot;&gt;亲缘利他&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;为了婴儿能更多地生存下去，人类普遍拥有自然界最强的母爱。&lt;/li&gt;
+  &lt;li&gt;父爱产生于一夫一妻制，一夫一妻制导致了父母双系抚育子女，那是比较晚近的事情。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;互惠利他&quot;&gt;互惠利他&lt;/h3&gt;
+
+&lt;p&gt;互惠利他是不问血缘、出身、门第，只问我们之间能不能互惠，能不能双赢。&lt;strong&gt;互惠利他是走出血缘关系的一个伟大的突破口。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;13讲--恻隐之心的生物学解释&quot;&gt;13讲 | 恻隐之心的生物学解释&lt;/h2&gt;
+
+&lt;p&gt;为了保护自己的孩子，人类拥有了被哭泣打动的本能。这个本能在原初的时候都是发生在部落内部，后来社会进化，人们被哭打动的这种本能没有改变，发生了移情，这就是所谓的恻隐之心。&lt;/p&gt;
+
+&lt;p&gt;作为高级动物，人类同时拥有多种本能，利己和恻隐之心虽然存在矛盾，但在通常状态下它们都可以相安无事。&lt;/p&gt;
+
+&lt;h2 id=&quot;14讲--交换的演进&quot;&gt;14讲 | 交换的演进&lt;/h2&gt;
+
+&lt;h3 id=&quot;部落内部交换&quot;&gt;部落内部交换&lt;/h3&gt;
+
+&lt;p&gt;人类部落内部的交换，开始于某个成员打了大猎物之后，部族内部的共餐。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;打了大动物的这个英雄，有可能获得更多的性资源。&lt;/li&gt;
+  &lt;li&gt;打猎中的英雄还有希望成为部落的首脑、领袖。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;部落间的交换&quot;&gt;部落间的交换&lt;/h3&gt;
+
+&lt;p&gt;人类部落之间的交换更为艰难，开始于部落之间“借火种”，人类伟大的语言是在这个过程当中产生的。&lt;/p&gt;
+
+&lt;p&gt;人类觉得部落外的异性更美的本能，也推动着交换的演进（部落通婚）。&lt;/p&gt;
+
+&lt;h2 id=&quot;15讲--可疑的进步观&quot;&gt;15讲 | 可疑的进步观&lt;/h2&gt;
+
+&lt;h3 id=&quot;威廉姆斯变化是适应的副产品&quot;&gt;威廉姆斯：变化是适应的副产品&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;基因所携带的遗传信息&lt;/strong&gt;：比较而言生命史更复杂的生物，在其生命不同阶段形体有更大变化的，携带的遗传信息更多（如蝴蝶）。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;复杂度&lt;/strong&gt;：低级动物在某些方面也可能比高级动物复杂，比如鱼的表皮比哺乳类动物复杂得多；另外复杂不代表高级，喷气式飞机没有螺旋桨飞机复杂，但毫无疑问更进步、更高级。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;适应&lt;/strong&gt;：高级动物不一定更适应，比如两栖类动物数量一点也不少于哺乳类动物。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;所谓进化应当意味着变化，意味着变化当中的正向的变化。但是一切变化，不管什么样的变化，实际上都是适应的副产品。&lt;/p&gt;
+
+&lt;h3 id=&quot;古尔德进化退化都是适应&quot;&gt;古尔德：进化、退化都是适应&lt;/h3&gt;
+
+&lt;p&gt;适应一定是适应包围着物种的具体的环境，那在适应这个具体环境的时候，它可以走向复杂，可以走向进步，也可以走向简单，走向退化。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;夜晚的大街上走着一个醉鬼，街的左边是一堵墙，右边是一道水沟。醉鬼烂醉如泥，他的走路方向完全是随机的，没有任何趋势。第二天人们会在哪里找到他？水沟里。他会掉进水沟，并不是因为他有喜欢水沟的趋势，而是因为墙挡住了他的路，不能再往左边走了。夜晚越是漫长，走得最远的醉鬼，和墙的距离就越远。而我们人类，暂时就是走得最远的醉鬼之一。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;简单复杂两个极端，在简单这一端中，积聚着更多的生命体和物种，在复杂这一端要少。简单的是有障碍的，是不能再简单的，因为再简单生命体就不存在了。细菌能更简单吗？更简单不了了。而复杂，相对说没有界限，可以一直复杂下去。但是你可以一左一右，这统统是偶然的。所以简单这一端聚集了更多的生命。走向复杂这个最远端的是人类。&lt;/p&gt;
+
+&lt;h2 id=&quot;16讲--进化论对疾病的几种解释&quot;&gt;16讲 | 进化论对疾病的几种解释&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-防御本领&quot;&gt;1 防御本领&lt;/h3&gt;
+
+&lt;p&gt;人类有些病症是进化给我们的防御本领，比如发烧，我们过去一直把它污名化，应该善用它（身体靠体温提升两度来抵抗感染）。&lt;/p&gt;
+
+&lt;h3 id=&quot;2-进化遗留问题&quot;&gt;2 进化遗留问题&lt;/h3&gt;
+
+&lt;p&gt;有些疾病是进化的遗留问题，自然选择是高明的，但是它的作品并不是完美的。比如食管和气管在嗓子底下，这个部位二者交叉，导致偶尔会出现噎死事故。因为进化只能在此前的基础上演化，不能另起炉灶。&lt;/p&gt;
+
+&lt;h3 id=&quot;3-病原微生物&quot;&gt;3 病原微生物&lt;/h3&gt;
+
+&lt;p&gt;细菌总能在繁衍中靠着突变产生多样性，所以人类和细菌的战斗没有终结的时候。&lt;/p&gt;
+
+&lt;h3 id=&quot;4-环境变迁&quot;&gt;4 环境变迁&lt;/h3&gt;
+
+&lt;p&gt;因为环境的变化，现代人得了很多生活方式改变带来的疾病。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;比如近视眼是因为看书多了&lt;/li&gt;
+  &lt;li&gt;糖尿病是因为食物富余&lt;/li&gt;
+  &lt;li&gt;抑郁症是因为缺乏群体生活&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这启示我们应该效仿祖先的生活状态，过“神似祖先的生活”。&lt;/p&gt;
+
+&lt;h2 id=&quot;17讲--痛感与痛苦的积极功能&quot;&gt;17讲 | 痛感与痛苦的积极功能&lt;/h2&gt;
+
+&lt;h3 id=&quot;痛感是报警器&quot;&gt;痛感是报警器&lt;/h3&gt;
+
+&lt;p&gt;痛感是我们的第一道防线，痛感系统是报警器。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;比如一部分麻风病人没有痛感，所以他们老受伤；&lt;/li&gt;
+  &lt;li&gt;孕妇早期的呕吐是因为受精卵受不了食物里最微量的毒素的伤害。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;痛点是可拓展的边界&quot;&gt;痛点是可拓展的边界&lt;/h3&gt;
+
+&lt;p&gt;痛苦是可以不断挑战的边界。比如在训练过程当中，昨天让你很痛苦，到明天可能就不痛苦了，因为体能提高了。你的痛点是不断地随着你的运动往前拓展着的。&lt;/p&gt;
+
+&lt;h3 id=&quot;痛苦的原因&quot;&gt;痛苦的原因&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;因为神经系统发达，人是最痛苦的动物，也是最快乐的动物。&lt;/li&gt;
+  &lt;li&gt;不可消除的零和博弈，稀缺性一直存在，因而人永远无法满足。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;18讲--追求快乐还是伟大&quot;&gt;18讲 | 追求快乐还是伟大&lt;/h2&gt;
+
+&lt;h3 id=&quot;快乐与自然选择&quot;&gt;快乐与自然选择&lt;/h3&gt;
+
+&lt;p&gt;自然选择留给动物的生理快感都是短暂的，我们没有一味追求快乐的能力。沉溺在快乐中的动物被淘汰了，所以留下来的，都是有节制地追求快乐的。&lt;/p&gt;
+
+&lt;h3 id=&quot;吃苦精神&quot;&gt;吃苦精神&lt;/h3&gt;
+
+&lt;p&gt;我们努力工作、改良社会，目的不就是要摆脱困苦吗？为什么要自找苦吃呢?&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;我们的生存的全部目的不只是追求舒适，还有其他比如追求伟大。在追求伟大的时候，我们很需要牺牲掉舒适和快乐。&lt;/li&gt;
+  &lt;li&gt;长辈和学校不必劝后辈吃苦，而可以培养他们的英雄情结。有了这份情结，他们会自找苦吃。要做不寻常的人，当然要做不寻常的事，而那个不寻常的事不会是寻常的舒适和快乐的事情。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;19讲--情绪是应对外部的工具箱&quot;&gt;19讲 | 情绪是应对外部的工具箱&lt;/h2&gt;
+
+&lt;h3 id=&quot;感性与理性&quot;&gt;感性与理性&lt;/h3&gt;
+
+&lt;p&gt;人的大脑有三个组成部分，按照进化的先后：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;爬虫脑：最底层部分是人类跟爬行动物共享的大脑，主要管呼吸、运动等；&lt;/li&gt;
+  &lt;li&gt;感性脑：中间部分是我们和旧哺乳动物共享的大脑，是专司情绪的；&lt;/li&gt;
+  &lt;li&gt;理性脑/大脑皮层：顶层的大脑是我们跟灵长目动物共享的大脑，是专司理性的。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;感性的特点是反应快，在信息缺乏的时候帮我作出决策，就好比下快棋。理性很大程度上依赖信息的齐备，就好比下慢棋。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;智力测验：信息是最齐备的，可以纯靠理性，不靠情绪。&lt;/li&gt;
+  &lt;li&gt;科研：信息也挺齐备，但是没有智力测验这么齐备，所以情绪也要扮演一定角色；&lt;/li&gt;
+  &lt;li&gt;投资：信息不齐备，所以有些优秀的企业家要有一点动物性，要有一点赌徒精神；&lt;/li&gt;
+  &lt;li&gt;婚姻：认识不久，信息是不齐备的。双方都愿意让对方看到自己最美好的一面，需要加入情感。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;不同情绪的功能&quot;&gt;不同情绪的功能&lt;/h3&gt;
+
+&lt;p&gt;种种情绪都是进化的产物，都是在漫长的时间中，祖先适应过去环境的结晶。但我们现在环境变了，要调整情绪适应新的环境。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;比如推销员，需要更乐观才能赢得更多的机会，也可以交到更多的朋友；&lt;/li&gt;
+  &lt;li&gt;飞行员需要谨慎，稍微悲观一点为好。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;20讲--遗传与环境的论战新篇&quot;&gt;20讲 | 遗传与环境的论战新篇&lt;/h2&gt;
+
+&lt;p&gt;环境和遗传的因素往往纠缠在一起，因此很难区分彼此。&lt;/p&gt;
+
+&lt;p&gt;通过对同卵双生的研究表明，&lt;strong&gt;人类的智商60%靠先天，40%靠后天。&lt;/strong&gt;通常认为，随着成长先天作用越来越小，环境的作用越来越大。但生物学家不这么看，他们认为遗传决定了发育的模式和时间表。比如基因决定了你是否得癌症，有可能是在50岁、60岁或者70岁的时候患病，它有远程的决定力。&lt;/p&gt;
+
+&lt;p&gt;有支持环境的学者认为，大脑越复杂的动物，后天行为习得性的比重越大。比如让人工饲养的老虎在野外生活的话，得有个野化的过程。另外早期印刻很重要，不仅是出生后的环境，怀孕期间也会对胎儿有影响。&lt;/p&gt;
+
+&lt;h2 id=&quot;21讲--语言是本能不是思维的必备工具&quot;&gt;21讲 | 语言是本能，不是思维的必备工具&lt;/h2&gt;
+
+&lt;h2 id=&quot;语言不是习得的&quot;&gt;语言不是习得的&lt;/h2&gt;
+
+&lt;p&gt;乔姆斯基认为各民族语言存在着普遍语法，他说如果有外星人来到地球考察我们各民族的语言，他们会认定这些语言在语法上基本上是一样的，差别只是单词。&lt;/p&gt;
+
+&lt;p&gt;语言不是习得的，儿童有能力可以从支离破碎的对话中轻松习得语言。&lt;/p&gt;
+
+&lt;h2 id=&quot;语言是本能&quot;&gt;语言是本能&lt;/h2&gt;
+
+&lt;p&gt;史蒂芬·平克认为，语言是本能。孩子们的心中有语言法则，是一种活的语言构成机制，但成年人丧失了这种能力（为了要给大脑节省空间）。&lt;/p&gt;
+
+&lt;h3 id=&quot;思维是否独立于语言&quot;&gt;思维是否独立于语言？&lt;/h3&gt;
+
+&lt;p&gt;语言是交流的工具，这是一定的。&lt;strong&gt;但语言未必是思维的工具，思维是先于语言，并且独立于语言的。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;22讲--博物学是生物多样性的首席辩护师&quot;&gt;22讲 | 博物学是生物多样性的首席辩护师&lt;/h2&gt;
+
+&lt;p&gt;多样性不管从物种，还是个体和基因的角度来看，都是极其宝贵的。维持多样性的关键是要保护生态，维持它的复杂性。生态越复杂，就越稳定。&lt;/p&gt;
+
+&lt;p&gt;古动物学家经研究统计说，古生代和中生代中大部分物种的寿命是100万到1000万年。人类这个物种的寿命已经有400万年了，我们已经快走到上面那个指标的中位数。如果我们要与世长存的话，今天该思考明智的生存方式。&lt;/p&gt;
+
+&lt;p&gt;地球上最重要的宝库，就是地球上拥有的所有动物、植物。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;袁隆平找到了一个品性极佳的野生水稻，与他的水稻进行了杂交，极大地造福了人类。&lt;/li&gt;
+  &lt;li&gt;1970年大面积锈病导致巴西咖啡业面临危机，所幸从埃塞俄比亚找到了某种基因改良锈病，于是挽救了巴西的咖啡业。&lt;/li&gt;
+  &lt;li&gt;今天的西药50%是从植物中提取的，13%是从微生物中提取的，3%是从动物中提取的。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;23讲--进攻性动物与人&quot;&gt;23讲 | 进攻性，动物与人&lt;/h2&gt;
+
+&lt;p&gt;性和领地的竞争是依赖攻击性的，是发生在同一物种内部的划分和竞争，而不是物种之间。&lt;/p&gt;
+
+&lt;p&gt;种内的竞争几乎统统不杀同类，争斗基本上是象征性的。但是最高级动物内部竞争有杀戮，比如黑猩猩和人类。这真是个很深刻的费解的问题。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;因为没有退路。我们的繁衍太好，导致可供人类生存的地面都占满了，没有地方可退，所以导致领地发生冲突的时候都是殊死的战斗。&lt;/li&gt;
+  &lt;li&gt;人类产生了货币，这是不会腐烂的财富，是可以积累的。财富观念的形成也造就了人类的贪婪。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;国家是为了解决冲突而产生的，用国家暴力机制解决国家内部的冲突。但国家之间的冲突仍然总会产生，未来有没有新的生存单位能克服这个问题，值得拭目以待。比如今天商业的发展冲破了民族国家的界限，冲破了传统领地的界限，就是所谓的全球化。&lt;/p&gt;
+
+&lt;h2 id=&quot;24讲--领地的演化与终结&quot;&gt;24讲 | 领地的演化与终结&lt;/h2&gt;
+
+&lt;p&gt;领地上人类最初的组织形态就是部落。部落性融化在今天人类的血液中，甚至可以说今天的人类仍然是部落动物。&lt;/p&gt;
+
+&lt;p&gt;部落联盟是走向封建制的直通车。&lt;/p&gt;
+
+&lt;p&gt;奴隶制贯穿于人类的历史，但是由奴隶的劳动构成社会的主流生产，这样的社会是不存在的。欧洲的封建结束于15、16世纪，中国的封建终结得早，终结于秦王政，公元前221年。以后中国实施的是帝制，不是封建。&lt;/p&gt;
+
+&lt;h2 id=&quot;25讲--农业的起源&quot;&gt;25讲 | 农业的起源&lt;/h2&gt;
+
+&lt;p&gt;如果把人类的整个历史看做一天的话，那么农业革命以后的历史只相当于24小时的最后4分钟。农业是人与动物的分水岭，它是个踏脚板，从此我们进入了快行道。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;成见一：前农业时代人类苦不堪言、饥寒交迫&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;事实：原始部落平均劳动时间比农民短很多，农民食物太单一了，缺少多样性。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;成见二：危机的压力导致人类走进农业文明&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;学者们将农业称为“重大的非事件”。因为它不是一个事件所造就出来的，而是要有多个环节的技术发明最后才能托举起农业，危机呼唤不来农业。石头的镰刀、锄头、犁、石磨，储存方式，这些都是漫长的技术积累。&lt;/p&gt;
+
+&lt;p&gt;因为遇上野生稻米人类开始定居，先有了定居，再有的农业的诞生。定居之后的部落慢慢壮大，当野生稻米已无法满足日益增长的人口时，人们开始靠自己种植，农业也就开始了。&lt;/p&gt;
+
+&lt;h2 id=&quot;26讲--作物与人类的相互驯化&quot;&gt;26讲 | 作物与人类的相互驯化&lt;/h2&gt;
+
+&lt;h3 id=&quot;野生世界的驯化&quot;&gt;野生世界的驯化&lt;/h3&gt;
+
+&lt;p&gt;植物的特征驯化了动物的选择，动物的选择回头来又放大了植物的品性。而这个过程是在潜移默化中完成的。如果树驯化了动物的眼光和口味，动物也驯化了植物的果实，使植物在成熟的时候一定是鲜艳的。&lt;/p&gt;
+
+&lt;h3 id=&quot;农业的驯化&quot;&gt;农业的驯化&lt;/h3&gt;
+
+&lt;p&gt;人工选择当然是驯化，但驯化却未必是人工选择。这个驯化是没有计划和目的，不经意得来的。如人们在收割果实的时候，易脱落的果实入土了，不易脱落的入仓了，明年又被作为种子播种出去了。&lt;/p&gt;
+
+&lt;h3 id=&quot;人与动植物相互驯化&quot;&gt;人与动植物相互驯化&lt;/h3&gt;
+
+&lt;p&gt;农时不可违，是这些作物的节奏强行地规定了我们的节奏。我们没有太多的主动性，而是按季节去春播、夏锄、秋收、冬藏。&lt;/p&gt;
+
+&lt;h2 id=&quot;27讲--甲骨文的创造者&quot;&gt;27讲 | 甲骨文的创造者&lt;/h2&gt;
+
+&lt;p&gt;陶符是视觉符号，它不是一个完整的符号系统，但它存在了漫长的时间，为文字的产生打下了基础。&lt;/p&gt;
+
+&lt;p&gt;口语是自然进化的产物，是约定俗成的；而文字是被人发明的，不是约定俗成的。文字是最初的国家权力系统制造出的，使用于他们的文官系统。&lt;/p&gt;
+
+&lt;p&gt;烧灼甲骨用来占卜起源甚早，甲骨文就是在甲骨上刻写的卜辞，它是由占卜群体和武丁共同创造的。&lt;/p&gt;
+
+&lt;h2 id=&quot;28讲--从象形文字走向拼音文字&quot;&gt;28讲 | 从象形文字走向拼音文字&lt;/h2&gt;
+
+&lt;p&gt;古代三大独立的文字系统：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;埃及的圣书字&lt;/li&gt;
+  &lt;li&gt;中国的甲骨文&lt;/li&gt;
+  &lt;li&gt;两河流域苏美尔的楔形文字&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;人类的文字是起源于象形的。&lt;/p&gt;
+
+&lt;p&gt;近代古文字学家陈梦家将“六书”简化为“三书”：象形、声借、形声。&lt;/p&gt;
+
+&lt;p&gt;借用在象形文字走向拼音文字的路上，发挥了重要的作用。首先是本民族语言中，因为象形文字表意的局限，所以用借用的方式来创造新的声借字。中国语言不能发展成拼音文字，有两个原因：一是因为汉语有四个音调，使用起来难以区分；二是因为单音节字太多。&lt;/p&gt;
+
+&lt;p&gt;在语言的传播发展中，外族人把象形文字变成了拼音文字。&lt;/p&gt;
+
+&lt;h2 id=&quot;29讲--蔡伦造纸中的惊天骗局&quot;&gt;29讲 | 蔡伦造纸中的惊天骗局&lt;/h2&gt;
+
+&lt;p&gt;考古发现西汉就有纸张出现了，蔡伦不是真正的纸张发明者。&lt;/p&gt;
+
+&lt;p&gt;蔡伦很可能误报了纸张的原料和发明过程，蒙蔽了皇上和许慎。从而许慎在《说文解字》中，错误地记载了造纸的原料是破旧的丝织品。&lt;/p&gt;
+
+&lt;p&gt;纸可能是树皮布的副产品，蔡伦对其进行了改良，并改变了它的用途，将它用于书写。&lt;/p&gt;
+
+&lt;h2 id=&quot;30讲--印章家族的荣衰&quot;&gt;30讲 | 印章家族的荣衰&lt;/h2&gt;
+
+&lt;p&gt;印章最早是盖在泥上，起源于美索不达米亚，中国的印章可能是源自中东印章的传递。&lt;/p&gt;
+
+&lt;p&gt;在中国，由于纸张的发明，印章的盖印对象从泥土转移到了纸张，并发展成了一种独特的印章文化，同时可能启发了雕版印刷。&lt;/p&gt;
+
+&lt;h2 id=&quot;31讲--刻制石经的动机统一经典&quot;&gt;31讲 | 刻制石经的动机：统一经典&lt;/h2&gt;
+
+&lt;p&gt;帝王刻制石经的动机是简单的，因为经典是他们合法性的根据。日后石碑对经典文本的复制和传播的巨大贡献，是个伟大的副产品。&lt;/p&gt;
+
+&lt;p&gt;石碑和印章共同启发了雕版印刷，雕版印刷竟是在五代十国这个战乱的年代开启的，也为后来的科举奠定了基础。&lt;/p&gt;
+
+&lt;h2 id=&quot;32讲--边缘化的中国活字印刷&quot;&gt;32讲 | 边缘化的中国活字印刷&lt;/h2&gt;
+
+&lt;p&gt;活字印刷的发明虽然名气很大，但实际在中国古代并没有得到广泛的应用。一是因为排版不多；三是因为雕工群体的成熟，中国的铜活字都不是铸造的，反而是雕刻的。&lt;/p&gt;
+
+&lt;p&gt;方块字的性质、庞大的考生群体、大批的抄手以及独一无二的刻工群体，使得手抄、雕版、活字这三种制书方式共存，形成了一种自洽的局面，这是中国古代印书业特殊的生态。&lt;/p&gt;
+
+&lt;h2 id=&quot;33讲--被政治耽搁的朝鲜铸字&quot;&gt;33讲 | 被政治耽搁的朝鲜铸字&lt;/h2&gt;
+
+&lt;p&gt;朝鲜出现铸字而不是雕版印刷的原因，一是因为图书制作印量太少；二是因为社会中缺乏刻工群体。&lt;/p&gt;
+
+&lt;p&gt;君主世宗创造出简单易懂的拼音文字，目的是为了普及文化；而贵族们推出封闭的两班制，却把科举垄断在他们嫡出的子弟中，建立起了文化门槛。&lt;/p&gt;
+
+&lt;h2 id=&quot;34讲--1450年西方崛起的里程碑&quot;&gt;34讲 | 1450年，西方崛起的里程碑&lt;/h2&gt;
+
+&lt;p&gt;当初欧洲没有使用雕版印刷的原因，一是因为拉丁文是拼音文字；二是当时社会没有一个庞大的刻工群体。&lt;/p&gt;
+
+&lt;p&gt;古登堡精心发明的金属活字印刷术，加上欧洲相对开放的市场环境，印刷业并不掌握在统治者手中，这些因素共同促进了图书业的发展，从而欧洲信息革命发生了。&lt;/p&gt;
+
+&lt;h2 id=&quot;35讲--杂交文化变异的源头&quot;&gt;35讲 | 杂交：文化变异的源头&lt;/h2&gt;
+
+&lt;p&gt;文明创新的法门是杂交，杂交往往体现在三个层面：物理、生物和文化。文明离不开杂交， 杂交造就了人类文明。&lt;/p&gt;
+
+&lt;h2 id=&quot;36讲--城市产生于王权&quot;&gt;36讲 | 城市产生于王权&lt;/h2&gt;
+
+&lt;p&gt;据目前的考古发现，人类历史上的第一座城池是伊拉克境内的乌尔城，由苏美尔人建造，距今6000多年。中国最老的城池建于3500年前，是商代的第十个君王中丁建立的国都叫做亳都，也被称为偃师商城。&lt;/p&gt;
+
+&lt;p&gt;出于军事、安全的目的，全世界的城市最初都诞生于王权，但欧洲的很多城市在晚近的时候被工商业接管了，而中国的城市一直都是王权主导。&lt;/p&gt;
+
+&lt;h2 id=&quot;37讲--城市再生于工商&quot;&gt;37讲 | 城市再生于工商&lt;/h2&gt;
+
+&lt;p&gt;在中世纪的欧洲，从封建庄园逃出来的难民 受到教会的庇护，慢慢地聚集在衰落的城市中，发展了商业和手工业团体，并形成了行会。&lt;/p&gt;
+
+&lt;p&gt;权力在欧洲中世纪出现了真空，而工商业和工商阶层地不断壮大，导致了欧洲城市的再生，是欧洲历史中最灿烂的乐章。&lt;/p&gt;
+
+&lt;h2 id=&quot;38讲--城市孕育文化&quot;&gt;38讲 | 城市孕育文化&lt;/h2&gt;
+
+&lt;p&gt;城市为人们提供了一个频繁交流和对话的平台，和语言一起促进了人类的交流，成为子文化产生的温床。&lt;/p&gt;
+
+&lt;p&gt;城市的宽容不是来自城市人的度量，而是城市的整体生态，人与人的距离更远，给了各类怪杰和小众群体空间。&lt;/p&gt;
+
+&lt;h2 id=&quot;39讲--超大城市的由来&quot;&gt;39讲 | 超大城市的由来&lt;/h2&gt;
+
+&lt;p&gt;城市的首位度，指一个国家最大城市人口和第二大城市人口的比值。首位城市产生的第一个原因是自然条件好，第二个原因是规模效益和大生态的形成。&lt;/p&gt;
+
+&lt;p&gt;控制大城市的发展，要认清这样一个逻辑：一个大城市当中只要它的高中端发展，低端就必然进入，因为那里有就业的机会，高中端是绝对离不开低端提供的服务业的。&lt;/p&gt;
+
+&lt;h2 id=&quot;40讲--城市化的真伪&quot;&gt;40讲 | 城市化的真伪&lt;/h2&gt;
+
+&lt;p&gt;西方学者提出过这样的概念，真正的城市化、深层的城市化应该是生存方式和价值观的改变，应该是农村的人口进了城，并且接受了城市的生存方式和城市中主导的价值观。简单的人口迁移是表层的城市化，如果没有完成生存方式和价值观的转变，那就是虚假的城市化。&lt;/p&gt;
+
+&lt;p&gt;户籍制和住房是两地分居和留守儿童现象的主要障碍，只有克服了这两大障碍，我们大概才能走通真正的城市化道路。&lt;/p&gt;
+
+&lt;h2 id=&quot;41讲--大城市的交通难题&quot;&gt;41讲 | 大城市的交通难题&lt;/h2&gt;
+
+&lt;p&gt;现代社会不是买一辆轿车，而是买了整个城市道路系统的使用权。&lt;/p&gt;
+
+&lt;p&gt;中国城市大力发展轿车的过程值得深入反思，需要慢慢地置换轿车这种交通工具，不断提升地铁、公交、自行 车的运行质量。&lt;/p&gt;
+
+&lt;h2 id=&quot;42讲--公共空间的开拓&quot;&gt;42讲 | 公共空间的开拓&lt;/h2&gt;
+
+&lt;p&gt;人是社会性的动物，乡村更多是半开放的交流状态，所以公共空间在城市中显得尤为重要。&lt;/p&gt;
+
+&lt;p&gt;公共空间是城市当中一个交际的场所，没了它这个城市会显得死气沉沉，有了它城市就有了生气。&lt;/p&gt;
+
+&lt;h2 id=&quot;43讲--垃圾与人类文明&quot;&gt;43讲 | 垃圾与人类文明&lt;/h2&gt;
+
+&lt;p&gt;自然中本没有垃圾，每个生命体会排出对自己无用的物质，对他来说这就是垃圾。&lt;/p&gt;
+
+&lt;p&gt;垃圾是个极大的问题，它是文明的产物，也是文明面临的严峻挑战。现阶段对垃圾处理的办法只有：回收、填埋和焚烧三种。而解决垃圾问题的办法，是让其循环起来。&lt;/p&gt;
+
+&lt;h2 id=&quot;44讲--书同文的历史三部曲&quot;&gt;44讲 | 书同文的历史三部曲&lt;/h2&gt;
+
+&lt;p&gt;秦始皇统一了中国，但并没有完成书同文。一个很重要的原因是他没有把秦国的文字小篆和经典文献相结合，相反却进行了焚书坑儒，所以在文化层面上与六国贵族会有一个艰苦残酷的博弈过程。&lt;/p&gt;
+
+&lt;p&gt;三国时期的三体石经证实了，直到三国还有人在使用古文。书同文的最终完成要归功于隋唐时期的第三次尝试，推行了科举制。&lt;/p&gt;
+
+&lt;h2 id=&quot;45讲--汉字中国文化的基石&quot;&gt;45讲 | 汉字，中国文化的基石&lt;/h2&gt;
+
+&lt;p&gt;汉字和王权有着密切关系，汉字和科举保证了儒家经典的正统地位，同时又为阶层流通建立了通道，制约了贵族阶层，削弱了其对王权的威胁。&lt;/p&gt;
+
+&lt;p&gt;在过往长期的历史中，文士阶层压过了工商，因为在我们的历史上是士农工商。我们在一定程度上失去了这种均衡，这导致了我们过于依赖文字、文学和文人，社会的发展就从本质上丧失了工商的动力来源。&lt;/p&gt;
+
+&lt;h2 id=&quot;46讲--方言的前世今生&quot;&gt;46讲 | 方言的前世今生&lt;/h2&gt;
+
+&lt;p&gt;在没有媒体的古代，语言的影响是靠着面对面，所以使用者多的语言必将有更大的影响力，方言就会比较有优势。而到了现代，媒体的出现和教育系统的推行让普通话的普及成为了可能。&lt;/p&gt;
+
+&lt;p&gt;因为汉字不是表音文字，所以它无法服务于地方的方言。但是方言都保存着该地的人们在千百年来形成的文化基因，重视和保护方言是我们应该关心的问题。&lt;/p&gt;
+
+&lt;h2 id=&quot;47讲--外来语异族文化的使者&quot;&gt;47讲 | 外来语：异族文化的使者&lt;/h2&gt;
+
+&lt;p&gt;语言不纯的重要标志是外来语，每个民族、每个语种当中都必然有相当多的外来语。外来语就是外民族语言中的单词被音译到我们的语言中，意译不是外来语。&lt;/p&gt;
+
+&lt;p&gt;近代进入汉语中的外来语很大一部分是从日本传过来的，它是为了传播西方的文化。有很多就是我们现在高频 词使用的词汇，比如自由、教育、表情、进步、艺术等。&lt;/p&gt;
+
+&lt;h2 id=&quot;48讲--借用是语言中的王牌&quot;&gt;48讲 | “借用”是语言中的王牌&lt;/h2&gt;
+
+&lt;p&gt;“美”最开始是用来形容人的，后来借用到其他各种事物中。这种借用的现象在动词和名词中也很常见，比如“打”和“家”。&lt;/p&gt;
+
+&lt;p&gt;文字运用借用和比喻的一个重要原因是为了减少字库数，提高效率，这也是语言精髓的体现。同时广义的“借”也体现了人类文明。&lt;/p&gt;
+
+&lt;h2 id=&quot;49讲--谚语兼收并蓄的武器库&quot;&gt;49讲 | 谚语：兼收并蓄的武器库&lt;/h2&gt;
+
+&lt;p&gt;谚语分为两类，第一类是自然现象，第二类是人世道理。第二类谚语大多都是优秀的辩护词，必然会被很多人学舌，学舌就是投票了，一再被学舌、一再被拣选的好词就成了谚语。&lt;/p&gt;
+
+&lt;p&gt;在漫长的历史中人们为各色行为寻找各种各样的说辞，人类有无数的形形色色的利益和他们驱动的行为，也就有了无数的为他们辩护的、雄辩的道理和漂亮的说辞。甚至现在社会科学中，有一些理论观点，类似于谚语，是在 为某些行为、利益所辩护。&lt;/p&gt;
+
+&lt;h2 id=&quot;50讲--儿歌天使们的表决&quot;&gt;50讲 | 儿歌：天使们的表决&lt;/h2&gt;
+
+&lt;p&gt;儿童的天性是选择有趣的、好玩的事物，有趣味的儿歌更受儿童的欢迎。而我认为，趣味产生于突兀、荒诞、远链接，出人意表。&lt;/p&gt;
+
+&lt;p&gt;儿童虽然没有创作，却有选择权，儿童们用他们的唱诵投了票，喜欢的儿歌他们一唱再唱，不喜欢的不会主动张嘴。于是亿万儿童以他们的情趣，以他们不捧臭脚的真诚完成了选择，引导了儿歌创造者的风格方向。&lt;/p&gt;
 </description>
-        <pubDate>Sat, 21 May 2016 15:25:20 +0800</pubDate>
-        <link>http://localhost:4000/python/security/2016/05/21/python-crazy-decrypter-has-been-released.html</link>
-        <guid isPermaLink="true">http://localhost:4000/python/security/2016/05/21/python-crazy-decrypter-has-been-released.html</guid>
+        <pubDate>Wed, 27 Mar 2019 12:49:00 +0800</pubDate>
+        <link>http://localhost:4000/get/2019/03/27/sociology.html</link>
+        <guid isPermaLink="true">http://localhost:4000/get/2019/03/27/sociology.html</guid>
         
         
-        <category>python</category>
-        
-        <category>security</category>
+        <category>Get</category>
         
       </item>
     
       <item>
-        <title>Javascript Validator for Input Number</title>
-        <description>&lt;p&gt;This javascript will validate/allow the number only when event key is pressed.
-For example result of it:&lt;/p&gt;
+        <title>品牌号学习笔记</title>
+        <description>&lt;h2 id=&quot;什么是品牌号&quot;&gt;什么是品牌号&lt;/h2&gt;
 
-&lt;iframe width=&quot;100%&quot; height=&quot;350&quot; src=&quot;//jsfiddle.net/agaust/3qz105nn/embedded/html,result/dark/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;数字时代的消费者对品牌提出更高的要求：&lt;/p&gt;
 
-&lt;p&gt;tutorial above, when you can not directly add the attribute inside html tag.
-but if you can add it, you can following this tutorial bellow:&lt;/p&gt;
+&lt;p&gt;他们希望品牌把他们当成一个个具体的消费者，而非传统营销中千人一面的客群；他们偏爱“去中心化”的营销，在品牌关系中发出他们的声音；他们需要线上线下无缝衔接的新零售体验。&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;id_price&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;number&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;min=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onkeypress=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;return isNumber(event)&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;isNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;charCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;which&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;which&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keyCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;charCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;31&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;charCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;48&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;charCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;57&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;这一切都对品牌-消费者的关系管理提出了全新的挑战。&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Refference:&lt;/strong&gt; &lt;a href=&quot;http://stackoverflow.com/a/7295864&quot;&gt;http://stackoverflow.com/a/7295864&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;内容营销解决方案：&lt;/strong&gt;包括内容沉淀、品牌主页等，实现粉丝和品牌互动；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;全域运营解决方案：&lt;/strong&gt;多样化营销场景，从内容分发到人群营销无缝衔接；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;关系营销解决方案：&lt;/strong&gt;品牌线上线下会员营销，会员服务与权益精准触达；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;全渠道运营解决方案：&lt;/strong&gt;串联线上线下，实现门店分流与客户关系维护；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;品牌全渠道解决方案：&lt;/strong&gt;打通淘宝、天猫及淘外流量渠道。&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;hope it usefull.&lt;/p&gt;
+&lt;h2 id=&quot;品牌号内容运营&quot;&gt;品牌号内容运营&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;精准圈定&lt;/li&gt;
+  &lt;li&gt;设置定位&lt;/li&gt;
+  &lt;li&gt;日常化&lt;/li&gt;
+  &lt;li&gt;引导粉丝&lt;/li&gt;
+  &lt;li&gt;内容输出&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;精准圈定粉丝画像&quot;&gt;精准圈定粉丝画像&lt;/h3&gt;
+
+&lt;p&gt;根据品牌号后台数据/竞品调研/各平台大数据，精准描绘你的粉丝画像，从而定位品牌号，需要明确：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;有哪些人群会关注你的品牌和内容？&lt;/li&gt;
+  &lt;li&gt;他们的期望是什么？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;以某服饰商家的用户画像为例：大多数为女生，年龄在18-25岁左右，大部分是南方妹子，一般在一线或者省会城市工作，消费层级在二三阶层，意味着用户能接受65-200左右的单价，兴趣爱好则说明这些女生普遍喜欢音乐、数码、打扮等。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;另外，可以通过同品类店铺的粉丝评论、&lt;strong&gt;数据银行&lt;/strong&gt; 进行分析，支持基本属性、行业特征及自定义多层次人群标签洞察，甚至还支持线下门店消费者画像分析。&lt;/p&gt;
+
+&lt;h2 id=&quot;设置定位个性化&quot;&gt;设置定位个性化&lt;/h2&gt;
+
+&lt;p&gt;根据品牌号粉丝画像，圈定测试发布的内容。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;买手Style：买手上新、日常穿搭、小技巧介绍&lt;/li&gt;
+  &lt;li&gt;娱乐杂志：大牌明星日常、热点节目追踪、店铺风格明星效应&lt;/li&gt;
+  &lt;li&gt;热点搞笑：微博日常段子、搞笑Gif/视频、实时热点&lt;/li&gt;
+  &lt;li&gt;育儿资讯：宝妈日常、育儿窍门、别人家的宝宝&lt;/li&gt;
+  &lt;li&gt;美妆教学：美妆教程、美妆博主、美妆视频&lt;/li&gt;
+  &lt;li&gt;健身养生：健身小知识、健身餐、健身教学&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;日常化增粉技巧&quot;&gt;日常化增粉技巧&lt;/h3&gt;
+
+&lt;p&gt;站内：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在店铺首页Banner引导关注：引导进店铺的人关注有礼&lt;/li&gt;
+  &lt;li&gt;在客服回复中随时引导关注：增加询店的人购买以及粉丝转化&lt;/li&gt;
+  &lt;li&gt;淘内群聊定时活动任务：增加老粉丝活跃度，购买等转化&lt;/li&gt;
+  &lt;li&gt;微淘同步宣推（还可邀请达人共同宣推）：权益化粉丝运营（提升品牌口碑及人群关注）&lt;/li&gt;
+  &lt;li&gt;借助达人在哇哦渠道进行曝光：让用户更直观感受到产品及其效果&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;站外：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;对于购买过的用户定期唤回（短信）：唤回老用户的同时增粉活跃&lt;/li&gt;
+  &lt;li&gt;微博、小红书、抖音、微信群等：多渠道互相打通&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;引导粉丝持续发电&quot;&gt;引导粉丝持续发电&lt;/h3&gt;
+
+&lt;p&gt;做各种能激发互动讨论的内容、活动、福利&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;投票选款：最好的免费测试新款途径&lt;/li&gt;
+  &lt;li&gt;盖楼：让品牌和话题曝光、提升粉丝活跃度&lt;/li&gt;
+  &lt;li&gt;有奖征集：让粉丝有主动参与的想法&lt;/li&gt;
+  &lt;li&gt;评论留言：带动粉丝互动能力，让留言区爆棚&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;引导关注：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;关注品牌号后才能参与互动，并赢取奖品，玩法可以是：盖楼、服务预约、晒图、话题、签到、积分、答题抽奖等；&lt;/li&gt;
+  &lt;li&gt;有用信息分阶段展示，若用户想看到更多的内容，需要关注才可以继续观看。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;./images/rongyao.jpg&quot; alt=&quot;荣耀&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;增进互动：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;发起活动，刺激用户进行评论留言或者点赞来赢取奖品。可结合热点话题，配合福利字眼（抽奖、免费、0元、抢券），吸引用户眼球。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;与门店结合：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;结合线下门店线下活动进行；&lt;/li&gt;
+  &lt;li&gt;活动前：内容作为吸引用户去线下的一种形式（展现利益点）&lt;/li&gt;
+  &lt;li&gt;活动后：线下活动玩法展现，塑造品牌形象，吸引用户。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;内容输出&quot;&gt;内容输出&lt;/h3&gt;
+
+&lt;p&gt;把内容玩出花来，永不停歇&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;日常搭配&amp;amp;宝贝穿搭：引导粉丝进店、搭配根据当季热点走&lt;/li&gt;
+  &lt;li&gt;Gif、视频：用户对直观内容意愿度高，比帖子等意愿度高&lt;/li&gt;
+  &lt;li&gt;攻略、技能、猎奇等：让内容更加有可读性，使粉丝有一定收获&lt;/li&gt;
+  &lt;li&gt;热点明星、搞笑段子：活跃粉丝，追一把热点，讨论度高，提升品牌号质量&lt;/li&gt;
+  &lt;li&gt;纯产品&amp;amp;买手Style：让粉丝持续看到产品及态度&lt;/li&gt;
+  &lt;li&gt;做新品任务优惠：增加店铺搜索权重，快速新品破零&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;数据分析&quot;&gt;数据分析&lt;/h3&gt;
+
+&lt;p&gt;品牌号的运营不以短期成交为目的，注重品牌宣传及粉丝运营。可以通过持续可触达通道，挖掘用户有效价值，提高用户粘性。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;做访客分析，调节内容发布时间，选择高峰期发布&lt;/li&gt;
+  &lt;li&gt;观看效果：图片 &amp;gt; 视频/Gif &amp;gt; 帖子&lt;/li&gt;
+  &lt;li&gt;关注竞品的品牌号热点&lt;/li&gt;
+&lt;/ul&gt;
+
 </description>
-        <pubDate>Tue, 26 Apr 2016 05:19:22 +0800</pubDate>
-        <link>http://localhost:4000/others/2016/04/26/javascript-validator-for-input-number.html</link>
-        <guid isPermaLink="true">http://localhost:4000/others/2016/04/26/javascript-validator-for-input-number.html</guid>
+        <pubDate>Thu, 21 Mar 2019 12:49:00 +0800</pubDate>
+        <link>http://localhost:4000/taobao/2019/03/21/brandhub.html</link>
+        <guid isPermaLink="true">http://localhost:4000/taobao/2019/03/21/brandhub.html</guid>
         
         
-        <category>others</category>
+        <category>Taobao</category>
+        
+      </item>
+    
+      <item>
+        <title>《深度工作》读书笔记</title>
+        <description>&lt;h2 id=&quot;理论&quot;&gt;理论&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;深度工作（Deep Work）&lt;/strong&gt;：在无干扰的状态下专注进行职业活动，使个人的认知能力达到极限。这种努力能够创造新价值，提升技能，而且难以复制。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;浮浅工作（Shallow Work）&lt;/strong&gt;：对认知要求不高的事务性任务，往往在受到干扰的情况下开展。此类工作通常不会为世界创造太多新价值，且容易复制。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;实习生法则&lt;/strong&gt;：要让一个刚毕业还没有在该领域接受特别训练的大学生完成这项工作需要多久（几个月）？越是实习生能够轻松完成的工作，越是浮浅，也越容易被取代。&lt;/p&gt;
+
+&lt;h3 id=&quot;深度工作是有价值的&quot;&gt;深度工作是有价值的&lt;/h3&gt;
+
+&lt;p&gt;这三类人将在智能机器时代胜出：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;高级技术工人&lt;/strong&gt;擅长使用智能机器的高级技术工人，包括工程师，也包括统计专家。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;超级明星&lt;/strong&gt;各个行业中的超级明星，可以通过信息工具扩大影响力，消除工作的时空门槛。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;资本家&lt;/strong&gt;有资本可以投入新科技、促成大重组的人。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;知识工作者的两种核心能力：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;迅速掌握复杂工具的能力&lt;/li&gt;
+  &lt;li&gt;在工作质量和速度方面都达到精英层次的能力&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;高质量工作产出 = 时间 × 专注度&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;亚当·格兰特（Adam Grant）成为沃顿商学院最年轻的正教授，跟他深度工作时间长有关。在长时间无干扰的状态下，批量解决困难却重要的智力工作。&lt;/p&gt;
+
+&lt;p&gt;多任务切换带来注意力损耗，存在「注意力残留效应」。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;「注意力残留」的效应： 「当你从某项任务 A 转移到任务 B 时，你的注意力并没有即时转移，你的注意力残留仍然在思考原始任务。如果在转移工作之前，你对任务 A 缺乏控制且关注度较低，残留会尤其浓厚，但即使你在转移工作之前已经完成了任务 A，你的注意力还是会有一段分散的时间。」&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;深度工作是少见的&quot;&gt;深度工作是少见的&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;知识工作者陷入「以忙为能」的误区&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;忙碌代表生产能力（Busyness as Proxy for Productivity）：在工作中，对于生产能力和价值没有明确的指标时，很多知识工作者都会采用工业时代关于生产能力的指标，以可视的方式完成很多事情。知识工作者越来越多地表现为可视的忙碌，是因为他们没有更好的方法证明其自身价值。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;最小阻力原则（The Principle of Least Resistance）：在工作环境下，若各种行为对于底线的影响没有得到明确的反馈意见，我们倾向于采用当下最简单易行的行为。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;深度工作是有意义的&quot;&gt;深度工作是有意义的&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;深度工作带来更好的精神体验&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;深度工作会带来心流体验。你的世界是你所关注事物的产物，你可以由此思考一下当你在深度努力状态下投入大量时间之时，所构建的精神世界是何种类型。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;深度工作赋予工作意义和价值&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;深度工作是「匠心」（工匠精神）的表现。启蒙运动瓦解了神的地位，人文主义带来虚无主义。工匠们通过专精、创造，重新赋予事物价值和意义。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;中世纪矿工的信条：「我等采石之人当心怀大教堂之愿景」。 百年之后，我们的技艺或许如今日的土建工程师看待中世纪大教堂建造者使用的技法一样陈旧，但是我们的匠心却会得到尊重。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;准则&quot;&gt;准则&lt;/h2&gt;
+
+&lt;h3 id=&quot;准则-1工作要深入&quot;&gt;准则 1：工作要深入&lt;/h3&gt;
+
+&lt;h4 id=&quot;策略-1选定工作哲学&quot;&gt;策略 1：选定工作哲学&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;禁欲主义哲学（Monastic Philosophy）&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;摒弃或最小化浮浅职责，最大化深度工作。禁欲主义哲学的实践者往往有明确且价值极高的职业目标追求。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;双峰哲学（Bimodal Philosophy）&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;按年/月/周组合深度工作和浮浅工作。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;节奏哲学（Rhythmic Philosophy）&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;按小时分割组合。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;新闻记者哲学（Journalistic Philosophy）&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;随时可插入深度工作。&lt;/p&gt;
+
+&lt;h4 id=&quot;策略-2习惯化&quot;&gt;策略 2：习惯化&lt;/h4&gt;
+
+&lt;p&gt;习惯使过渡到深度工作状态的阻力压缩到最小，使你能够更轻松地进入深度状态并保持更长的时间。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;工作环境和工作时长&lt;/li&gt;
+  &lt;li&gt;工作流程&lt;/li&gt;
+  &lt;li&gt;工作支持（咖啡、水或散步等）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;策略-3大手笔&quot;&gt;策略 3：大手笔&lt;/h4&gt;
+
+&lt;p&gt;以可观的精力或金钱投入对工作环境做出巨大改变，提升了这项任务的重要性。这种重要性的提升，降低了你的大脑继续拖延的本能，并注入了激励和能量。&lt;/p&gt;
+
+&lt;h4 id=&quot;策略-4不要独自工作&quot;&gt;策略 4：不要独自工作&lt;/h4&gt;
+
+&lt;p&gt;恰当的时机可以采用协作的方式，与此同时，也不要过分追求交流和积极的偶遇，以免破坏了专注的状态。&lt;/p&gt;
+
+&lt;h4 id=&quot;策略-5图安逸&quot;&gt;策略 5：图安逸&lt;/h4&gt;
+
+&lt;p&gt;每天在工作之外定期放松大脑，享受一些自由时光。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;把去健身房的时间留到中午，或者下午的某个时间，这样你可以把上下午两个工作时间段分开，用运动去调节，这样你下午回到工作时会更神清气爽。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;停工仪式&lt;/strong&gt; 确保每一项未完成的任务、目标或项目都得到回顾，而且每一项你都确认过，不是（1）有计划确信可以完成，就是（2）保存在一个地方，恰当的时候可以再取用。结束的时候，要说出一个预设的短语，表明完成。&lt;/p&gt;
+
+&lt;h3 id=&quot;准则-2拥抱无聊&quot;&gt;准则 2：拥抱无聊&lt;/h3&gt;
+
+&lt;h4 id=&quot;策略-1不要不断分心而要不断专注&quot;&gt;策略 1：不要不断分心，而要不断专注&lt;/h4&gt;
+
+&lt;p&gt;与其偶尔从分心中拿出部分时间来专注，你更应该从专注中规划出偶尔的分心。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;不要用这样的方式去思考问题：我接下来三十分钟都不用手机，而是去把干扰活动集中到一起：现在我的主要工作完成了，我可以查看一下微信。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;策略-2像罗斯福一样工作&quot;&gt;策略 2：像罗斯福一样工作&lt;/h4&gt;
+
+&lt;p&gt;估算出通常完成此类型任务需要的时间，然后设定一个硬性截止期限，留出的时间远远少于估算时间。（高强度工作）&lt;/p&gt;
+
+&lt;h4 id=&quot;策略-3有成果的冥想&quot;&gt;策略 3：有成果的冥想&lt;/h4&gt;
+
+&lt;p&gt;在身体劳作而心智空闲的时候（比如走路、慢跑、开车、淋浴），将注意力集中到一件定义明确的专业难题上。&lt;/p&gt;
+
+&lt;h4 id=&quot;策略-4记住一副牌&quot;&gt;策略 4：记住一副牌&lt;/h4&gt;
+
+&lt;p&gt;记忆力训练带来个人专注能力的提升。&lt;/p&gt;
+
+&lt;h3 id=&quot;准则-3远离社交网络&quot;&gt;准则 3：远离社交网络&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;工具选择的手艺人方法：明确在你的职业和个人生活中决定成功与幸福的核心因素。只有一种工具对这些因素的实际益处大于实际害处时才选择这种工具。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;策略-1采用关键少数法则&quot;&gt;策略 1：采用关键少数法则&lt;/h4&gt;
+
+&lt;p&gt;明确个人职业和私人生活中主要的高层次目标，再列出为实现每一个目标而需要的两到三个重要活动。&lt;/p&gt;
+
+&lt;h4 id=&quot;策略-2戒掉社交媒体&quot;&gt;策略 2：戒掉社交媒体&lt;/h4&gt;
+
+&lt;p&gt;只有你尝试了没有它们的生活，你才会知道你属于哪一类人。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;控制你刷手机上APP的时间，做到开始工作就不要去开APP。手机是对于持续专注工作和学习的一号干扰源。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;策略-3不要用网络来消遣&quot;&gt;策略 3：不要用网络来消遣&lt;/h4&gt;
+
+&lt;p&gt;如果你想抵御娱乐网站对你时间和精力的诱惑，那么就给大脑找一些高质量的替代活动。这样不仅可以使我们避免分心，保持专注的能力，同时还有可能实现本内特的宏伟目标：体验到何为生活，而不仅仅是生存。&lt;/p&gt;
+
+&lt;h3 id=&quot;准则-4摒弃浮浅&quot;&gt;准则 4：摒弃浮浅&lt;/h3&gt;
+
+&lt;h4 id=&quot;策略-1一天的每一分钟都要做好计划&quot;&gt;策略 1：一天的每一分钟都要做好计划&lt;/h4&gt;
+
+&lt;p&gt;深度工作要求你尊重自己的时间。要做到真正尊重时间，下面这一条建议是个很不错的开端：提前决定你一天的每一分钟要做什么工作。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Routine很关键，养成一个习惯和流程。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;早起，早上的时段是进入Deep Work最容易的时段。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;但过度整理也是一种干扰和浪费时间。那些Evernote整理得太过于完美的人Deep Work的时间应该不多。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;策略-2定量分析每一项活动的深度&quot;&gt;策略 2：定量分析每一项活动的深度&lt;/h4&gt;
+
+&lt;p&gt;设定每天深度工作的时长并做好评估，定期回顾表现，改进方案，完善计划。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;记笔记。每天记录一下你的Deep Work有多少小时，每周回顾看一下，如果这个数字很低，想想原因是什么，怎么改善。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;策略-3向老板申请浮浅工作预算&quot;&gt;策略 3：向老板申请浮浅工作预算&lt;/h4&gt;
+
+&lt;p&gt;与老板沟通：你的时间应该有几成被投入到浮浅工作中？（通常在 30%～50% 之间）了解老板对你的工作预期并作出调整。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;你自己能够做Deep Work，所以安排自己做别人替代不了的工作，把其他的任务雇人帮助你完成。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;策略-45-点半之前结束工作&quot;&gt;策略 4：5 点半之前结束工作&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;固定日程生产力&lt;/strong&gt;：确定一个坚定的目标，在某个固定时间后不再工作，然后在工作中寻找提高产出的策略以达成目标。&lt;/p&gt;
+
+&lt;h4 id=&quot;策略-5适度失联&quot;&gt;策略 5：适度失联&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;采取离线模式，直接断网。&lt;/li&gt;
+  &lt;li&gt;远离社交媒体，减少浪费。&lt;/li&gt;
+  &lt;li&gt;设置邮箱发件人过滤，变得不容易联系。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;邮件过滤策略&lt;/strong&gt;：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;深度议题&lt;/li&gt;
+  &lt;li&gt;深度回复&lt;/li&gt;
+  &lt;li&gt;一次性讲清楚，避免长篇大论&lt;/li&gt;
+  &lt;li&gt;主导并给出「闭合」框架&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 18 Mar 2019 12:45:00 +0800</pubDate>
+        <link>http://localhost:4000/books/2019/03/18/deep_work.html</link>
+        <guid isPermaLink="true">http://localhost:4000/books/2019/03/18/deep_work.html</guid>
+        
+        
+        <category>Books</category>
+        
+      </item>
+    
+      <item>
+        <title>没有策略，就不要刷屏</title>
+        <description>&lt;p&gt;杨不坏系列学习笔记 - 6&lt;/p&gt;
+
+&lt;p&gt;没有策略，刷屏真的没什么了不起，也没那么重要。下面从空间位置与历史逻辑两个维度划定出一个策略范围，最终给出行动指南。&lt;/p&gt;
+
+&lt;h2 id=&quot;空间位置&quot;&gt;空间位置&lt;/h2&gt;
+
+&lt;p&gt;做策略的第一步是分析市场并给出结论，找出此品牌的市场位置与角色，并协助决策者思考要生长成什么，建立品牌愿景与价值观。&lt;/p&gt;
+
+&lt;h2 id=&quot;历史逻辑&quot;&gt;历史逻辑&lt;/h2&gt;
+
+&lt;p&gt;确定了空间位置之后，要梳理出品牌逻辑来，根据行业与自身品牌的历史，结合当下大环境的趋势与品牌愿景，确定当下品牌所处的历史阶段与位置，然后还需要规划出现在到未来的品牌策略，未来的路要如何走，要做什么事。&lt;/p&gt;
+
+&lt;h2 id=&quot;策略范围&quot;&gt;策略范围&lt;/h2&gt;
+
+&lt;p&gt;策略最终需要思考出的结论，规划出到达品牌愿景的路，分成一个个小目标。给创意划定一个范围，指明一个方向，做正确的事情。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;./ybh.html&quot;&gt;👉杨不坏系列合辑&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/OJvdAp_vZ_JK0xbaJfE9uA&quot;&gt;杨不坏《没有策略，就不要刷屏》&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 17 Mar 2019 23:49:00 +0800</pubDate>
+        <link>http://localhost:4000/ybh/2019/03/17/strategy.html</link>
+        <guid isPermaLink="true">http://localhost:4000/ybh/2019/03/17/strategy.html</guid>
+        
+        
+        <category>Ybh</category>
+        
+      </item>
+    
+      <item>
+        <title>to B 品牌不做传播</title>
+        <description>&lt;p&gt;杨不坏系列学习笔记 -5&lt;/p&gt;
+
+&lt;h2 id=&quot;品牌与传播是两个词&quot;&gt;品牌与传播是两个词&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;品牌：&lt;/strong&gt;品牌塑造自己的调性，并提出自己的立场与价值观，向消费者进行提案，然后获得消费者的认同，达成品牌共识，此称之为品牌，所以品牌是双向的共识。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;传播：&lt;/strong&gt;传播就是曝光，是个中性词。传播是否产生价值或者产生正向还是反向的价值都是无从判断的，所以传播本身并没有价值。&lt;/p&gt;
+
+&lt;h2 id=&quot;主动传播与反向吸引&quot;&gt;主动传播与反向吸引&lt;/h2&gt;
+
+&lt;p&gt;奢侈品从来不推销自己，只是在塑造自己，把自己塑造成最顶级的，然后等着欣赏它的人前来购买，这是做奢侈品牌的基础策略。&lt;/p&gt;
+
+&lt;h2 id=&quot;产品广告化&quot;&gt;产品广告化&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;简单来说，从做广告到做事情，通过做事情来塑造品牌，积累品牌资产。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;比如阿里云，广告思维是解释阿里云是什么，能做什么，能带来什么；做事思维，做几个典型的案例，如塑造了城市大脑，能够极致表现出阿里云的能力。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;1-信任背书&quot;&gt;1. 信任背书&lt;/h3&gt;
+
+&lt;p&gt;用一些权威案例为自己的品牌背书，建立信任度。这是基础工作，这部分很重要，但不需要市场部做太多工作。&lt;/p&gt;
+
+&lt;h3 id=&quot;2-极致案例&quot;&gt;2. 极致案例&lt;/h3&gt;
+
+&lt;p&gt;这部分是市场部的重点工作，对于to B 品牌来说，市场部要做的不是大众传播，而是努力去建造一个“品牌展厅”。去做一些品牌导向的，前沿的，探索性的极致案例，把这些产品案例广告化，以此来塑造品牌。&lt;/p&gt;
+
+&lt;h2 id=&quot;品牌价值观&quot;&gt;品牌价值观&lt;/h2&gt;
+
+&lt;p&gt;价值观是品牌承诺，你要想客户承诺你的责任与担当，你是有可靠与可信任的。&lt;/p&gt;
+
+&lt;h2 id=&quot;结论&quot;&gt;结论&lt;/h2&gt;
+
+&lt;p&gt;如果是非常专业精准的to B 品牌，不做大众传播也是完全没问题的，比如空客的飞机，客户就是各个国家的几大航空公司，精准销售就可以了。&lt;/p&gt;
+
+&lt;p&gt;但比如阿里云这类规模化的to B 品牌，也是需要做传播的，传播 &lt;strong&gt;品牌价值观&lt;/strong&gt; 与 &lt;strong&gt;产品广告化的极致案例&lt;/strong&gt; 就可以了。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;./ybh.html&quot;&gt;👉杨不坏系列合辑&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/0tmXJmHc4uzmsGqWWl-jAg&quot;&gt;杨不坏《to B 品牌，可以不做传播》&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 16 Mar 2019 23:49:00 +0800</pubDate>
+        <link>http://localhost:4000/ybh/2019/03/16/tob.html</link>
+        <guid isPermaLink="true">http://localhost:4000/ybh/2019/03/16/tob.html</guid>
+        
+        
+        <category>Ybh</category>
+        
+      </item>
+    
+      <item>
+        <title>重新理解品效合一</title>
+        <description>&lt;p&gt;杨不坏系列学习笔记 -4&lt;/p&gt;
+
+&lt;h2 id=&quot;时代洞察&quot;&gt;时代洞察&lt;/h2&gt;
+
+&lt;p&gt;在传统工业时代，所有的商业行为都是在线下的物理距离时，品牌与效果要分开。&lt;strong&gt;从品到效的转化路径太长了，在这个过程中，消费者已经丧失掉行动的欲望，人们总是在犹豫中丧失激情。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;品效合一是行动&quot;&gt;品效合一是：行动！&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;以前的转化路径&lt;/strong&gt;：“品”的渠道与形式是相对集中的，主要是电视台，加一些小众的报纸杂志。“效”是分散的，主要分散在线下的各种地方。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;现在的转化路径&lt;/strong&gt;“品”可能是分散的，但“效”是集中在手机里的，不管在任何地方看到，拿起手机就可以完成“效”的转化。&lt;/p&gt;
+
+&lt;p&gt;在这样一个环境中，消费者的转化路径是：&lt;strong&gt;看到——查找——行动&lt;/strong&gt;。从品到效的真实路径是人们的心理路径，内容是否打动我，是否有购买冲动，广告出现的时机对不对等等，综合起一个行动起来的理由。立刻转化。&lt;/p&gt;
+
+&lt;h2 id=&quot;明确的信息点&quot;&gt;明确的信息点&lt;/h2&gt;
+
+&lt;p&gt;现在的品牌传播应该品牌前置，品牌首先说清楚你是谁，你想说什么，把LOGO与核心信息讲清楚，筛选出目标人群，然后再对他们表达更详细的信息。（我是谁？）&lt;/p&gt;
+
+&lt;h2 id=&quot;具体的行动坐标&quot;&gt;具体的行动坐标&lt;/h2&gt;
+
+&lt;p&gt;向消费者提案，向年轻人提案，然后让年轻人自我决策如何行动。所以行动坐标不是画出一个路线图，而是给到一个场景展示，引导消费者自己主动做出，你想让TA做出的决策与行动。（你要做什么？）&lt;/p&gt;
+
+&lt;h2 id=&quot;创造行动时刻&quot;&gt;创造行动时刻&lt;/h2&gt;
+
+&lt;p&gt;创造行动时刻，最好是多个内容和多个媒介触点进行配合，共同协作下，创作出一个行动时刻，并且让行动冲动立刻得到释放，进行行动转化。（参考&lt;a href=&quot;./media.html&quot;&gt;《如何让媒介投放更加高效》&lt;/a&gt;）&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;./ybh.html&quot;&gt;👉杨不坏系列合辑&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/hEY09fJa_Q0pqPWAMEWsJw&quot;&gt;杨不坏《2019，品效合一元年》&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 04 Mar 2019 23:49:00 +0800</pubDate>
+        <link>http://localhost:4000/ybh/2019/03/04/effect.html</link>
+        <guid isPermaLink="true">http://localhost:4000/ybh/2019/03/04/effect.html</guid>
+        
+        
+        <category>Ybh</category>
+        
+      </item>
+    
+      <item>
+        <title>案例：Luckin Coffee 体系化营销复盘</title>
+        <description>&lt;p&gt;杨不坏系列学习笔记 -3&lt;/p&gt;
+
+&lt;h2 id=&quot;体系化营销思维&quot;&gt;体系化营销思维&lt;/h2&gt;
+
+&lt;p&gt;Luckin Coffee 的营销核心：一个单点创意，一次刷屏，一个大创意已经不能解决品牌问题了。&lt;strong&gt;今天的营销，需要更加体系化的思维，把单点创意放进体系中协同营销，集团军作战。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;品牌基本面不讲故事营造感觉&quot;&gt;品牌基本面：不讲故事，营造感觉&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;视觉VI：以蓝色为基调的主视觉，鹿头形象的logo，luckin coffee 的英文名与瑞幸咖啡的中文名，这三个元素合在一起，给了你一种感觉：大面积的蓝色视觉，给人以沉稳成熟的感觉；鹿头的形象年轻中带着高级的感觉，不互联网也不陈旧，是一种活力；luckin coffee 瑞幸咖啡这个名字，非常不互联网，不像个新品牌，它像个老品牌，老朋友，某个国际品牌来中国开拓市场了。&lt;/li&gt;
+  &lt;li&gt;代言人：选择了张震与汤唯两位。一是传达自身品牌调性塑造品牌形象，二是以明星作为连接点，消除大众对新品牌的陌生感。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;总结一下，它的品牌形象给人以老练成熟的感觉，没有告诉或者教导消费者“它是谁”，而是展示它的形象，让消费者自行感知它是谁。而蓝色的主视觉则是这个品牌的超级符号，现在已经在广告上公然出现“小蓝杯”字样了。&lt;/p&gt;
+
+&lt;h3 id=&quot;媒介策略精准投放精细化运营&quot;&gt;媒介策略：精准投放精细化运营&lt;/h3&gt;
+
+&lt;h4 id=&quot;区域化精准投放&quot;&gt;区域化精准投放&lt;/h4&gt;
+
+&lt;p&gt;投放策略是跟着门店走的，每开一个新门店，围绕门店半径1.5公里之内的分众广告，和围绕门店半径1.5公里之内的朋友圈LBS定投。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;针对同一人群，在同一个舆论场内重复覆盖，高效转化。&lt;/strong&gt;先锁定一个人群，对于luckin来说就是一二线办公室白领，然后考虑到用户转化的因素只针对店面能覆盖的人群，在这群人的生活场景中线上加线下重复覆盖。然后以首杯免费，买二送一的极大力度促销，降低消费者的准入门槛，进一步提高广告的转化效果。&lt;/p&gt;
+
+&lt;h3 id=&quot;传播策略场景化与裂变分享&quot;&gt;传播策略：场景化与裂变分享&lt;/h3&gt;
+
+&lt;h4 id=&quot;1-场景化植入&quot;&gt;1. 场景化植入&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;场景策略&lt;/strong&gt;：把咖啡放进某个具体场景中，向消费者传达，在这个场景中来一杯luckin coffee 正合适，就够了。&lt;/p&gt;
+
+&lt;p&gt;KOL+场景：KOL晒luckin coffee ，有广告创意人在开会时晒，有演员艺人在片场晒，也有当红爱豆手拿luckin的漂亮街拍。一改KOL的主流合作方式，而是直接晒，不用讲道理，它自有道理。&lt;/p&gt;
+
+&lt;p&gt;品牌+场景：仅仅半年时间，luckin就跨界了腾讯、广告门、虎嗅、小米、北马、北京车展等众多品牌，通过与不同的品牌不断跨界，来提升这个新品牌的调性。&lt;/p&gt;
+
+&lt;h4 id=&quot;2-裂变式分享万物生长&quot;&gt;2. 裂变式分享：万物生长&lt;/h4&gt;
+
+&lt;p&gt;裂变分享除了好内容，基础性福利不可少。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新客户，全场首件商品免费&lt;/li&gt;
+  &lt;li&gt;邀请好友成功，自己再得一杯&lt;/li&gt;
+  &lt;li&gt;咖啡钱包，买2赠1，买5赠5&lt;/li&gt;
+  &lt;li&gt;全场轻食5折风暴&lt;/li&gt;
+  &lt;li&gt;下单成功，送20张折扣券试手气&lt;/li&gt;
+  &lt;li&gt;官方微信，每周送一张5折券&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;体系化高效协同&quot;&gt;体系化高效协同&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;品牌广告：确定基础调性，营销氛围感觉&lt;/li&gt;
+  &lt;li&gt;分众投放：线下告知，部分转化&lt;/li&gt;
+  &lt;li&gt;朋友圈定投：线上告知，部分转化&lt;/li&gt;
+  &lt;li&gt;KOL+品牌跨界：降低分享压力&lt;/li&gt;
+  &lt;li&gt;裂变分享：快速裂变，高效转化&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;总结&quot;&gt;总结&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;内容场景化：数十年来我们的广告都是高度提炼一句话，来教导我们的消费者，而新时代的消费者，已经不愿意再被教导了，品牌需要制造场景去影响新一代的消费者。&lt;/li&gt;
+  &lt;li&gt;网络化传播：社交媒体不是媒体，自媒体也不是媒体，是社交网络，而KOL则是社交网络中比较关键的节点。&lt;/li&gt;
+  &lt;li&gt;操盘手团队：体系化的营销战役，必须是自上而下的体制，不管是CMO还是市场总监还是项目PM，必须有一位被充分授权的操盘手，能够掌控整个事件的发展和走势。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;./ybh.html&quot;&gt;👉杨不坏系列合辑&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/6krLPQnuwfyQoGYeBLrdXQ&quot;&gt;杨不坏《体系化颠覆大创意，luckin coffee 营销复盘》&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 03 Mar 2019 23:49:00 +0800</pubDate>
+        <link>http://localhost:4000/ybh/2019/03/03/luckin.html</link>
+        <guid isPermaLink="true">http://localhost:4000/ybh/2019/03/03/luckin.html</guid>
+        
+        
+        <category>Ybh</category>
         
       </item>
     
