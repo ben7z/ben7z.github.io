@@ -24,8 +24,6 @@ social:
 urls:
     - text: About Me
       url: /about/
-    - text: XML Feed
-      url: /feed.xml
 
 url: "https://aben.ml"
 baseurl: ""

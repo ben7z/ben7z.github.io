@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "郑也夫的社会学专题笔记"
+title: "【得到】郑也夫的社会学专题笔记"
 date: 2019-03-27 12:49:00 +0800
-categories: [Get]
+categories: [得到]
 ---
 
 ## 01讲 | 发刊词：游击队员之歌

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "高阶用户运营与大规模用户运营体系搭建"
+title: "【三节课】高阶用户运营与大规模用户运营体系搭建"
 date: 2019-04-03 12:49:00 +0800
-categories: [Sanjieke]
+categories: [三节课]
 ---
 
 ## 1讲 | 概述

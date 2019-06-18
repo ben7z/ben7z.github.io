@@ -5,12 +5,12 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Jun 2019 13:26:40 +0800</pubDate>
-    <lastBuildDate>Tue, 18 Jun 2019 13:26:40 +0800</lastBuildDate>
+    <pubDate>Tue, 18 Jun 2019 16:47:38 +0800</pubDate>
+    <lastBuildDate>Tue, 18 Jun 2019 16:47:38 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>MacBook 的一些使用技巧</title>
+        <title>【技术】MacBook 的一些使用技巧</title>
         <description>&lt;h2 id=&quot;日历设置为-24-小时制&quot;&gt;日历设置为 24 小时制&lt;/h2&gt;
 
 &lt;p&gt;习惯使用 24 小时制的时间，但 Mac 的日历默认使用 12 小时制，如下午 10 点，既不习惯，也不方便。&lt;/p&gt;
@@ -54,16 +54,16 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Tue, 11 Jun 2019 11:00:00 +0800</pubDate>
-        <link>http://localhost:4000/ybh/2019/06/11/macbook.html</link>
-        <guid isPermaLink="true">http://localhost:4000/ybh/2019/06/11/macbook.html</guid>
+        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/06/11/macbook.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/06/11/macbook.html</guid>
         
         
-        <category>Ybh</category>
+        <category>技术</category>
         
       </item>
     
       <item>
-        <title>在 Mac 上压制带字幕的视频</title>
+        <title>【技术】在 Mac 上压制带字幕的视频</title>
         <description>&lt;p&gt;工具：&lt;/p&gt;
 
 &lt;ul&gt;
@@ -101,16 +101,16 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 30 May 2019 21:53:00 +0800</pubDate>
-        <link>http://localhost:4000/tech/2019/05/30/video.html</link>
-        <guid isPermaLink="true">http://localhost:4000/tech/2019/05/30/video.html</guid>
+        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/05/30/video.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/05/30/video.html</guid>
         
         
-        <category>Tech</category>
+        <category>技术</category>
         
       </item>
     
       <item>
-        <title>高阶用户运营与大规模用户运营体系搭建</title>
+        <title>【三节课】高阶用户运营与大规模用户运营体系搭建</title>
         <description>&lt;h2 id=&quot;1讲--概述&quot;&gt;1讲 | 概述&lt;/h2&gt;
 
 &lt;h3 id=&quot;11-理解用户运营与大规模用户管理的本质&quot;&gt;1.1 理解用户运营与“大规模用户管理”的本质&lt;/h3&gt;
@@ -298,16 +298,16 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 03 Apr 2019 12:49:00 +0800</pubDate>
-        <link>http://localhost:4000/sanjieke/2019/04/03/operation.html</link>
-        <guid isPermaLink="true">http://localhost:4000/sanjieke/2019/04/03/operation.html</guid>
+        <link>http://localhost:4000/%E4%B8%89%E8%8A%82%E8%AF%BE/2019/04/03/operation.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E4%B8%89%E8%8A%82%E8%AF%BE/2019/04/03/operation.html</guid>
         
         
-        <category>Sanjieke</category>
+        <category>三节课</category>
         
       </item>
     
       <item>
-        <title>郑也夫的社会学专题笔记</title>
+        <title>【得到】郑也夫的社会学专题笔记</title>
         <description>&lt;h2 id=&quot;01讲--发刊词游击队员之歌&quot;&gt;01讲 | 发刊词：游击队员之歌&lt;/h2&gt;
 
 &lt;p&gt;课表：&lt;/p&gt;
@@ -875,16 +875,16 @@
 &lt;p&gt;儿童虽然没有创作，却有选择权，儿童们用他们的唱诵投了票，喜欢的儿歌他们一唱再唱，不喜欢的不会主动张嘴。于是亿万儿童以他们的情趣，以他们不捧臭脚的真诚完成了选择，引导了儿歌创造者的风格方向。&lt;/p&gt;
 </description>
         <pubDate>Wed, 27 Mar 2019 12:49:00 +0800</pubDate>
-        <link>http://localhost:4000/get/2019/03/27/sociology.html</link>
-        <guid isPermaLink="true">http://localhost:4000/get/2019/03/27/sociology.html</guid>
+        <link>http://localhost:4000/%E5%BE%97%E5%88%B0/2019/03/27/sociology.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E5%BE%97%E5%88%B0/2019/03/27/sociology.html</guid>
         
         
-        <category>Get</category>
+        <category>得到</category>
         
       </item>
     
       <item>
-        <title>品牌号学习笔记</title>
+        <title>【淘宝】品牌号学习笔记</title>
         <description>&lt;h2 id=&quot;什么是品牌号&quot;&gt;什么是品牌号&lt;/h2&gt;
 
 &lt;p&gt;数字时代的消费者对品牌提出更高的要求：&lt;/p&gt;
@@ -1017,16 +1017,16 @@
 
 </description>
         <pubDate>Thu, 21 Mar 2019 12:49:00 +0800</pubDate>
-        <link>http://localhost:4000/taobao/2019/03/21/brandhub.html</link>
-        <guid isPermaLink="true">http://localhost:4000/taobao/2019/03/21/brandhub.html</guid>
+        <link>http://localhost:4000/%E6%B7%98%E5%AE%9D/2019/03/21/brandhub.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%B7%98%E5%AE%9D/2019/03/21/brandhub.html</guid>
         
         
-        <category>Taobao</category>
+        <category>淘宝</category>
         
       </item>
     
       <item>
-        <title>《深度工作》读书笔记</title>
+        <title>【读书笔记】《深度工作》读书笔记</title>
         <description>&lt;h2 id=&quot;理论&quot;&gt;理论&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;深度工作（Deep Work）&lt;/strong&gt;：在无干扰的状态下专注进行职业活动，使个人的认知能力达到极限。这种努力能够创造新价值，提升技能，而且难以复制。&lt;/p&gt;
@@ -1239,16 +1239,16 @@
 
 </description>
         <pubDate>Mon, 18 Mar 2019 12:45:00 +0800</pubDate>
-        <link>http://localhost:4000/books/2019/03/18/deep_work.html</link>
-        <guid isPermaLink="true">http://localhost:4000/books/2019/03/18/deep_work.html</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/03/18/deep_work.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/03/18/deep_work.html</guid>
         
         
-        <category>Books</category>
+        <category>读书笔记</category>
         
       </item>
     
       <item>
-        <title>没有策略，就不要刷屏</title>
+        <title>【杨不坏系列】没有策略，就不要刷屏</title>
         <description>&lt;p&gt;杨不坏系列学习笔记 - 6&lt;/p&gt;
 
 &lt;p&gt;没有策略，刷屏真的没什么了不起，也没那么重要。下面从空间位置与历史逻辑两个维度划定出一个策略范围，最终给出行动指南。&lt;/p&gt;
@@ -1270,16 +1270,16 @@
 &lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/OJvdAp_vZ_JK0xbaJfE9uA&quot;&gt;杨不坏《没有策略，就不要刷屏》&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 17 Mar 2019 23:49:00 +0800</pubDate>
-        <link>http://localhost:4000/ybh/2019/03/17/strategy.html</link>
-        <guid isPermaLink="true">http://localhost:4000/ybh/2019/03/17/strategy.html</guid>
+        <link>http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/17/strategy.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/17/strategy.html</guid>
         
         
-        <category>Ybh</category>
+        <category>杨不坏</category>
         
       </item>
     
       <item>
-        <title>to B 品牌不做传播</title>
+        <title>【杨不坏系列】to B 品牌不做传播</title>
         <description>&lt;p&gt;杨不坏系列学习笔记 -5&lt;/p&gt;
 
 &lt;h2 id=&quot;品牌与传播是两个词&quot;&gt;品牌与传播是两个词&lt;/h2&gt;
@@ -1323,16 +1323,16 @@
 &lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/0tmXJmHc4uzmsGqWWl-jAg&quot;&gt;杨不坏《to B 品牌，可以不做传播》&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 16 Mar 2019 23:49:00 +0800</pubDate>
-        <link>http://localhost:4000/ybh/2019/03/16/tob.html</link>
-        <guid isPermaLink="true">http://localhost:4000/ybh/2019/03/16/tob.html</guid>
+        <link>http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/16/tob.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/16/tob.html</guid>
         
         
-        <category>Ybh</category>
+        <category>杨不坏</category>
         
       </item>
     
       <item>
-        <title>重新理解品效合一</title>
+        <title>【杨不坏系列】重新理解品效合一</title>
         <description>&lt;p&gt;杨不坏系列学习笔记 -4&lt;/p&gt;
 
 &lt;h2 id=&quot;时代洞察&quot;&gt;时代洞察&lt;/h2&gt;
@@ -1364,16 +1364,16 @@
 &lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/hEY09fJa_Q0pqPWAMEWsJw&quot;&gt;杨不坏《2019，品效合一元年》&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 04 Mar 2019 23:49:00 +0800</pubDate>
-        <link>http://localhost:4000/ybh/2019/03/04/effect.html</link>
-        <guid isPermaLink="true">http://localhost:4000/ybh/2019/03/04/effect.html</guid>
+        <link>http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/04/effect.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/04/effect.html</guid>
         
         
-        <category>Ybh</category>
+        <category>杨不坏</category>
         
       </item>
     
       <item>
-        <title>案例：Luckin Coffee 体系化营销复盘</title>
+        <title>【杨不坏系列】案例：Luckin Coffee 体系化营销复盘</title>
         <description>&lt;p&gt;杨不坏系列学习笔记 -3&lt;/p&gt;
 
 &lt;h2 id=&quot;体系化营销思维&quot;&gt;体系化营销思维&lt;/h2&gt;
@@ -1443,11 +1443,11 @@
 &lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/6krLPQnuwfyQoGYeBLrdXQ&quot;&gt;杨不坏《体系化颠覆大创意，luckin coffee 营销复盘》&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 03 Mar 2019 23:49:00 +0800</pubDate>
-        <link>http://localhost:4000/ybh/2019/03/03/luckin.html</link>
-        <guid isPermaLink="true">http://localhost:4000/ybh/2019/03/03/luckin.html</guid>
+        <link>http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/03/luckin.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/03/luckin.html</guid>
         
         
-        <category>Ybh</category>
+        <category>杨不坏</category>
         
       </item>
     

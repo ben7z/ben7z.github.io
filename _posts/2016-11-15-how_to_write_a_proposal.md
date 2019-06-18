@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "这不是一份广告提案模板"
+title: "【广告】这不是一份广告提案模板"
 date: 2016-11-25 15:30:00 +0800
-categories: [Advertising]
+categories: [广告]
 ---
 
 ## 写在前面
