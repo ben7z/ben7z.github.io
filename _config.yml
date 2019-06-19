@@ -1,11 +1,11 @@
 title: 叨叨
 description: 读书，搞机与其他
-author: 阿Ben
+author: 阿Ben同学
 github: https://aben.ml
 about: 乏善可陈
 disqus_shortname: stackproblems
 google_analytics: UA-XXXXXXXX-Y
-avatar_url: /static/img/avatar.jpg
+avatar_url: /static/img/avatar.png
 
 enableTags: true
 tagarray: []
