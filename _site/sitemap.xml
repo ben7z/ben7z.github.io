@@ -5,62 +5,9 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 19 Jun 2019 18:38:12 +0800</pubDate>
-    <lastBuildDate>Wed, 19 Jun 2019 18:38:12 +0800</lastBuildDate>
+    <pubDate>Thu, 20 Jun 2019 10:41:07 +0800</pubDate>
+    <lastBuildDate>Thu, 20 Jun 2019 10:41:07 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
-    
-      <item>
-        <title>【技术】MacBook 的一些使用技巧</title>
-        <description>&lt;h2 id=&quot;日历设置为-24-小时制&quot;&gt;日历设置为 24 小时制&lt;/h2&gt;
-
-&lt;p&gt;习惯使用 24 小时制的时间，但 Mac 的日历默认使用 12 小时制，如下午 10 点，既不习惯，也不方便。&lt;/p&gt;
-
-&lt;p&gt;方法：&lt;/p&gt;
-
-&lt;p&gt;日历时间显示是跟随系统时间的，因此只需要在系统设置中的 &lt;em&gt;语言与区域&lt;/em&gt; 设置勾选 24 小时制即可调整。&lt;/p&gt;
-
-&lt;h2 id=&quot;显示与隐藏所有文件&quot;&gt;显示与隐藏所有文件&lt;/h2&gt;
-
-&lt;p&gt;显示：在终端中输入&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;defaults write com.apple.finder AppleShowAllFiles -bool true&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;隐藏：在终端中输入&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;defaults write com.apple.finder AppleShowAllFiles -bool false&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;微软雅黑字体标准体与粗体无法同时使用&quot;&gt;微软雅黑字体标准体与粗体无法同时使用&lt;/h2&gt;
-
-&lt;p&gt;微软雅黑字体有标准体和粗体两种字体，但在 Mac 系统中无法同时使用。要么只能用标准体，粗体报错；要么就是能用粗体，标准体无法使用。很偶然找到了以下MAC技巧，问题终于得以解决。&lt;/p&gt;
-
-&lt;p&gt;步骤：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;下载 &lt;a href=&quot;http://pan.baidu.com/s/1qWHISLQ&quot;&gt;微软雅黑forMac.zip&lt;/a&gt;；&lt;/li&gt;
-  &lt;li&gt;打开Finder，按shift+command+G组合键；&lt;/li&gt;
-  &lt;li&gt;在对话框中输入：/Library/Fonts ，把之前的微软雅黑字体删除（名称如：Microsoft Yahei.ttf、msyh.ttf 和 msyhbd.ttf），再把下载好的字体解压后复制到Fonts文件夹，重启电脑后就大功告成了。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;安装任何来源软件&quot;&gt;安装任何来源软件&lt;/h2&gt;
-
-&lt;p&gt;安装绿色软件时，系统默认会阻止，有时需要允许安装任何来源软件。&lt;/p&gt;
-
-&lt;p&gt;步骤：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;打开系统设置中的 &lt;em&gt;安全性与隐私&lt;/em&gt;，查看 &lt;em&gt;允许从以下位置下载的应用&lt;/em&gt; 设置，尝试将其设置为 &lt;em&gt;App Store 和被认可的开发者&lt;/em&gt;，如还是不能安装，进入下一步；&lt;/li&gt;
-  &lt;li&gt;在终端中输入：&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo spctl --master-disable&lt;/code&gt;；&lt;/li&gt;
-  &lt;li&gt;安装完毕后，回到 &lt;em&gt;安全性与隐私&lt;/em&gt;，将 &lt;em&gt;任何来源&lt;/em&gt; 改为其他的选项，等需要的时候再次开启。&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Tue, 11 Jun 2019 11:00:00 +0800</pubDate>
-        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/06/11/macbook.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/06/11/macbook.html</guid>
-        
-        
-        <category>技术</category>
-        
-      </item>
     
       <item>
         <title>【技术】MacBook 的一些使用技巧</title>

@@ -5,62 +5,9 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 19 Jun 2019 18:38:12 +0800</pubDate>
-    <lastBuildDate>Wed, 19 Jun 2019 18:38:12 +0800</lastBuildDate>
+    <pubDate>Thu, 20 Jun 2019 10:41:07 +0800</pubDate>
+    <lastBuildDate>Thu, 20 Jun 2019 10:41:07 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
-    
-      <item>
-        <title>【技术】MacBook 的一些使用技巧</title>
-        <description>&lt;h2 id=&quot;日历设置为-24-小时制&quot;&gt;日历设置为 24 小时制&lt;/h2&gt;
-
-&lt;p&gt;习惯使用 24 小时制的时间，但 Mac 的日历默认使用 12 小时制，如下午 10 点，既不习惯，也不方便。&lt;/p&gt;
-
-&lt;p&gt;方法：&lt;/p&gt;
-
-&lt;p&gt;日历时间显示是跟随系统时间的，因此只需要在系统设置中的 &lt;em&gt;语言与区域&lt;/em&gt; 设置勾选 24 小时制即可调整。&lt;/p&gt;
-
-&lt;h2 id=&quot;显示与隐藏所有文件&quot;&gt;显示与隐藏所有文件&lt;/h2&gt;
-
-&lt;p&gt;显示：在终端中输入&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;defaults write com.apple.finder AppleShowAllFiles -bool true&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;隐藏：在终端中输入&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;defaults write com.apple.finder AppleShowAllFiles -bool false&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;微软雅黑字体标准体与粗体无法同时使用&quot;&gt;微软雅黑字体标准体与粗体无法同时使用&lt;/h2&gt;
-
-&lt;p&gt;微软雅黑字体有标准体和粗体两种字体，但在 Mac 系统中无法同时使用。要么只能用标准体，粗体报错；要么就是能用粗体，标准体无法使用。很偶然找到了以下MAC技巧，问题终于得以解决。&lt;/p&gt;
-
-&lt;p&gt;步骤：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;下载 &lt;a href=&quot;http://pan.baidu.com/s/1qWHISLQ&quot;&gt;微软雅黑forMac.zip&lt;/a&gt;；&lt;/li&gt;
-  &lt;li&gt;打开Finder，按shift+command+G组合键；&lt;/li&gt;
-  &lt;li&gt;在对话框中输入：/Library/Fonts ，把之前的微软雅黑字体删除（名称如：Microsoft Yahei.ttf、msyh.ttf 和 msyhbd.ttf），再把下载好的字体解压后复制到Fonts文件夹，重启电脑后就大功告成了。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;安装任何来源软件&quot;&gt;安装任何来源软件&lt;/h2&gt;
-
-&lt;p&gt;安装绿色软件时，系统默认会阻止，有时需要允许安装任何来源软件。&lt;/p&gt;
-
-&lt;p&gt;步骤：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;打开系统设置中的 &lt;em&gt;安全性与隐私&lt;/em&gt;，查看 &lt;em&gt;允许从以下位置下载的应用&lt;/em&gt; 设置，尝试将其设置为 &lt;em&gt;App Store 和被认可的开发者&lt;/em&gt;，如还是不能安装，进入下一步；&lt;/li&gt;
-  &lt;li&gt;在终端中输入：&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo spctl --master-disable&lt;/code&gt;；&lt;/li&gt;
-  &lt;li&gt;安装完毕后，回到 &lt;em&gt;安全性与隐私&lt;/em&gt;，将 &lt;em&gt;任何来源&lt;/em&gt; 改为其他的选项，等需要的时候再次开启。&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Tue, 11 Jun 2019 11:00:00 +0800</pubDate>
-        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/06/11/macbook.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/06/11/macbook.html</guid>
-        
-        
-        <category>技术</category>
-        
-      </item>
     
       <item>
         <title>【技术】MacBook 的一些使用技巧</title>
@@ -1419,6 +1366,85 @@
         <pubDate>Mon, 04 Mar 2019 23:49:00 +0800</pubDate>
         <link>http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/04/effect.html</link>
         <guid isPermaLink="true">http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/04/effect.html</guid>
+        
+        
+        <category>杨不坏</category>
+        
+      </item>
+    
+      <item>
+        <title>【杨不坏系列】案例：Luckin Coffee 体系化营销复盘</title>
+        <description>&lt;p&gt;杨不坏系列学习笔记 -3&lt;/p&gt;
+
+&lt;h2 id=&quot;体系化营销思维&quot;&gt;体系化营销思维&lt;/h2&gt;
+
+&lt;p&gt;Luckin Coffee 的营销核心：一个单点创意，一次刷屏，一个大创意已经不能解决品牌问题了。&lt;strong&gt;今天的营销，需要更加体系化的思维，把单点创意放进体系中协同营销，集团军作战。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;品牌基本面不讲故事营造感觉&quot;&gt;品牌基本面：不讲故事，营造感觉&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;视觉VI：以蓝色为基调的主视觉，鹿头形象的logo，luckin coffee 的英文名与瑞幸咖啡的中文名，这三个元素合在一起，给了你一种感觉：大面积的蓝色视觉，给人以沉稳成熟的感觉；鹿头的形象年轻中带着高级的感觉，不互联网也不陈旧，是一种活力；luckin coffee 瑞幸咖啡这个名字，非常不互联网，不像个新品牌，它像个老品牌，老朋友，某个国际品牌来中国开拓市场了。&lt;/li&gt;
+  &lt;li&gt;代言人：选择了张震与汤唯两位。一是传达自身品牌调性塑造品牌形象，二是以明星作为连接点，消除大众对新品牌的陌生感。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;总结一下，它的品牌形象给人以老练成熟的感觉，没有告诉或者教导消费者“它是谁”，而是展示它的形象，让消费者自行感知它是谁。而蓝色的主视觉则是这个品牌的超级符号，现在已经在广告上公然出现“小蓝杯”字样了。&lt;/p&gt;
+
+&lt;h3 id=&quot;媒介策略精准投放精细化运营&quot;&gt;媒介策略：精准投放精细化运营&lt;/h3&gt;
+
+&lt;h4 id=&quot;区域化精准投放&quot;&gt;区域化精准投放&lt;/h4&gt;
+
+&lt;p&gt;投放策略是跟着门店走的，每开一个新门店，围绕门店半径1.5公里之内的分众广告，和围绕门店半径1.5公里之内的朋友圈LBS定投。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;针对同一人群，在同一个舆论场内重复覆盖，高效转化。&lt;/strong&gt;先锁定一个人群，对于luckin来说就是一二线办公室白领，然后考虑到用户转化的因素只针对店面能覆盖的人群，在这群人的生活场景中线上加线下重复覆盖。然后以首杯免费，买二送一的极大力度促销，降低消费者的准入门槛，进一步提高广告的转化效果。&lt;/p&gt;
+
+&lt;h3 id=&quot;传播策略场景化与裂变分享&quot;&gt;传播策略：场景化与裂变分享&lt;/h3&gt;
+
+&lt;h4 id=&quot;1-场景化植入&quot;&gt;1. 场景化植入&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;场景策略&lt;/strong&gt;：把咖啡放进某个具体场景中，向消费者传达，在这个场景中来一杯luckin coffee 正合适，就够了。&lt;/p&gt;
+
+&lt;p&gt;KOL+场景：KOL晒luckin coffee ，有广告创意人在开会时晒，有演员艺人在片场晒，也有当红爱豆手拿luckin的漂亮街拍。一改KOL的主流合作方式，而是直接晒，不用讲道理，它自有道理。&lt;/p&gt;
+
+&lt;p&gt;品牌+场景：仅仅半年时间，luckin就跨界了腾讯、广告门、虎嗅、小米、北马、北京车展等众多品牌，通过与不同的品牌不断跨界，来提升这个新品牌的调性。&lt;/p&gt;
+
+&lt;h4 id=&quot;2-裂变式分享万物生长&quot;&gt;2. 裂变式分享：万物生长&lt;/h4&gt;
+
+&lt;p&gt;裂变分享除了好内容，基础性福利不可少。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新客户，全场首件商品免费&lt;/li&gt;
+  &lt;li&gt;邀请好友成功，自己再得一杯&lt;/li&gt;
+  &lt;li&gt;咖啡钱包，买2赠1，买5赠5&lt;/li&gt;
+  &lt;li&gt;全场轻食5折风暴&lt;/li&gt;
+  &lt;li&gt;下单成功，送20张折扣券试手气&lt;/li&gt;
+  &lt;li&gt;官方微信，每周送一张5折券&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;体系化高效协同&quot;&gt;体系化高效协同&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;品牌广告：确定基础调性，营销氛围感觉&lt;/li&gt;
+  &lt;li&gt;分众投放：线下告知，部分转化&lt;/li&gt;
+  &lt;li&gt;朋友圈定投：线上告知，部分转化&lt;/li&gt;
+  &lt;li&gt;KOL+品牌跨界：降低分享压力&lt;/li&gt;
+  &lt;li&gt;裂变分享：快速裂变，高效转化&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;总结&quot;&gt;总结&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;内容场景化：数十年来我们的广告都是高度提炼一句话，来教导我们的消费者，而新时代的消费者，已经不愿意再被教导了，品牌需要制造场景去影响新一代的消费者。&lt;/li&gt;
+  &lt;li&gt;网络化传播：社交媒体不是媒体，自媒体也不是媒体，是社交网络，而KOL则是社交网络中比较关键的节点。&lt;/li&gt;
+  &lt;li&gt;操盘手团队：体系化的营销战役，必须是自上而下的体制，不管是CMO还是市场总监还是项目PM，必须有一位被充分授权的操盘手，能够掌控整个事件的发展和走势。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;./ybh.html&quot;&gt;👉杨不坏系列合辑&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/6krLPQnuwfyQoGYeBLrdXQ&quot;&gt;杨不坏《体系化颠覆大创意，luckin coffee 营销复盘》&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 03 Mar 2019 23:49:00 +0800</pubDate>
+        <link>http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/03/luckin.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/03/luckin.html</guid>
         
         
         <category>杨不坏</category>
