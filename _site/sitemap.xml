@@ -5,8 +5,8 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 20 Jun 2019 10:41:07 +0800</pubDate>
-    <lastBuildDate>Thu, 20 Jun 2019 10:41:07 +0800</lastBuildDate>
+    <pubDate>Fri, 28 Jun 2019 10:47:18 +0800</pubDate>
+    <lastBuildDate>Fri, 28 Jun 2019 10:47:18 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -2854,6 +2854,48 @@
         
         
         <category>成长</category>
+        
+      </item>
+    
+      <item>
+        <title>【技术】50行代码刷金币</title>
+        <description>&lt;h2 id=&quot;原理&quot;&gt;原理&lt;/h2&gt;
+
+&lt;p&gt;农药冒险模式挑战可以获得少量金币，利用自动脚本可以实现自动刷金币。&lt;strong&gt;推荐关卡：稷下困难。&lt;/strong&gt;此关卡55秒左右可以通关，每次通关可以获得 55 金币。&lt;/p&gt;
+
+&lt;h2 id=&quot;准备&quot;&gt;准备&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;手机打开USB调试模式，允许电脑调试。&lt;/li&gt;
+  &lt;li&gt;电脑上安装 python。&lt;/li&gt;
+  &lt;li&gt;下载脚本 &lt;a href=&quot;./../../../../static/img/public/kog.py.zip&quot;&gt;kog.py&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;根据手机性能和分辨率，调整 kog.py 中的参数。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;步骤&quot;&gt;步骤&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;用 USB 连接手机，如果弹出警告，允许电脑调试手机。&lt;/li&gt;
+  &lt;li&gt;使用命令 &lt;code class=&quot;highlighter-rouge&quot;&gt;adb devices&lt;/code&gt; 检验手机状态就绪。&lt;/li&gt;
+  &lt;li&gt;将游戏打开，进入冒险模式，稷下，阵容调整界面。&lt;/li&gt;
+  &lt;li&gt;运行命令 &lt;code class=&quot;highlighter-rouge&quot;&gt;python kog.py&lt;/code&gt; 即可。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;adb无线连接android&quot;&gt;ADB无线连接Android&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;确保手机开启了usb调试&lt;/li&gt;
+  &lt;li&gt;用usb线把手机和电脑连接起来&lt;/li&gt;
+  &lt;li&gt;执行命令：&lt;code class=&quot;highlighter-rouge&quot;&gt;adb tcpip 5555&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;找到手机的IP地址，执行：&lt;code class=&quot;highlighter-rouge&quot;&gt;adb connect 192.168.1.100:5555&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;连接成功，查看连接设备：&lt;code class=&quot;highlighter-rouge&quot;&gt;adb devices&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Wed, 26 Dec 2018 12:49:00 +0800</pubDate>
+        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2018/12/26/kog.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2018/12/26/kog.html</guid>
+        
+        
+        <category>技术</category>
         
       </item>
     

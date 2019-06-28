@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/static/img/favicon.ico" />
-    <title>技术 - 叨叨</title>
+    <title>【技术】50行代码刷金币 - 叨叨</title>
     <meta name="author" content="阿Ben同学" />
-    <meta name="description" content="技术" />
-    <meta name="keywords" content="技术, 叨叨, 技术" />
+    <meta name="description" content="【技术】50行代码刷金币" />
+    <meta name="keywords" content="【技术】50行代码刷金币, 叨叨, 技术" />
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
     <meta content="" property="fb:app_id">
     <meta content="叨叨" property="og:site_name">
@@ -16,7 +16,7 @@
     
 
     
-      <meta content="技术" property="og:title">
+      <meta content="【技术】50行代码刷金币" property="og:title">
       <meta content="article" property="og:type">
     
 
@@ -25,9 +25,12 @@
     
 
     
-      <meta content="http://localhost:4000/category/技术" property="og:url">
+      <meta content="http://localhost:4000/%E6%8A%80%E6%9C%AF/2018/12/26/kog.html" property="og:url">
     
 
+    
+      <meta content="2018-12-26T12:49:00+08:00" property="article:published_time">
+      <meta content="http://localhost:4000/about/" property="article:author">
     
 
     
@@ -41,17 +44,19 @@
     
 
     
+      
+    
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@">
     <meta name="twitter:creator" content="@">
 
     
-      <meta name="twitter:title" content="技术">
+      <meta name="twitter:title" content="【技术】50行代码刷金币">
     
 
     
-      <meta name="twitter:url" content="http://localhost:4000/category/技术">
+      <meta name="twitter:url" content="http://localhost:4000/%E6%8A%80%E6%9C%AF/2018/12/26/kog.html">
     
 
     
@@ -114,131 +119,79 @@
       </div>
       <div class="col-sm-8 col-offset-1 main-layout">
         <header class="post-header">
-  <h1 class="post-title">Articles by category: 技术</h1>
+  <h1 class="post-title">【技术】50行代码刷金币</h1>
 </header>
 
-<div class="post-content">
-  <hr />
-  
-    
-    
-      
-        <a href="/category/广告" class="btn btn-sm btn-default">广告</a>
-      
-    
-  
-    
-    
-      
-        <button class="btn btn-sm btn-default active">技术</button>
-      
-    
-  
-    
-    
-      
-        <a href="/category/成长" class="btn btn-sm btn-default">成长</a>
-      
-    
-  
-    
-    
-      
-        <a href="/category/读书笔记" class="btn btn-sm btn-default">读书笔记</a>
-      
-    
-  
-    
-    
-      
-        <a href="/category/杨不坏" class="btn btn-sm btn-default">杨不坏</a>
-      
-    
-  
-    
-    
-      
-        <a href="/category/淘宝" class="btn btn-sm btn-default">淘宝</a>
-      
-    
-  
-    
-    
-      
-        <a href="/category/得到" class="btn btn-sm btn-default">得到</a>
-      
-    
-  
-    
-    
-      
-        <a href="/category/三节课" class="btn btn-sm btn-default">三节课</a>
-      
-    
-  
+<span class="time">2018-12-26</span>
 
-  <hr />
+  <span class="categories">
+    &raquo; <a href="/category/技术">技术</a>
+  </span>
+
+
+<div class="content">
+  <div class="post"><h2 id="原理">原理</h2>
+
+<p>农药冒险模式挑战可以获得少量金币，利用自动脚本可以实现自动刷金币。<strong>推荐关卡：稷下困难。</strong>此关卡55秒左右可以通关，每次通关可以获得 55 金币。</p>
+
+<h2 id="准备">准备</h2>
+
+<ul>
+  <li>手机打开USB调试模式，允许电脑调试。</li>
+  <li>电脑上安装 python。</li>
+  <li>下载脚本 <a href="./../../../../static/img/public/kog.py.zip">kog.py</a></li>
+  <li>根据手机性能和分辨率，调整 kog.py 中的参数。</li>
+</ul>
+
+<h2 id="步骤">步骤</h2>
+<ol>
+  <li>用 USB 连接手机，如果弹出警告，允许电脑调试手机。</li>
+  <li>使用命令 <code class="highlighter-rouge">adb devices</code> 检验手机状态就绪。</li>
+  <li>将游戏打开，进入冒险模式，稷下，阵容调整界面。</li>
+  <li>运行命令 <code class="highlighter-rouge">python kog.py</code> 即可。</li>
+</ol>
+
+<h2 id="adb无线连接android">ADB无线连接Android</h2>
+
+<ol>
+  <li>确保手机开启了usb调试</li>
+  <li>用usb线把手机和电脑连接起来</li>
+  <li>执行命令：<code class="highlighter-rouge">adb tcpip 5555</code></li>
+  <li>找到手机的IP地址，执行：<code class="highlighter-rouge">adb connect 192.168.1.100:5555</code></li>
+  <li>连接成功，查看连接设备：<code class="highlighter-rouge">adb devices</code></li>
+</ol>
+</div>
+</div>
+
+<hr>
+
+<div class="PageNavigation">
   
-    
-      
-      
-          <h4>2019</h4>
-          <div class="list-group">
-      
-
-      
-        <ul class="posts">
-          <li><a href="/%E6%8A%80%E6%9C%AF/2019/06/11/macbook.html">【技术】MacBook 的一些使用技巧</a> &raquo; <i><span>2019-06-11</span></i></li>
-        </ul>
-      
-    
-      
-      
-
-      
-        
-        
-        
-      
-        <ul class="posts">
-          <li><a href="/%E6%8A%80%E6%9C%AF/2019/05/30/video.html">【技术】在 Mac 上压制带字幕的视频</a> &raquo; <i><span>2019-05-30</span></i></li>
-        </ul>
-      
-    
-      
-      
-
-      
-        
-        
-        
-      
-        <ul class="posts">
-          <li><a href="/%E6%8A%80%E6%9C%AF/2019/01/23/mi6.html">【技术】小米 6 玩机心得</a> &raquo; <i><span>2019-01-23</span></i></li>
-        </ul>
-      
-    
-      
-      
-
-      
-        
-        
-        
-          </div>
-          <h4>2018</h4>
-          <div class="list-group">
-        
-      
-        <ul class="posts">
-          <li><a href="/%E6%8A%80%E6%9C%AF/2018/12/26/kog.html">【技术】50行代码刷金币</a> &raquo; <i><span>2018-12-26</span></i></li>
-        </ul>
-      
-        </div>
-      
-    
+    <a class="prev" href="/%E5%B9%BF%E5%91%8A/2016/11/25/how_to_write_a_proposal.html">&laquo; 【广告】这不是一份广告提案模板</a>
+  
+  
+    <a class="next" href="/%E6%88%90%E9%95%BF/2019/01/09/2019_flag.html">【成长】2019 年个人 Flag &raquo;</a>
   
 </div>
+
+<!-- LiveRe City install code -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80MjE2NS8xODcxMg==">
+<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+</script>
+<noscript>Please activate JavaScript for write a comment in LiveRe</noscript>
+</div>
+<!-- completed City install code -->
 
         <footer>
           <div style="float: right">&copy; 阿Ben同学
