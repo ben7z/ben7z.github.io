@@ -5,9 +5,99 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 08 Jul 2019 08:21:18 +0800</pubDate>
-    <lastBuildDate>Mon, 08 Jul 2019 08:21:18 +0800</lastBuildDate>
+    <pubDate>Mon, 08 Jul 2019 23:49:25 +0800</pubDate>
+    <lastBuildDate>Mon, 08 Jul 2019 23:49:25 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>【技术】Google Sheet 的一些使用技巧</title>
+        <description>&lt;p&gt;Google Sheets / Microsoft Excel 就是一套系统，其背后的核心是数据逻辑。&lt;/p&gt;
+
+&lt;h2 id=&quot;基本法则&quot;&gt;基本法则&lt;/h2&gt;
+
+&lt;p&gt;完整的数据系统包含三张表：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;参数表：基础数据的分类及属性；&lt;/li&gt;
+  &lt;li&gt;源数据表：一定是一张一维数据表，俗称“天下第一表”；&lt;/li&gt;
+  &lt;li&gt;各种分类汇总表：是在源数据表基础上抽取关键数据构成的二维汇总表。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;其中，源数据表需要注意：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;一维数据；&lt;/li&gt;
+  &lt;li&gt;只有一个标题行；&lt;/li&gt;
+  &lt;li&gt;同一属性的数据，都应该记录在同一列；&lt;/li&gt;
+  &lt;li&gt;每一列只记录一个属性；&lt;/li&gt;
+  &lt;li&gt;不要使用合并单元格破坏数据结构；&lt;/li&gt;
+  &lt;li&gt;不要插入合并行，因为非常多余；&lt;/li&gt;
+  &lt;li&gt;无分隔行/列；&lt;/li&gt;
+  &lt;li&gt;数据区域中无空白单元格。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;数据透视表&quot;&gt;数据透视表&lt;/h2&gt;
+
+&lt;p&gt;数据透视表是制作二维汇总表最简单的方法，简单摸索一下就很容易掌握了，这里不做展开。其缺点是格式相对固定，如果要更灵活的展示数据，还需要掌握函数的用法。&lt;/p&gt;
+
+&lt;h2 id=&quot;常用的公式&quot;&gt;常用的公式&lt;/h2&gt;
+
+&lt;h3 id=&quot;源数据组织&quot;&gt;源数据组织&lt;/h3&gt;
+
+&lt;p&gt;当我们需要把多张源数据表组织起来，可以使用跨文件导入的 &lt;code class=&quot;highlighter-rouge&quot;&gt;importrange&lt;/code&gt; 函数。&lt;/p&gt;
+
+&lt;p&gt;如：我们将参数表和源数据表作为一个文件，汇总表作为另一个文件；那么汇总表中需要新建一个 Sheet 用 &lt;code class=&quot;highlighter-rouge&quot;&gt;importrange&lt;/code&gt; 将源数据导入再做分析。&lt;em&gt;注意汇总表的数据是跟随源数据表实时变化的。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;再如：我们希望多个人各自提交数据，同时不希望他们可以看到其他人提交的数据。那么可以给每个人特定的一张源数据表，再将所有数据表汇总成一张总的源数据表，操作如下：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;在一个 Sheet 中，给每个人设定特定的行数范围，在每个范围的首行利用  &lt;code class=&quot;highlighter-rouge&quot;&gt;importrange&lt;/code&gt; 将每个人的源数据导入到同一个 Sheet 中；&lt;/li&gt;
+  &lt;li&gt;新建一个 Sheet， 使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;sort&lt;/code&gt; 对上一步的源数据表进行排序，将空白行排到后面去。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;排序与过滤数组&quot;&gt;排序与过滤数组&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;filter&lt;/code&gt;：根据条件对范围内的进行数据过滤。&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sort&lt;/code&gt;：依据一列或多列对指定范围内的数据进行排序。&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sortn&lt;/code&gt;：在 sort 基础上只返回数据中的前 n 个。&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sort(filter)&lt;/code&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;sort&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;filter&lt;/code&gt; 嵌套使用，对过滤后的一组数据进行排序。&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;unique&lt;/code&gt;：返回范围中唯一的数据，剔除重复的行。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;有条件地统计数组&quot;&gt;有条件地统计数组&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sumif&lt;/code&gt;：根据一个条件筛选出数据进行求和。&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sumifs&lt;/code&gt;：根据一个以上的条件筛选出数据进行求和（可以取代 &lt;code class=&quot;highlighter-rouge&quot;&gt;sumif&lt;/code&gt;）。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;条件格式&quot;&gt;条件格式&lt;/h2&gt;
+
+&lt;h3 id=&quot;多个条件&quot;&gt;多个条件&lt;/h3&gt;
+
+&lt;p&gt;多个条件，用 &lt;code class=&quot;highlighter-rouge&quot;&gt;and&lt;/code&gt;，如：&lt;code class=&quot;highlighter-rouge&quot;&gt;=and($A2=&quot;foo&quot;, D$1&amp;gt;=$B2, D$1&amp;lt;=$C2)&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;变量行列&quot;&gt;变量行/列&lt;/h3&gt;
+
+&lt;p&gt;多行/列依次检查条件格式，可以利用相对位置。但要注意变量行/列相对于范围的开头。如果公式需要检查水平/垂直固定的值，加个美元符号即可。&lt;/p&gt;
+
+&lt;h3 id=&quot;检查一整列&quot;&gt;检查一整列&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;比如检查B列是否是“完成”，应该用：&lt;code class=&quot;highlighter-rouge&quot;&gt;=$B:$B=&quot;完成&quot; &lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;如果B列包含“完成”，则公式改成：&lt;code class=&quot;highlighter-rouge&quot;&gt;=search(&quot;完成&quot;,$B:$B) &lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 08 Jul 2019 11:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/07/08/sheets.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/07/08/sheets.html</guid>
+        
+        
+        <category>技术</category>
+        
+      </item>
     
       <item>
         <title>【读书笔记】零秒工作</title>
@@ -52,9 +142,9 @@
   &lt;li&gt;收到邮件后立即回信，对复杂的内容，应当直接沟通&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sun, 07 Jul 2019 11:00:00 +0800</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/07/07/speed.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/07/07/speed.html</guid>
+        <pubDate>Thu, 04 Jul 2019 11:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/07/04/speed.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/07/04/speed.html</guid>
         
         
         <category>读书笔记</category>
@@ -1377,47 +1467,6 @@
         <pubDate>Sat, 16 Mar 2019 23:49:00 +0800</pubDate>
         <link>http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/16/tob.html</link>
         <guid isPermaLink="true">http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/16/tob.html</guid>
-        
-        
-        <category>杨不坏</category>
-        
-      </item>
-    
-      <item>
-        <title>【杨不坏系列】重新理解品效合一</title>
-        <description>&lt;p&gt;杨不坏系列学习笔记 -4&lt;/p&gt;
-
-&lt;h2 id=&quot;时代洞察&quot;&gt;时代洞察&lt;/h2&gt;
-
-&lt;p&gt;在传统工业时代，所有的商业行为都是在线下的物理距离时，品牌与效果要分开。&lt;strong&gt;从品到效的转化路径太长了，在这个过程中，消费者已经丧失掉行动的欲望，人们总是在犹豫中丧失激情。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;品效合一是行动&quot;&gt;品效合一是：行动！&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;以前的转化路径&lt;/strong&gt;：“品”的渠道与形式是相对集中的，主要是电视台，加一些小众的报纸杂志。“效”是分散的，主要分散在线下的各种地方。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;现在的转化路径&lt;/strong&gt;“品”可能是分散的，但“效”是集中在手机里的，不管在任何地方看到，拿起手机就可以完成“效”的转化。&lt;/p&gt;
-
-&lt;p&gt;在这样一个环境中，消费者的转化路径是：&lt;strong&gt;看到——查找——行动&lt;/strong&gt;。从品到效的真实路径是人们的心理路径，内容是否打动我，是否有购买冲动，广告出现的时机对不对等等，综合起一个行动起来的理由。立刻转化。&lt;/p&gt;
-
-&lt;h2 id=&quot;明确的信息点&quot;&gt;明确的信息点&lt;/h2&gt;
-
-&lt;p&gt;现在的品牌传播应该品牌前置，品牌首先说清楚你是谁，你想说什么，把LOGO与核心信息讲清楚，筛选出目标人群，然后再对他们表达更详细的信息。（我是谁？）&lt;/p&gt;
-
-&lt;h2 id=&quot;具体的行动坐标&quot;&gt;具体的行动坐标&lt;/h2&gt;
-
-&lt;p&gt;向消费者提案，向年轻人提案，然后让年轻人自我决策如何行动。所以行动坐标不是画出一个路线图，而是给到一个场景展示，引导消费者自己主动做出，你想让TA做出的决策与行动。（你要做什么？）&lt;/p&gt;
-
-&lt;h2 id=&quot;创造行动时刻&quot;&gt;创造行动时刻&lt;/h2&gt;
-
-&lt;p&gt;创造行动时刻，最好是多个内容和多个媒介触点进行配合，共同协作下，创作出一个行动时刻，并且让行动冲动立刻得到释放，进行行动转化。（参考&lt;a href=&quot;./media.html&quot;&gt;《如何让媒介投放更加高效》&lt;/a&gt;）&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;./ybh.html&quot;&gt;👉杨不坏系列合辑&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/hEY09fJa_Q0pqPWAMEWsJw&quot;&gt;杨不坏《2019，品效合一元年》&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 04 Mar 2019 23:49:00 +0800</pubDate>
-        <link>http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/04/effect.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/04/effect.html</guid>
         
         
         <category>杨不坏</category>

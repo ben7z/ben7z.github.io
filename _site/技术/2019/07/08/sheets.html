@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/static/img/favicon.ico" />
+    <title>【技术】Google Sheet 的一些使用技巧 - 叨叨</title>
+    <meta name="author" content="阿Ben同学" />
+    <meta name="description" content="【技术】Google Sheet 的一些使用技巧" />
+    <meta name="keywords" content="【技术】Google Sheet 的一些使用技巧, 叨叨, 技术" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+    <meta content="" property="fb:app_id">
+    <meta content="叨叨" property="og:site_name">
+
+    
+
+    
+      <meta content="【技术】Google Sheet 的一些使用技巧" property="og:title">
+      <meta content="article" property="og:type">
+    
+
+    
+      <meta content="读书，搞机与其他" property="og:description">
+    
+
+    
+      <meta content="http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/07/08/sheets.html" property="og:url">
+    
+
+    
+      <meta content="2019-07-08T11:00:00+08:00" property="article:published_time">
+      <meta content="http://localhost:4000/about/" property="article:author">
+    
+
+    
+      <meta content="http://localhost:4000/static/img/avatar.png" property="og:image">
+    
+
+    
+      
+        <meta content="技术" property="article:section">
+      
+    
+
+    
+      
+    
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+
+    
+      <meta name="twitter:title" content="【技术】Google Sheet 的一些使用技巧">
+    
+
+    
+      <meta name="twitter:url" content="http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/07/08/sheets.html">
+    
+
+    
+      <meta name="twitter:description" content="读书，搞机与其他">
+    
+
+    
+
+    <!-- Font awesome icons -->
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/static/css/syntax.css">
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="/static/css/fonts.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/super-search.css">
+    <link rel="stylesheet" href="/static/css/thickbox.css">
+    <link rel="stylesheet" href="/static/css/projects.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-sm-3">
+        <div class="fixed-condition">
+          <a href="/"><img class="profile-avatar" src="/static/img/avatar.png" height="75px" width="75px" /></a>
+          <a href="/"><h1 class="author-name">阿Ben同学</h1></a>
+          
+            <div class="profile-about">
+              乏善可陈
+            </div>
+          
+          <div class="social">
+            <ul>
+              
+                <li><a href="www.linkedin.com/in/ben7z" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              
+                <li><a href="https://aben.ml" target="_blank"><i class="fa fa-github"></i></a></li>
+              
+            </ul>
+          </div>
+          <div class="search" id="js-search">
+            <input type="text" placeholder="(sitemap)~$ type to search" class="search__input form-control" id="js-search__input">
+            <ul class="search__results" id="js-search__results"></ul>
+          </div>
+          <hr />
+          <ul class="sidebar-nav">
+            <strong>导航</strong>
+            <li><a href="/">Home</a></li>
+            
+              <li><a class="about" href="/about/">About Me</a></li>
+            
+			<li><a href="https://ben7z.github.io/wiki" target="_blank">Wiki</a></li>
+          </ul>
+        </div>
+        <!-- end /.fixed-condition -->
+      </div>
+      <div class="col-sm-8 col-offset-1 main-layout">
+        <header class="post-header">
+  <h1 class="post-title">【技术】Google Sheet 的一些使用技巧</h1>
+</header>
+
+<span class="time">2019-07-08</span>
+
+  <span class="categories">
+    &raquo; <a href="/category/技术">技术</a>
+  </span>
+
+
+<div class="content">
+  <div class="post"><p>Google Sheets / Microsoft Excel 就是一套系统，其背后的核心是数据逻辑。</p>
+
+<h2 id="基本法则">基本法则</h2>
+
+<p>完整的数据系统包含三张表：</p>
+
+<ol>
+  <li>参数表：基础数据的分类及属性；</li>
+  <li>源数据表：一定是一张一维数据表，俗称“天下第一表”；</li>
+  <li>各种分类汇总表：是在源数据表基础上抽取关键数据构成的二维汇总表。</li>
+</ol>
+
+<p>其中，源数据表需要注意：</p>
+
+<ul>
+  <li>一维数据；</li>
+  <li>只有一个标题行；</li>
+  <li>同一属性的数据，都应该记录在同一列；</li>
+  <li>每一列只记录一个属性；</li>
+  <li>不要使用合并单元格破坏数据结构；</li>
+  <li>不要插入合并行，因为非常多余；</li>
+  <li>无分隔行/列；</li>
+  <li>数据区域中无空白单元格。</li>
+</ul>
+
+<h2 id="数据透视表">数据透视表</h2>
+
+<p>数据透视表是制作二维汇总表最简单的方法，简单摸索一下就很容易掌握了，这里不做展开。其缺点是格式相对固定，如果要更灵活的展示数据，还需要掌握函数的用法。</p>
+
+<h2 id="常用的公式">常用的公式</h2>
+
+<h3 id="源数据组织">源数据组织</h3>
+
+<p>当我们需要把多张源数据表组织起来，可以使用跨文件导入的 <code class="highlighter-rouge">importrange</code> 函数。</p>
+
+<p>如：我们将参数表和源数据表作为一个文件，汇总表作为另一个文件；那么汇总表中需要新建一个 Sheet 用 <code class="highlighter-rouge">importrange</code> 将源数据导入再做分析。<em>注意汇总表的数据是跟随源数据表实时变化的。</em></p>
+
+<p>再如：我们希望多个人各自提交数据，同时不希望他们可以看到其他人提交的数据。那么可以给每个人特定的一张源数据表，再将所有数据表汇总成一张总的源数据表，操作如下：</p>
+
+<ol>
+  <li>在一个 Sheet 中，给每个人设定特定的行数范围，在每个范围的首行利用  <code class="highlighter-rouge">importrange</code> 将每个人的源数据导入到同一个 Sheet 中；</li>
+  <li>新建一个 Sheet， 使用 <code class="highlighter-rouge">sort</code> 对上一步的源数据表进行排序，将空白行排到后面去。</li>
+</ol>
+
+<h3 id="排序与过滤数组">排序与过滤数组</h3>
+
+<ul>
+  <li><code class="highlighter-rouge">filter</code>：根据条件对范围内的进行数据过滤。</li>
+  <li><code class="highlighter-rouge">sort</code>：依据一列或多列对指定范围内的数据进行排序。</li>
+  <li><code class="highlighter-rouge">sortn</code>：在 sort 基础上只返回数据中的前 n 个。</li>
+  <li><code class="highlighter-rouge">sort(filter)</code>：<code class="highlighter-rouge">sort</code> 和 <code class="highlighter-rouge">filter</code> 嵌套使用，对过滤后的一组数据进行排序。</li>
+  <li><code class="highlighter-rouge">unique</code>：返回范围中唯一的数据，剔除重复的行。</li>
+</ul>
+
+<h3 id="有条件地统计数组">有条件地统计数组</h3>
+
+<ul>
+  <li><code class="highlighter-rouge">sumif</code>：根据一个条件筛选出数据进行求和。</li>
+  <li><code class="highlighter-rouge">sumifs</code>：根据一个以上的条件筛选出数据进行求和（可以取代 <code class="highlighter-rouge">sumif</code>）。</li>
+</ul>
+
+<h2 id="条件格式">条件格式</h2>
+
+<h3 id="多个条件">多个条件</h3>
+
+<p>多个条件，用 <code class="highlighter-rouge">and</code>，如：<code class="highlighter-rouge">=and($A2="foo", D$1&gt;=$B2, D$1&lt;=$C2)</code></p>
+
+<h3 id="变量行列">变量行/列</h3>
+
+<p>多行/列依次检查条件格式，可以利用相对位置。但要注意变量行/列相对于范围的开头。如果公式需要检查水平/垂直固定的值，加个美元符号即可。</p>
+
+<h3 id="检查一整列">检查一整列</h3>
+
+<ul>
+  <li>比如检查B列是否是“完成”，应该用：<code class="highlighter-rouge">=$B:$B="完成" </code></li>
+  <li>如果B列包含“完成”，则公式改成：<code class="highlighter-rouge">=search("完成",$B:$B) </code></li>
+</ul>
+
+</div>
+</div>
+
+<hr>
+
+<div class="PageNavigation">
+  
+    <a class="prev" href="/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/07/04/speed.html">&laquo; 【读书笔记】零秒工作</a>
+  
+  
+</div>
+
+<!-- LiveRe City install code -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80MjE2NS8xODcxMg==">
+<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+</script>
+<noscript>Please activate JavaScript for write a comment in LiveRe</noscript>
+</div>
+<!-- completed City install code -->
+
+        <footer>
+          <div style="float: right">&copy; 阿Ben同学
+          
+            - <a href="https://aben.ml">https://aben.ml</a> - Powered by Jekyll.
+          </div>
+        </footer>
+      </div>
+      <!-- end /.col-sm-8 -->
+    </div>
+    <!-- end /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/js/jquery-1.11.0.min.js"></script>
+    <script src="/static/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/super-search.js"></script>
+    <script src="/static/js/thickbox-compressed.js"></script>
+    <script src="/static/js/projects.js"></script>
+  </body>
+</html>
+
