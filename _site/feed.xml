@@ -5,9 +5,61 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Jun 2019 10:47:18 +0800</pubDate>
-    <lastBuildDate>Fri, 28 Jun 2019 10:47:18 +0800</lastBuildDate>
+    <pubDate>Mon, 08 Jul 2019 08:21:18 +0800</pubDate>
+    <lastBuildDate>Mon, 08 Jul 2019 08:21:18 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>【读书笔记】零秒工作</title>
+        <description>&lt;h2 id=&quot;速度能解决一切问题&quot;&gt;速度能解决一切问题&lt;/h2&gt;
+
+&lt;p&gt;工作效率为什么低下？这是一直困扰职场人的一个问题。《零秒工作》的作者给出不一样的答案：速度能解决一切问题。&lt;/p&gt;
+
+&lt;p&gt;什么？难道质量就不重要了吗？&lt;/p&gt;
+
+&lt;p&gt;其实太多人就是因为过度重视质量或者以追求完美为借口而付出了工作效率低下的代价，而《零秒工作》告诉我的，恰恰是以最简单的切口且可能直击问题本质的解决方案。&lt;/p&gt;
+
+&lt;p&gt;在我读小学的时候，曾经给自己定下一条不成文的规定：放学后留下来，将所有的作业做完再回家。如何将作业又快又不出错地完成，这是当时的我不断思考的问题，而我也在持续的正向激励中形成良性循环。&lt;/p&gt;
+
+&lt;p&gt;《零秒工作》所指的科学方法也非常类似。当你总是超前地完成一项任务的时候，你会感觉很棒，你将会越有干劲地投入到下一项工作中。你需要头脑灵活地思考如何快速完成工作，而工作的高效也将带来你更多能够改进工作的富余时间。这种正向的良性循环，说是「速度能解决一切问题」当然一点也不过分。&lt;/p&gt;
+
+&lt;h2 id=&quot;提升思考速度&quot;&gt;提升思考速度&lt;/h2&gt;
+
+&lt;p&gt;既然速度是解决问题的关键，那么拥有一颗能掌控一切的大脑。《零秒工作》介绍了一种全世界最简单的头脑灵活度训练方法——A4纸做笔记，即在一页纸上写上讨论的标题，以100~200字的篇幅写下解决问题的方法。如果每天坚持写10页笔记，那么你的大脑一定会越来越灵活。这种类似于金字塔原理的思想实验型训练，通过不断练习可以达到量变突破质量的效果。&lt;/p&gt;
+
+&lt;h2 id=&quot;一些技巧&quot;&gt;一些技巧&lt;/h2&gt;
+
+&lt;p&gt;书中还提到了一些最大限度提升工作效率的方法，摘录如下：&lt;/p&gt;
+
+&lt;p&gt;学习：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;每天早晚，各花30分钟手机收集信息&lt;/li&gt;
+  &lt;li&gt;利用通勤时间学习英语或读书&lt;/li&gt;
+  &lt;li&gt;观看国外的会议视频&lt;/li&gt;
+  &lt;li&gt;参加学习会、研讨会和随后的交流会（每月1~2次）&lt;/li&gt;
+  &lt;li&gt;经常参加各类展会&lt;/li&gt;
+  &lt;li&gt;通过主动演讲收集信息（主题阅读）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;工作：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;跟上司确认整体印象，推进工作&lt;/li&gt;
+  &lt;li&gt;将能够反复使用的文件保存在专用文件夹里&lt;/li&gt;
+  &lt;li&gt;关掉网络，集中于编写工作&lt;/li&gt;
+  &lt;li&gt;迅速高效地推进会议中的讨论，白板可以让会议的效率提高数倍&lt;/li&gt;
+  &lt;li&gt;收到邮件后立即回信，对复杂的内容，应当直接沟通&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 07 Jul 2019 11:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/07/07/speed.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/07/07/speed.html</guid>
+        
+        
+        <category>读书笔记</category>
+        
+      </item>
     
       <item>
         <title>【技术】MacBook 的一些使用技巧</title>
@@ -1366,85 +1418,6 @@
         <pubDate>Mon, 04 Mar 2019 23:49:00 +0800</pubDate>
         <link>http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/04/effect.html</link>
         <guid isPermaLink="true">http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/04/effect.html</guid>
-        
-        
-        <category>杨不坏</category>
-        
-      </item>
-    
-      <item>
-        <title>【杨不坏系列】案例：Luckin Coffee 体系化营销复盘</title>
-        <description>&lt;p&gt;杨不坏系列学习笔记 -3&lt;/p&gt;
-
-&lt;h2 id=&quot;体系化营销思维&quot;&gt;体系化营销思维&lt;/h2&gt;
-
-&lt;p&gt;Luckin Coffee 的营销核心：一个单点创意，一次刷屏，一个大创意已经不能解决品牌问题了。&lt;strong&gt;今天的营销，需要更加体系化的思维，把单点创意放进体系中协同营销，集团军作战。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;品牌基本面不讲故事营造感觉&quot;&gt;品牌基本面：不讲故事，营造感觉&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;视觉VI：以蓝色为基调的主视觉，鹿头形象的logo，luckin coffee 的英文名与瑞幸咖啡的中文名，这三个元素合在一起，给了你一种感觉：大面积的蓝色视觉，给人以沉稳成熟的感觉；鹿头的形象年轻中带着高级的感觉，不互联网也不陈旧，是一种活力；luckin coffee 瑞幸咖啡这个名字，非常不互联网，不像个新品牌，它像个老品牌，老朋友，某个国际品牌来中国开拓市场了。&lt;/li&gt;
-  &lt;li&gt;代言人：选择了张震与汤唯两位。一是传达自身品牌调性塑造品牌形象，二是以明星作为连接点，消除大众对新品牌的陌生感。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;总结一下，它的品牌形象给人以老练成熟的感觉，没有告诉或者教导消费者“它是谁”，而是展示它的形象，让消费者自行感知它是谁。而蓝色的主视觉则是这个品牌的超级符号，现在已经在广告上公然出现“小蓝杯”字样了。&lt;/p&gt;
-
-&lt;h3 id=&quot;媒介策略精准投放精细化运营&quot;&gt;媒介策略：精准投放精细化运营&lt;/h3&gt;
-
-&lt;h4 id=&quot;区域化精准投放&quot;&gt;区域化精准投放&lt;/h4&gt;
-
-&lt;p&gt;投放策略是跟着门店走的，每开一个新门店，围绕门店半径1.5公里之内的分众广告，和围绕门店半径1.5公里之内的朋友圈LBS定投。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;针对同一人群，在同一个舆论场内重复覆盖，高效转化。&lt;/strong&gt;先锁定一个人群，对于luckin来说就是一二线办公室白领，然后考虑到用户转化的因素只针对店面能覆盖的人群，在这群人的生活场景中线上加线下重复覆盖。然后以首杯免费，买二送一的极大力度促销，降低消费者的准入门槛，进一步提高广告的转化效果。&lt;/p&gt;
-
-&lt;h3 id=&quot;传播策略场景化与裂变分享&quot;&gt;传播策略：场景化与裂变分享&lt;/h3&gt;
-
-&lt;h4 id=&quot;1-场景化植入&quot;&gt;1. 场景化植入&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;场景策略&lt;/strong&gt;：把咖啡放进某个具体场景中，向消费者传达，在这个场景中来一杯luckin coffee 正合适，就够了。&lt;/p&gt;
-
-&lt;p&gt;KOL+场景：KOL晒luckin coffee ，有广告创意人在开会时晒，有演员艺人在片场晒，也有当红爱豆手拿luckin的漂亮街拍。一改KOL的主流合作方式，而是直接晒，不用讲道理，它自有道理。&lt;/p&gt;
-
-&lt;p&gt;品牌+场景：仅仅半年时间，luckin就跨界了腾讯、广告门、虎嗅、小米、北马、北京车展等众多品牌，通过与不同的品牌不断跨界，来提升这个新品牌的调性。&lt;/p&gt;
-
-&lt;h4 id=&quot;2-裂变式分享万物生长&quot;&gt;2. 裂变式分享：万物生长&lt;/h4&gt;
-
-&lt;p&gt;裂变分享除了好内容，基础性福利不可少。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;新客户，全场首件商品免费&lt;/li&gt;
-  &lt;li&gt;邀请好友成功，自己再得一杯&lt;/li&gt;
-  &lt;li&gt;咖啡钱包，买2赠1，买5赠5&lt;/li&gt;
-  &lt;li&gt;全场轻食5折风暴&lt;/li&gt;
-  &lt;li&gt;下单成功，送20张折扣券试手气&lt;/li&gt;
-  &lt;li&gt;官方微信，每周送一张5折券&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;体系化高效协同&quot;&gt;体系化高效协同&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;品牌广告：确定基础调性，营销氛围感觉&lt;/li&gt;
-  &lt;li&gt;分众投放：线下告知，部分转化&lt;/li&gt;
-  &lt;li&gt;朋友圈定投：线上告知，部分转化&lt;/li&gt;
-  &lt;li&gt;KOL+品牌跨界：降低分享压力&lt;/li&gt;
-  &lt;li&gt;裂变分享：快速裂变，高效转化&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;总结&quot;&gt;总结&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;内容场景化：数十年来我们的广告都是高度提炼一句话，来教导我们的消费者，而新时代的消费者，已经不愿意再被教导了，品牌需要制造场景去影响新一代的消费者。&lt;/li&gt;
-  &lt;li&gt;网络化传播：社交媒体不是媒体，自媒体也不是媒体，是社交网络，而KOL则是社交网络中比较关键的节点。&lt;/li&gt;
-  &lt;li&gt;操盘手团队：体系化的营销战役，必须是自上而下的体制，不管是CMO还是市场总监还是项目PM，必须有一位被充分授权的操盘手，能够掌控整个事件的发展和走势。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&quot;./ybh.html&quot;&gt;👉杨不坏系列合辑&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/6krLPQnuwfyQoGYeBLrdXQ&quot;&gt;杨不坏《体系化颠覆大创意，luckin coffee 营销复盘》&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 03 Mar 2019 23:49:00 +0800</pubDate>
-        <link>http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/03/luckin.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/03/luckin.html</guid>
         
         
         <category>杨不坏</category>
