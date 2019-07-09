@@ -215,3 +215,5 @@ code {
   white-space: normal;
   word-break: break-all;
 }
+input[type=radio], input[type=checkbox] {
+    margin: 4px 4px 4px 0;
