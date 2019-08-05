@@ -5,9 +5,38 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 Jul 2019 14:09:36 +0800</pubDate>
-    <lastBuildDate>Tue, 16 Jul 2019 14:09:36 +0800</lastBuildDate>
+    <pubDate>Mon, 05 Aug 2019 18:35:06 +0800</pubDate>
+    <lastBuildDate>Mon, 05 Aug 2019 18:35:06 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>【技术】Small PDF Mac 无限试用方案</title>
+        <description>&lt;p&gt;Small PDF 是一款这么多款压缩软件里面压缩率最高的神器，没有之一。除了 &lt;a href=&quot;https://smallpdf.com/compress-pdf&quot;&gt;在线版本&lt;/a&gt; 之外，离线版省却了上传大文件的麻烦，不过目前有 7 天试用限制。个人多次试验后，找到了无限试用的方法。&lt;/p&gt;
+
+&lt;p&gt;官方试用版下载：&lt;/p&gt;
+
+&lt;p&gt;链接:https://pan.baidu.com/s/1-7cAlatgoMZ0jkqezj9QUQ 提取码:g74q 复制这段内容后打开百度网盘手机App，操作更方便哦&lt;/p&gt;
+
+&lt;p&gt;无限试用方案：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./../../../../static/img/public/smallpdf.jpg&quot; alt=&quot;SmallPDF&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;在 Finder 中找到 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/Library/Application Support/Smallpdf/preferences.json&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;打开 &lt;code class=&quot;highlighter-rouge&quot;&gt;preferences.json&lt;/code&gt;，找到以下代码：&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;system.trial_duration_limit&quot;: 7&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;将 7 改为一个超大的数字，保存即可。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;参考：&lt;a href=&quot;https://blog.cat73.org/20190528/2019052801.surge3-crack/&quot;&gt;Surge Mac 3 无限试用方案&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 05 Aug 2019 11:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/08/05/smallpdf.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/08/05/smallpdf.html</guid>
+        
+        
+        <category>技术</category>
+        
+      </item>
     
       <item>
         <title>【读书笔记】新零售：低价高效的数据赋能之路</title>
@@ -189,7 +218,13 @@
     
       <item>
         <title>【技术】MacBook 的一些使用技巧</title>
-        <description>&lt;h2 id=&quot;日历设置为-24-小时制&quot;&gt;日历设置为 24 小时制&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;校准时间&quot;&gt;校准时间&lt;/h2&gt;
+
+&lt;p&gt;尝试过切换时间同步服务器无效，最终寻找得到可行的答案：&lt;/p&gt;
+
+&lt;p&gt;在终端中输入 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo sntp -sS time.apple.com&lt;/code&gt; 强制更新系统时间&lt;/p&gt;
+
+&lt;h2 id=&quot;日历设置为-24-小时制&quot;&gt;日历设置为 24 小时制&lt;/h2&gt;
 
 &lt;p&gt;习惯使用 24 小时制的时间，但 Mac 的日历默认使用 12 小时制，如下午 10 点，既不习惯，也不方便。&lt;/p&gt;
 
@@ -230,6 +265,10 @@
   &lt;li&gt;在终端中输入：&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo spctl --master-disable&lt;/code&gt;；&lt;/li&gt;
   &lt;li&gt;安装完毕后，回到 &lt;em&gt;安全性与隐私&lt;/em&gt;，将 &lt;em&gt;任何来源&lt;/em&gt; 改为其他的选项，等需要的时候再次开启。&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;h2 id=&quot;修改显示字号&quot;&gt;修改显示字号&lt;/h2&gt;
+
+&lt;p&gt;在 &lt;em&gt;系统偏好设置&lt;/em&gt; 中的 &lt;em&gt;显示器&lt;/em&gt; 中，选择 &lt;em&gt;缩放&lt;/em&gt;，点选合适的显示字号即可。&lt;/p&gt;
 </description>
         <pubDate>Tue, 11 Jun 2019 11:00:00 +0800</pubDate>
         <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/06/11/macbook.html</link>

@@ -130,7 +130,13 @@
 
 
 <div class="content">
-  <div class="post"><h2 id="日历设置为-24-小时制">日历设置为 24 小时制</h2>
+  <div class="post"><h2 id="校准时间">校准时间</h2>
+
+<p>尝试过切换时间同步服务器无效，最终寻找得到可行的答案：</p>
+
+<p>在终端中输入 <code class="highlighter-rouge">sudo sntp -sS time.apple.com</code> 强制更新系统时间</p>
+
+<h2 id="日历设置为-24-小时制">日历设置为 24 小时制</h2>
 
 <p>习惯使用 24 小时制的时间，但 Mac 的日历默认使用 12 小时制，如下午 10 点，既不习惯，也不方便。</p>
 
@@ -171,6 +177,10 @@
   <li>在终端中输入：<code class="highlighter-rouge">sudo spctl --master-disable</code>；</li>
   <li>安装完毕后，回到 <em>安全性与隐私</em>，将 <em>任何来源</em> 改为其他的选项，等需要的时候再次开启。</li>
 </ol>
+
+<h2 id="修改显示字号">修改显示字号</h2>
+
+<p>在 <em>系统偏好设置</em> 中的 <em>显示器</em> 中，选择 <em>缩放</em>，点选合适的显示字号即可。</p>
 </div>
 </div>
 

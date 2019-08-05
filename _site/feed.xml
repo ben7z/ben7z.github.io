@@ -5,9 +5,38 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 Jul 2019 14:09:36 +0800</pubDate>
-    <lastBuildDate>Tue, 16 Jul 2019 14:09:36 +0800</lastBuildDate>
+    <pubDate>Mon, 05 Aug 2019 18:35:06 +0800</pubDate>
+    <lastBuildDate>Mon, 05 Aug 2019 18:35:06 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>【技术】Small PDF Mac 无限试用方案</title>
+        <description>&lt;p&gt;Small PDF 是一款这么多款压缩软件里面压缩率最高的神器，没有之一。除了 &lt;a href=&quot;https://smallpdf.com/compress-pdf&quot;&gt;在线版本&lt;/a&gt; 之外，离线版省却了上传大文件的麻烦，不过目前有 7 天试用限制。个人多次试验后，找到了无限试用的方法。&lt;/p&gt;
+
+&lt;p&gt;官方试用版下载：&lt;/p&gt;
+
+&lt;p&gt;链接:https://pan.baidu.com/s/1-7cAlatgoMZ0jkqezj9QUQ 提取码:g74q 复制这段内容后打开百度网盘手机App，操作更方便哦&lt;/p&gt;
+
+&lt;p&gt;无限试用方案：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./../../../../static/img/public/smallpdf.jpg&quot; alt=&quot;SmallPDF&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;在 Finder 中找到 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/Library/Application Support/Smallpdf/preferences.json&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;打开 &lt;code class=&quot;highlighter-rouge&quot;&gt;preferences.json&lt;/code&gt;，找到以下代码：&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;system.trial_duration_limit&quot;: 7&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;将 7 改为一个超大的数字，保存即可。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;参考：&lt;a href=&quot;https://blog.cat73.org/20190528/2019052801.surge3-crack/&quot;&gt;Surge Mac 3 无限试用方案&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 05 Aug 2019 11:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/08/05/smallpdf.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/08/05/smallpdf.html</guid>
+        
+        
+        <category>技术</category>
+        
+      </item>
     
       <item>
         <title>【读书笔记】新零售：低价高效的数据赋能之路</title>
@@ -189,7 +218,13 @@
     
       <item>
         <title>【技术】MacBook 的一些使用技巧</title>
-        <description>&lt;h2 id=&quot;日历设置为-24-小时制&quot;&gt;日历设置为 24 小时制&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;校准时间&quot;&gt;校准时间&lt;/h2&gt;
+
+&lt;p&gt;尝试过切换时间同步服务器无效，最终寻找得到可行的答案：&lt;/p&gt;
+
+&lt;p&gt;在终端中输入 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo sntp -sS time.apple.com&lt;/code&gt; 强制更新系统时间&lt;/p&gt;
+
+&lt;h2 id=&quot;日历设置为-24-小时制&quot;&gt;日历设置为 24 小时制&lt;/h2&gt;
 
 &lt;p&gt;习惯使用 24 小时制的时间，但 Mac 的日历默认使用 12 小时制，如下午 10 点，既不习惯，也不方便。&lt;/p&gt;
 
@@ -230,6 +265,10 @@
   &lt;li&gt;在终端中输入：&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo spctl --master-disable&lt;/code&gt;；&lt;/li&gt;
   &lt;li&gt;安装完毕后，回到 &lt;em&gt;安全性与隐私&lt;/em&gt;，将 &lt;em&gt;任何来源&lt;/em&gt; 改为其他的选项，等需要的时候再次开启。&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;h2 id=&quot;修改显示字号&quot;&gt;修改显示字号&lt;/h2&gt;
+
+&lt;p&gt;在 &lt;em&gt;系统偏好设置&lt;/em&gt; 中的 &lt;em&gt;显示器&lt;/em&gt; 中，选择 &lt;em&gt;缩放&lt;/em&gt;，点选合适的显示字号即可。&lt;/p&gt;
 </description>
         <pubDate>Tue, 11 Jun 2019 11:00:00 +0800</pubDate>
         <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/06/11/macbook.html</link>
@@ -873,59 +912,6 @@
         <pubDate>Sun, 17 Mar 2019 23:49:00 +0800</pubDate>
         <link>http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/17/strategy.html</link>
         <guid isPermaLink="true">http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/17/strategy.html</guid>
-        
-        
-        <category>杨不坏</category>
-        
-      </item>
-    
-      <item>
-        <title>【杨不坏系列】to B 品牌不做传播</title>
-        <description>&lt;p&gt;杨不坏系列学习笔记 -5&lt;/p&gt;
-
-&lt;h2 id=&quot;品牌与传播是两个词&quot;&gt;品牌与传播是两个词&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;品牌：&lt;/strong&gt;品牌塑造自己的调性，并提出自己的立场与价值观，向消费者进行提案，然后获得消费者的认同，达成品牌共识，此称之为品牌，所以品牌是双向的共识。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;传播：&lt;/strong&gt;传播就是曝光，是个中性词。传播是否产生价值或者产生正向还是反向的价值都是无从判断的，所以传播本身并没有价值。&lt;/p&gt;
-
-&lt;h2 id=&quot;主动传播与反向吸引&quot;&gt;主动传播与反向吸引&lt;/h2&gt;
-
-&lt;p&gt;奢侈品从来不推销自己，只是在塑造自己，把自己塑造成最顶级的，然后等着欣赏它的人前来购买，这是做奢侈品牌的基础策略。&lt;/p&gt;
-
-&lt;h2 id=&quot;产品广告化&quot;&gt;产品广告化&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;简单来说，从做广告到做事情，通过做事情来塑造品牌，积累品牌资产。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;比如阿里云，广告思维是解释阿里云是什么，能做什么，能带来什么；做事思维，做几个典型的案例，如塑造了城市大脑，能够极致表现出阿里云的能力。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;1-信任背书&quot;&gt;1. 信任背书&lt;/h3&gt;
-
-&lt;p&gt;用一些权威案例为自己的品牌背书，建立信任度。这是基础工作，这部分很重要，但不需要市场部做太多工作。&lt;/p&gt;
-
-&lt;h3 id=&quot;2-极致案例&quot;&gt;2. 极致案例&lt;/h3&gt;
-
-&lt;p&gt;这部分是市场部的重点工作，对于to B 品牌来说，市场部要做的不是大众传播，而是努力去建造一个“品牌展厅”。去做一些品牌导向的，前沿的，探索性的极致案例，把这些产品案例广告化，以此来塑造品牌。&lt;/p&gt;
-
-&lt;h2 id=&quot;品牌价值观&quot;&gt;品牌价值观&lt;/h2&gt;
-
-&lt;p&gt;价值观是品牌承诺，你要想客户承诺你的责任与担当，你是有可靠与可信任的。&lt;/p&gt;
-
-&lt;h2 id=&quot;结论&quot;&gt;结论&lt;/h2&gt;
-
-&lt;p&gt;如果是非常专业精准的to B 品牌，不做大众传播也是完全没问题的，比如空客的飞机，客户就是各个国家的几大航空公司，精准销售就可以了。&lt;/p&gt;
-
-&lt;p&gt;但比如阿里云这类规模化的to B 品牌，也是需要做传播的，传播 &lt;strong&gt;品牌价值观&lt;/strong&gt; 与 &lt;strong&gt;产品广告化的极致案例&lt;/strong&gt; 就可以了。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;./../../../../category/杨不坏&quot;&gt;👉杨不坏系列合辑&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/0tmXJmHc4uzmsGqWWl-jAg&quot;&gt;杨不坏《to B 品牌，可以不做传播》&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 16 Mar 2019 23:49:00 +0800</pubDate>
-        <link>http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/16/tob.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E6%9D%A8%E4%B8%8D%E5%9D%8F/2019/03/16/tob.html</guid>
         
         
         <category>杨不坏</category>
