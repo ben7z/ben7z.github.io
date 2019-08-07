@@ -5,8 +5,8 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Aug 2019 19:38:40 +0800</pubDate>
-    <lastBuildDate>Mon, 05 Aug 2019 19:38:40 +0800</lastBuildDate>
+    <pubDate>Wed, 07 Aug 2019 11:35:22 +0800</pubDate>
+    <lastBuildDate>Wed, 07 Aug 2019 11:35:22 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -24,7 +24,8 @@
 &lt;ol&gt;
   &lt;li&gt;在 Finder 中找到 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/Library/Application Support/Smallpdf/preferences.json&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;打开 &lt;code class=&quot;highlighter-rouge&quot;&gt;preferences.json&lt;/code&gt;，找到以下代码：&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;system.trial_duration_limit&quot;: 7&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;将 7 改为一个超大的数字，保存即可。&lt;/li&gt;
+  &lt;li&gt;将 7 改为一个超大的数字，保存即可；&lt;/li&gt;
+  &lt;li&gt;删掉除  &lt;code class=&quot;highlighter-rouge&quot;&gt;preferences.json&lt;/code&gt; 之外文件夹中的其他所有文件。&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;参考：&lt;a href=&quot;https://blog.cat73.org/20190528/2019052801.surge3-crack/&quot;&gt;Surge Mac 3 无限试用方案&lt;/a&gt;&lt;/p&gt;
@@ -44,6 +45,18 @@
 
 &lt;p&gt;&lt;img src=&quot;./../../../../static/img/public/retail.jpg&quot; alt=&quot;新零售&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;新零售就是更高效率的零售。过去的失败经历告诉我们，传统零售业沿用产品思维+用户思维的打法缺失灵了，这说明零售业面临的是结构性问题——零售业的效率太低下。&lt;/p&gt;
+
+&lt;p&gt;理解新零售，先理解零售。零售就是连接人与货之间的场。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;人&lt;/strong&gt;：人即流量，销售漏斗4件事：流量、转化、客单、复购；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;货&lt;/strong&gt;：供应链，即：D设计 - M制造 - S代理 - B商场 - b微商 - C消费者&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;场&lt;/strong&gt;：信息流（逛）+资金流（买）+物流（运）三者的万千组合。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;新技术的诞生，将创造新的场组合，例如：&lt;em&gt;希尔斯利用铁路创造了“邮购”，沃尔玛利用汽车创造了“大型超市”。&lt;/em&gt;&lt;/p&gt;
+
 &lt;p&gt;总结而言，新零售就是更高效率的零售，即：&lt;/p&gt;
 
 &lt;ul&gt;
@@ -54,11 +67,24 @@
 
 &lt;h2 id=&quot;场数据赋能&quot;&gt;场：数据赋能&lt;/h2&gt;
 
-&lt;h3 id=&quot;信息流&quot;&gt;信息流&lt;/h3&gt;
+&lt;p&gt;传统零售下的“场组合”：用商品差价，补贴信息流成本。&lt;/p&gt;
 
-&lt;h3 id=&quot;资金流&quot;&gt;资金流&lt;/h3&gt;
+&lt;p&gt;新零售如何解决：&lt;/p&gt;
 
-&lt;h3 id=&quot;物流&quot;&gt;物流&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;品牌体验店：线下体验，线上买单；&lt;/li&gt;
+  &lt;li&gt;数据赋能：选址、配货、信用。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;信息流&lt;/strong&gt;：大数据精准配货，使传统体验性+互联网高效性结合；线上线下同价，不必比价；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;资金流&lt;/strong&gt;：大数据信用系统，使传统可行性+互联网便捷性结合，促进交易；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;物流&lt;/strong&gt;：传统即得性+互联网跨度性，大数据配送（预测式购物）+物流更快。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;案例：天猫小店&lt;/p&gt;
+
+&lt;p&gt;天猫小店在一定程度上充当了“品牌体验店”相同的角色，是离消费者最近的流量收集器，引导消费者到线上长远经营；另一方面，大数据赋能，可以做到千店千面，精准匹配社区消费群体。&lt;/p&gt;
 
 &lt;h3 id=&quot;人坪效革命&quot;&gt;人：坪效革命&lt;/h3&gt;
 
