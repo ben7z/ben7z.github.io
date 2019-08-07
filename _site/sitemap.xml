@@ -5,8 +5,8 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Aug 2019 11:35:22 +0800</pubDate>
-    <lastBuildDate>Wed, 07 Aug 2019 11:35:22 +0800</lastBuildDate>
+    <pubDate>Wed, 07 Aug 2019 13:36:41 +0800</pubDate>
+    <lastBuildDate>Wed, 07 Aug 2019 13:36:41 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -72,9 +72,11 @@
 &lt;p&gt;新零售如何解决：&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;品牌体验店：线下体验，线上买单；&lt;/li&gt;
-  &lt;li&gt;数据赋能：选址、配货、信用。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;品牌体验店&lt;/strong&gt;：线下体验，线上买单；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;数据赋能&lt;/strong&gt;：选址、配货、信用。&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;新零售下的场组合：&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;信息流&lt;/strong&gt;：大数据精准配货，使传统体验性+互联网高效性结合；线上线下同价，不必比价；&lt;/li&gt;
@@ -82,14 +84,69 @@
   &lt;li&gt;&lt;strong&gt;物流&lt;/strong&gt;：传统即得性+互联网跨度性，大数据配送（预测式购物）+物流更快。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;案例：天猫小店&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;案例：天猫小店&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;天猫小店在一定程度上充当了“品牌体验店”相同的角色，是离消费者最近的流量收集器，引导消费者到线上长远经营；另一方面，大数据赋能，可以做到千店千面，精准匹配社区消费群体。&lt;/p&gt;
+  &lt;p&gt;天猫小店在一定程度上充当了“品牌体验店”相同的角色，是离消费者最近的流量收集器，引导消费者到线上长远经营；另一方面，大数据赋能，可以做到千店千面，精准匹配社区消费群体。&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h3 id=&quot;人坪效革命&quot;&gt;人：坪效革命&lt;/h3&gt;
 
+&lt;p&gt;重新考虑销售漏斗：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;流量&lt;/strong&gt;：一切与消费者的触点；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;转化&lt;/strong&gt;：找到社群很重要；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;客单&lt;/strong&gt;：大数据精准推荐；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;复购&lt;/strong&gt;：用会员制挖掘终身价值。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;案例：小米新零售&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;流量：选址对标新零售+低频变高频&lt;/li&gt;
+    &lt;li&gt;转化：爆品策略+大数据选品&lt;/li&gt;
+    &lt;li&gt;客单：提高连带率+增加体验感&lt;/li&gt;
+    &lt;li&gt;复购：强化品牌认知+打通全渠道&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
 &lt;h3 id=&quot;货短路经济&quot;&gt;货：短路经济&lt;/h3&gt;
 
+&lt;p&gt;思路一：缩短环节&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;案例1：Costco（M2B）&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;超低SKU+会员制：超低SKU意味着爆款、大包装、低成本，会员制保持了用户忠诚度，分别成就了低价格+高口碑，形成强大的议价能力。&lt;/li&gt;
+    &lt;li&gt;直接从制造商（M）采购，最有效率地陈列在卖场（B）里，去掉了代理环节（B），极大提升了链条效率。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;案例2：名创优品（M2b）&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;采用介于直营和加盟之间的开店模式——直管，即：别人投资，自己管理。从而迅速聚集起1000多家小b的议价能力。&lt;/li&gt;
+    &lt;li&gt;直接找到制造商（M）进行大规模采购，一次性付款，将常规出厂价降低一半。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;思路2：链条反向&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;案例3：必要商城（C2M）&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;按需生产，没有库销比，先有订单再生产，最大限度地解决库存问题。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;案例4：红领集团（C2M）&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;通过反向定制，取消中间环节，做到零库存。&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         <pubDate>Wed, 10 Jul 2019 11:00:00 +0800</pubDate>
         <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/07/10/retail.html</link>
