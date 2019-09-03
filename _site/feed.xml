@@ -5,9 +5,144 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 17 Aug 2019 11:10:06 +0800</pubDate>
-    <lastBuildDate>Sat, 17 Aug 2019 11:10:06 +0800</lastBuildDate>
+    <pubDate>Tue, 03 Sep 2019 17:45:21 +0800</pubDate>
+    <lastBuildDate>Tue, 03 Sep 2019 17:45:21 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>【读书笔记】流量池</title>
+        <description>&lt;p&gt;流量池是一本写给巨头之外的企业营销人员看的，对于这样的企业来说，流量来之不易，更需要精耕细作，让流量带来更多购买。以下是一些摘抄和笔记。&lt;/p&gt;
+
+&lt;h2 id=&quot;为什么需要流量池思维&quot;&gt;为什么需要流量池思维？&lt;/h2&gt;
+
+&lt;p&gt;任何品牌传播行为，都需要有效果思维。单纯的品牌传播时代已经一去不复返，对于企业、尤其是创业企业，必须依靠一切可以借助的手段蓄积流量。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;头部移动互联网巨头已经形成，进而形成对剩余流量的进一步控制，留给其他App机会可能只能在 &lt;strong&gt;垂直人群或应用场景&lt;/strong&gt;；&lt;/li&gt;
+  &lt;li&gt;线上流量的减少和价格疯涨，使很多企业转而再次寻找传统流量的突破。无论是线下门店、传统广告，还是最古老的地推，都成为挖掘流量的手段；&lt;/li&gt;
+  &lt;li&gt;企业和品牌对于实际效果的要求越来越高，甚至到了苛刻的程度；&lt;/li&gt;
+  &lt;li&gt;技术与营销结合速度加快，广告技术化和甲方去乙方化都成为趋势。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;——在多年的营销工作中，我深刻地感受到两点：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;企业营销不仅要品牌，更需要效果；&lt;/li&gt;
+  &lt;li&gt;在移动互联网上做营销，必须追求品效合一。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;用流量池实现 &lt;strong&gt;”急功近利“&lt;/strong&gt;：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;急功：要快速建立品牌，打响知名度，切入市场，获得流量；&lt;/li&gt;
+  &lt;li&gt;近利：获得流量的同时，快速转化成销量，带来实际的效果。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;流量池的三个思维层次&quot;&gt;流量池的三个思维层次&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;如何获得流量&lt;/li&gt;
+  &lt;li&gt;流量如何高效转化&lt;/li&gt;
+  &lt;li&gt;流量运营与再发掘&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;./../../../../static/img/public/flowpool.jpg&quot; alt=&quot;流量池&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在流量池思维的图谱中，列举了七种入水口：品牌、裂变、微信、事件、数字广告、直播、BD。&lt;/p&gt;
+
+&lt;h2 id=&quot;品牌流量之井&quot;&gt;品牌：流量之井&lt;/h2&gt;
+
+&lt;p&gt;在我看来，不能直接导向购买的营销行为都是 &lt;strong&gt;品牌营销&lt;/strong&gt;，即使其最终目的是导购。但是此类营销路线较长、周期较长，目标可能也会在这个过程中变得模糊。——&lt;em&gt;我知道我的广告费至少有一半浪费了，但我并不知道是哪一半。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;但今天一个市场总监的知识结构已远不止品牌部分了。用户运营知识、产品经理的技术视野、数字效果广告、社交媒体玩法，只有掌握这些新知板块，才能更好地武装一个市场总监，让传统意识升级。&lt;/p&gt;
+
+&lt;p&gt;如何理解品牌？一般来说，品牌解决的是认知（心智占有）、认同（文化信仰）、认购（信任）。在移动互联网时代，&lt;strong&gt;品牌就是流量&lt;/strong&gt;。通过关注和粉丝，可以获得源源不断的流量。如何做——1定位；2符号；3场景。&lt;/p&gt;
+
+&lt;h3 id=&quot;定位&quot;&gt;定位&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;1. 对立型定位&lt;/strong&gt;：一般在广告语言上使用 &lt;em&gt;更、比、没有、增加、不是……而是……&lt;/em&gt; 等字眼，体现对比优势。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;瓜子二手车直卖网，没有中间商赚差价&lt;/li&gt;
+  &lt;li&gt;我们不生产水，我们只是大自然的搬运工&lt;/li&gt;
+  &lt;li&gt;不是所有的牛奶都叫特仑苏&lt;/li&gt;
+  &lt;li&gt;百度更懂中文&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2. USP定位&lt;/strong&gt;：独特销售主张，集中强调产品具体的特殊功效和利益（物理型定位）。一般采用场景性口号，如“……就用……”。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;胃痛胃酸胃胀，就用斯达舒&lt;/li&gt;
+  &lt;li&gt;困了累了，喝红牛&lt;/li&gt;
+  &lt;li&gt;农夫山泉有点甜&lt;/li&gt;
+  &lt;li&gt;充电5分钟，通话两小时&lt;/li&gt;
+  &lt;li&gt;横扫饥饿，做回自己&lt;/li&gt;
+  &lt;li&gt;把1000首歌装进口袋&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;3. 升维定位&lt;/strong&gt;：最常见的表现形式是 &lt;em&gt;行业开创者、重新定义、革命&lt;/em&gt; 等比较大的字眼。&lt;/p&gt;
+
+&lt;h3 id=&quot;强化视觉符号&quot;&gt;强化视觉符号&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;1.视觉&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;品牌工作的本质就是打造符号、强化符号、保护符号。好的视觉符号能够给用户留下深刻印象，包含产品LOGO、产品包装、代表品牌的传播形状和人物代言。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.听觉&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;听觉主要形式有：口号（Slogan）和韵曲（Jingle）。在移动互联网时代，好的广告语一定要说人话。弱化广告腔，不要说大话、空话，更不要说大家听不懂的话。&lt;/p&gt;
+
+&lt;h3 id=&quot;品牌如何做出实效&quot;&gt;品牌如何做出实效？&lt;/h3&gt;
+
+&lt;p&gt;国际品牌的定位其实并没有国内创新品牌那些犀利和有进攻性，更偏于情感和价值观，是很难迅速见效的。国内品牌欠缺的不是定位问题，而是品牌落地执行。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.场景&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;案例：神州专车主打六个细分场景：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;接送机（金色星期天，免费接送机；新用户千元接送机券）&lt;/li&gt;
+  &lt;li&gt;会务用车（头等舱计划、G20峰会官方指定用车）&lt;/li&gt;
+  &lt;li&gt;夜晚加班（放心睡、加班限时券）&lt;/li&gt;
+  &lt;li&gt;孕妇（孕妈专车）&lt;/li&gt;
+  &lt;li&gt;异地出差&lt;/li&gt;
+  &lt;li&gt;带子出行&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2.品牌触点&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;品牌触点是品牌展示与传达的机会，都是可以精心策划的。如神州专车品牌触点分为线下司机和车辆，以及线上App；因此神州做了：1司机SOP标准、2车辆标准化、3App的UI设计标准。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3.产品为定位赋能&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;创业期产品，品牌定位服务必须要与产品设计同步。产品主义至少正在成为这个时代的成功法则。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;小黄车大眼萌&lt;/li&gt;
+  &lt;li&gt;神州虚拟电话、OBD、孕妈专车、无霾专车&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;4.传统广告升级&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;明确投放场景，素材简单直接（反例：知乎走心广告）&lt;/li&gt;
+  &lt;li&gt;传统广告也要提供互动形式&lt;/li&gt;
+  &lt;li&gt;多用产品活动带品牌，品牌广告也可带上促销信息&lt;/li&gt;
+  &lt;li&gt;广告投放同步事件营销，避免墙纸效应&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;传统广告4件套：强化客服电话、放置二维码、推荐关注微信、给出百度搜索关键词。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;品牌在创牌阶段，确实可以多打些纯形象广告，提出鲜明的消费主张（比如神州专车创牌时就是主打安全形象），让用户知道你、认可你，待品牌有了知名度以后，就可以多用产品活动带品牌，让品牌在产品和活动中变得更加丰满、落地、有血有肉。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Aug 2019 01:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/08/29/flow.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/08/29/flow.html</guid>
+        
+        
+        <category>读书笔记</category>
+        
+      </item>
     
       <item>
         <title>【读书笔记】零售的哲学</title>
@@ -850,228 +985,6 @@
         
         
         <category>淘宝</category>
-        
-      </item>
-    
-      <item>
-        <title>【读书笔记】《深度工作》读书笔记</title>
-        <description>&lt;h2 id=&quot;理论&quot;&gt;理论&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;深度工作（Deep Work）&lt;/strong&gt;：在无干扰的状态下专注进行职业活动，使个人的认知能力达到极限。这种努力能够创造新价值，提升技能，而且难以复制。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;浮浅工作（Shallow Work）&lt;/strong&gt;：对认知要求不高的事务性任务，往往在受到干扰的情况下开展。此类工作通常不会为世界创造太多新价值，且容易复制。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;实习生法则&lt;/strong&gt;：要让一个刚毕业还没有在该领域接受特别训练的大学生完成这项工作需要多久（几个月）？越是实习生能够轻松完成的工作，越是浮浅，也越容易被取代。&lt;/p&gt;
-
-&lt;h3 id=&quot;深度工作是有价值的&quot;&gt;深度工作是有价值的&lt;/h3&gt;
-
-&lt;p&gt;这三类人将在智能机器时代胜出：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;高级技术工人&lt;/strong&gt;擅长使用智能机器的高级技术工人，包括工程师，也包括统计专家。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;超级明星&lt;/strong&gt;各个行业中的超级明星，可以通过信息工具扩大影响力，消除工作的时空门槛。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;资本家&lt;/strong&gt;有资本可以投入新科技、促成大重组的人。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;知识工作者的两种核心能力：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;迅速掌握复杂工具的能力&lt;/li&gt;
-  &lt;li&gt;在工作质量和速度方面都达到精英层次的能力&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;高质量工作产出 = 时间 × 专注度&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;亚当·格兰特（Adam Grant）成为沃顿商学院最年轻的正教授，跟他深度工作时间长有关。在长时间无干扰的状态下，批量解决困难却重要的智力工作。&lt;/p&gt;
-
-&lt;p&gt;多任务切换带来注意力损耗，存在「注意力残留效应」。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;「注意力残留」的效应： 「当你从某项任务 A 转移到任务 B 时，你的注意力并没有即时转移，你的注意力残留仍然在思考原始任务。如果在转移工作之前，你对任务 A 缺乏控制且关注度较低，残留会尤其浓厚，但即使你在转移工作之前已经完成了任务 A，你的注意力还是会有一段分散的时间。」&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;深度工作是少见的&quot;&gt;深度工作是少见的&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;知识工作者陷入「以忙为能」的误区&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;忙碌代表生产能力（Busyness as Proxy for Productivity）：在工作中，对于生产能力和价值没有明确的指标时，很多知识工作者都会采用工业时代关于生产能力的指标，以可视的方式完成很多事情。知识工作者越来越多地表现为可视的忙碌，是因为他们没有更好的方法证明其自身价值。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;最小阻力原则（The Principle of Least Resistance）：在工作环境下，若各种行为对于底线的影响没有得到明确的反馈意见，我们倾向于采用当下最简单易行的行为。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;深度工作是有意义的&quot;&gt;深度工作是有意义的&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;深度工作带来更好的精神体验&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;深度工作会带来心流体验。你的世界是你所关注事物的产物，你可以由此思考一下当你在深度努力状态下投入大量时间之时，所构建的精神世界是何种类型。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;深度工作赋予工作意义和价值&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;深度工作是「匠心」（工匠精神）的表现。启蒙运动瓦解了神的地位，人文主义带来虚无主义。工匠们通过专精、创造，重新赋予事物价值和意义。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;中世纪矿工的信条：「我等采石之人当心怀大教堂之愿景」。 百年之后，我们的技艺或许如今日的土建工程师看待中世纪大教堂建造者使用的技法一样陈旧，但是我们的匠心却会得到尊重。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;准则&quot;&gt;准则&lt;/h2&gt;
-
-&lt;h3 id=&quot;准则-1工作要深入&quot;&gt;准则 1：工作要深入&lt;/h3&gt;
-
-&lt;h4 id=&quot;策略-1选定工作哲学&quot;&gt;策略 1：选定工作哲学&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;禁欲主义哲学（Monastic Philosophy）&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;摒弃或最小化浮浅职责，最大化深度工作。禁欲主义哲学的实践者往往有明确且价值极高的职业目标追求。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;双峰哲学（Bimodal Philosophy）&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;按年/月/周组合深度工作和浮浅工作。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;节奏哲学（Rhythmic Philosophy）&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;按小时分割组合。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;新闻记者哲学（Journalistic Philosophy）&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;随时可插入深度工作。&lt;/p&gt;
-
-&lt;h4 id=&quot;策略-2习惯化&quot;&gt;策略 2：习惯化&lt;/h4&gt;
-
-&lt;p&gt;习惯使过渡到深度工作状态的阻力压缩到最小，使你能够更轻松地进入深度状态并保持更长的时间。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;工作环境和工作时长&lt;/li&gt;
-  &lt;li&gt;工作流程&lt;/li&gt;
-  &lt;li&gt;工作支持（咖啡、水或散步等）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;策略-3大手笔&quot;&gt;策略 3：大手笔&lt;/h4&gt;
-
-&lt;p&gt;以可观的精力或金钱投入对工作环境做出巨大改变，提升了这项任务的重要性。这种重要性的提升，降低了你的大脑继续拖延的本能，并注入了激励和能量。&lt;/p&gt;
-
-&lt;h4 id=&quot;策略-4不要独自工作&quot;&gt;策略 4：不要独自工作&lt;/h4&gt;
-
-&lt;p&gt;恰当的时机可以采用协作的方式，与此同时，也不要过分追求交流和积极的偶遇，以免破坏了专注的状态。&lt;/p&gt;
-
-&lt;h4 id=&quot;策略-5图安逸&quot;&gt;策略 5：图安逸&lt;/h4&gt;
-
-&lt;p&gt;每天在工作之外定期放松大脑，享受一些自由时光。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;把去健身房的时间留到中午，或者下午的某个时间，这样你可以把上下午两个工作时间段分开，用运动去调节，这样你下午回到工作时会更神清气爽。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;停工仪式&lt;/strong&gt; 确保每一项未完成的任务、目标或项目都得到回顾，而且每一项你都确认过，不是（1）有计划确信可以完成，就是（2）保存在一个地方，恰当的时候可以再取用。结束的时候，要说出一个预设的短语，表明完成。&lt;/p&gt;
-
-&lt;h3 id=&quot;准则-2拥抱无聊&quot;&gt;准则 2：拥抱无聊&lt;/h3&gt;
-
-&lt;h4 id=&quot;策略-1不要不断分心而要不断专注&quot;&gt;策略 1：不要不断分心，而要不断专注&lt;/h4&gt;
-
-&lt;p&gt;与其偶尔从分心中拿出部分时间来专注，你更应该从专注中规划出偶尔的分心。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;不要用这样的方式去思考问题：我接下来三十分钟都不用手机，而是去把干扰活动集中到一起：现在我的主要工作完成了，我可以查看一下微信。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;策略-2像罗斯福一样工作&quot;&gt;策略 2：像罗斯福一样工作&lt;/h4&gt;
-
-&lt;p&gt;估算出通常完成此类型任务需要的时间，然后设定一个硬性截止期限，留出的时间远远少于估算时间。（高强度工作）&lt;/p&gt;
-
-&lt;h4 id=&quot;策略-3有成果的冥想&quot;&gt;策略 3：有成果的冥想&lt;/h4&gt;
-
-&lt;p&gt;在身体劳作而心智空闲的时候（比如走路、慢跑、开车、淋浴），将注意力集中到一件定义明确的专业难题上。&lt;/p&gt;
-
-&lt;h4 id=&quot;策略-4记住一副牌&quot;&gt;策略 4：记住一副牌&lt;/h4&gt;
-
-&lt;p&gt;记忆力训练带来个人专注能力的提升。&lt;/p&gt;
-
-&lt;h3 id=&quot;准则-3远离社交网络&quot;&gt;准则 3：远离社交网络&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;工具选择的手艺人方法：明确在你的职业和个人生活中决定成功与幸福的核心因素。只有一种工具对这些因素的实际益处大于实际害处时才选择这种工具。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;策略-1采用关键少数法则&quot;&gt;策略 1：采用关键少数法则&lt;/h4&gt;
-
-&lt;p&gt;明确个人职业和私人生活中主要的高层次目标，再列出为实现每一个目标而需要的两到三个重要活动。&lt;/p&gt;
-
-&lt;h4 id=&quot;策略-2戒掉社交媒体&quot;&gt;策略 2：戒掉社交媒体&lt;/h4&gt;
-
-&lt;p&gt;只有你尝试了没有它们的生活，你才会知道你属于哪一类人。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;控制你刷手机上APP的时间，做到开始工作就不要去开APP。手机是对于持续专注工作和学习的一号干扰源。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;策略-3不要用网络来消遣&quot;&gt;策略 3：不要用网络来消遣&lt;/h4&gt;
-
-&lt;p&gt;如果你想抵御娱乐网站对你时间和精力的诱惑，那么就给大脑找一些高质量的替代活动。这样不仅可以使我们避免分心，保持专注的能力，同时还有可能实现本内特的宏伟目标：体验到何为生活，而不仅仅是生存。&lt;/p&gt;
-
-&lt;h3 id=&quot;准则-4摒弃浮浅&quot;&gt;准则 4：摒弃浮浅&lt;/h3&gt;
-
-&lt;h4 id=&quot;策略-1一天的每一分钟都要做好计划&quot;&gt;策略 1：一天的每一分钟都要做好计划&lt;/h4&gt;
-
-&lt;p&gt;深度工作要求你尊重自己的时间。要做到真正尊重时间，下面这一条建议是个很不错的开端：提前决定你一天的每一分钟要做什么工作。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Routine很关键，养成一个习惯和流程。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;早起，早上的时段是进入Deep Work最容易的时段。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;但过度整理也是一种干扰和浪费时间。那些Evernote整理得太过于完美的人Deep Work的时间应该不多。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;策略-2定量分析每一项活动的深度&quot;&gt;策略 2：定量分析每一项活动的深度&lt;/h4&gt;
-
-&lt;p&gt;设定每天深度工作的时长并做好评估，定期回顾表现，改进方案，完善计划。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;记笔记。每天记录一下你的Deep Work有多少小时，每周回顾看一下，如果这个数字很低，想想原因是什么，怎么改善。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;策略-3向老板申请浮浅工作预算&quot;&gt;策略 3：向老板申请浮浅工作预算&lt;/h4&gt;
-
-&lt;p&gt;与老板沟通：你的时间应该有几成被投入到浮浅工作中？（通常在 30%～50% 之间）了解老板对你的工作预期并作出调整。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;你自己能够做Deep Work，所以安排自己做别人替代不了的工作，把其他的任务雇人帮助你完成。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;策略-45-点半之前结束工作&quot;&gt;策略 4：5 点半之前结束工作&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;固定日程生产力&lt;/strong&gt;：确定一个坚定的目标，在某个固定时间后不再工作，然后在工作中寻找提高产出的策略以达成目标。&lt;/p&gt;
-
-&lt;h4 id=&quot;策略-5适度失联&quot;&gt;策略 5：适度失联&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;采取离线模式，直接断网。&lt;/li&gt;
-  &lt;li&gt;远离社交媒体，减少浪费。&lt;/li&gt;
-  &lt;li&gt;设置邮箱发件人过滤，变得不容易联系。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;邮件过滤策略&lt;/strong&gt;：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;深度议题&lt;/li&gt;
-  &lt;li&gt;深度回复&lt;/li&gt;
-  &lt;li&gt;一次性讲清楚，避免长篇大论&lt;/li&gt;
-  &lt;li&gt;主导并给出「闭合」框架&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Mon, 18 Mar 2019 12:45:00 +0800</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/03/18/deep_work.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/03/18/deep_work.html</guid>
-        
-        
-        <category>读书笔记</category>
         
       </item>
     
