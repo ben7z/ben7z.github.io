@@ -5,9 +5,33 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 03 Sep 2019 17:52:09 +0800</pubDate>
-    <lastBuildDate>Tue, 03 Sep 2019 17:52:09 +0800</lastBuildDate>
+    <pubDate>Mon, 09 Sep 2019 17:31:50 +0800</pubDate>
+    <lastBuildDate>Mon, 09 Sep 2019 17:31:50 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>【技术】一键连接v片</title>
+        <description>&lt;p&gt;前提：电脑上已经安装了Cisco AnyConnect Secure Mobility Client，而且至少连接成功过1次。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;下载一键连接 &lt;a href=&quot;./../../../../static/img/public/一键连接.dmg&quot;&gt;脚本文件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;将anyconnect拖到右边进行安装&lt;/li&gt;
+  &lt;li&gt;依次打开&lt;code class=&quot;highlighter-rouge&quot;&gt;系统偏好设置&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;安全性与隐私&lt;/code&gt;，在&lt;code class=&quot;highlighter-rouge&quot;&gt;隐私&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;辅助功能&lt;/code&gt;那里，点击下面的锁图标，输入密码之后点击右边的加号，将anyconnect添加到列表中&lt;/li&gt;
+  &lt;li&gt;可以使用anyconnect一键连接v片啦！&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;./../../../../static/img/public/vp1.jpg&quot; alt=&quot;vp1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./../../../../static/img/public/vp2.jpg&quot; alt=&quot;vp2&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 Sep 2019 21:53:00 +0800</pubDate>
+        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/09/08/vp.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/09/08/vp.html</guid>
+        
+        
+        <category>技术</category>
+        
+      </item>
     
       <item>
         <title>【读书笔记】流量池</title>
@@ -134,6 +158,25 @@
 &lt;p&gt;&lt;strong&gt;传统广告4件套：强化客服电话、放置二维码、推荐关注微信、给出百度搜索关键词。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;品牌在创牌阶段，确实可以多打些纯形象广告，提出鲜明的消费主张（比如神州专车创牌时就是主打安全形象），让用户知道你、认可你，待品牌有了知名度以后，就可以多用产品活动带品牌，让品牌在产品和活动中变得更加丰满、落地、有血有肉。&lt;/p&gt;
+
+&lt;h2 id=&quot;裂变营销&quot;&gt;裂变营销&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;裂变目的：获客（品牌宣传、销售、体验召集、文章传播、H5传播、游戏传播、App下载安装）&lt;/li&gt;
+    &lt;li&gt;中心思路：分裂&lt;/li&gt;
+    &lt;li&gt;核心要素：种子用户、福利设计、裂变玩法设计、分享渠道、分享引导设计、落地页路径&lt;/li&gt;
+    &lt;li&gt;裂变形式：公众号文章福利、线上订单消费后裂变、线下实物产品类裂变、二维码海报裂变、现金红包裂变&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;裂变营销要点：强调分享、后付奖励&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-app裂变&quot;&gt;1. App裂变&lt;/h3&gt;
+
+&lt;p&gt;方式一：拉新裂变
+方式二：裂变红包
+方式三：IP裂变&lt;/p&gt;
 </description>
         <pubDate>Thu, 29 Aug 2019 01:00:00 +0800</pubDate>
         <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/08/29/flow.html</link>
@@ -843,148 +886,6 @@
         
         
         <category>三节课</category>
-        
-      </item>
-    
-      <item>
-        <title>【淘宝】品牌号学习笔记</title>
-        <description>&lt;h2 id=&quot;什么是品牌号&quot;&gt;什么是品牌号&lt;/h2&gt;
-
-&lt;p&gt;数字时代的消费者对品牌提出更高的要求：&lt;/p&gt;
-
-&lt;p&gt;他们希望品牌把他们当成一个个具体的消费者，而非传统营销中千人一面的客群；他们偏爱“去中心化”的营销，在品牌关系中发出他们的声音；他们需要线上线下无缝衔接的新零售体验。&lt;/p&gt;
-
-&lt;p&gt;这一切都对品牌-消费者的关系管理提出了全新的挑战。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;内容营销解决方案：&lt;/strong&gt;包括内容沉淀、品牌主页等，实现粉丝和品牌互动；&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;全域运营解决方案：&lt;/strong&gt;多样化营销场景，从内容分发到人群营销无缝衔接；&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;关系营销解决方案：&lt;/strong&gt;品牌线上线下会员营销，会员服务与权益精准触达；&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;全渠道运营解决方案：&lt;/strong&gt;串联线上线下，实现门店分流与客户关系维护；&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;品牌全渠道解决方案：&lt;/strong&gt;打通淘宝、天猫及淘外流量渠道。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;品牌号内容运营&quot;&gt;品牌号内容运营&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;精准圈定&lt;/li&gt;
-  &lt;li&gt;设置定位&lt;/li&gt;
-  &lt;li&gt;日常化&lt;/li&gt;
-  &lt;li&gt;引导粉丝&lt;/li&gt;
-  &lt;li&gt;内容输出&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;精准圈定粉丝画像&quot;&gt;精准圈定粉丝画像&lt;/h3&gt;
-
-&lt;p&gt;根据品牌号后台数据/竞品调研/各平台大数据，精准描绘你的粉丝画像，从而定位品牌号，需要明确：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;有哪些人群会关注你的品牌和内容？&lt;/li&gt;
-  &lt;li&gt;他们的期望是什么？&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;以某服饰商家的用户画像为例：大多数为女生，年龄在18-25岁左右，大部分是南方妹子，一般在一线或者省会城市工作，消费层级在二三阶层，意味着用户能接受65-200左右的单价，兴趣爱好则说明这些女生普遍喜欢音乐、数码、打扮等。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;另外，可以通过同品类店铺的粉丝评论、&lt;strong&gt;数据银行&lt;/strong&gt; 进行分析，支持基本属性、行业特征及自定义多层次人群标签洞察，甚至还支持线下门店消费者画像分析。&lt;/p&gt;
-
-&lt;h2 id=&quot;设置定位个性化&quot;&gt;设置定位个性化&lt;/h2&gt;
-
-&lt;p&gt;根据品牌号粉丝画像，圈定测试发布的内容。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;买手Style：买手上新、日常穿搭、小技巧介绍&lt;/li&gt;
-  &lt;li&gt;娱乐杂志：大牌明星日常、热点节目追踪、店铺风格明星效应&lt;/li&gt;
-  &lt;li&gt;热点搞笑：微博日常段子、搞笑Gif/视频、实时热点&lt;/li&gt;
-  &lt;li&gt;育儿资讯：宝妈日常、育儿窍门、别人家的宝宝&lt;/li&gt;
-  &lt;li&gt;美妆教学：美妆教程、美妆博主、美妆视频&lt;/li&gt;
-  &lt;li&gt;健身养生：健身小知识、健身餐、健身教学&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;日常化增粉技巧&quot;&gt;日常化增粉技巧&lt;/h3&gt;
-
-&lt;p&gt;站内：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;在店铺首页Banner引导关注：引导进店铺的人关注有礼&lt;/li&gt;
-  &lt;li&gt;在客服回复中随时引导关注：增加询店的人购买以及粉丝转化&lt;/li&gt;
-  &lt;li&gt;淘内群聊定时活动任务：增加老粉丝活跃度，购买等转化&lt;/li&gt;
-  &lt;li&gt;微淘同步宣推（还可邀请达人共同宣推）：权益化粉丝运营（提升品牌口碑及人群关注）&lt;/li&gt;
-  &lt;li&gt;借助达人在哇哦渠道进行曝光：让用户更直观感受到产品及其效果&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;站外：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;对于购买过的用户定期唤回（短信）：唤回老用户的同时增粉活跃&lt;/li&gt;
-  &lt;li&gt;微博、小红书、抖音、微信群等：多渠道互相打通&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;引导粉丝持续发电&quot;&gt;引导粉丝持续发电&lt;/h3&gt;
-
-&lt;p&gt;做各种能激发互动讨论的内容、活动、福利&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;投票选款：最好的免费测试新款途径&lt;/li&gt;
-  &lt;li&gt;盖楼：让品牌和话题曝光、提升粉丝活跃度&lt;/li&gt;
-  &lt;li&gt;有奖征集：让粉丝有主动参与的想法&lt;/li&gt;
-  &lt;li&gt;评论留言：带动粉丝互动能力，让留言区爆棚&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;引导关注：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;关注品牌号后才能参与互动，并赢取奖品，玩法可以是：盖楼、服务预约、晒图、话题、签到、积分、答题抽奖等；&lt;/li&gt;
-  &lt;li&gt;有用信息分阶段展示，若用户想看到更多的内容，需要关注才可以继续观看。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;./../../../../static/img/public/rongyao.jpg&quot; alt=&quot;荣耀&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;增进互动：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;发起活动，刺激用户进行评论留言或者点赞来赢取奖品。可结合热点话题，配合福利字眼（抽奖、免费、0元、抢券），吸引用户眼球。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;与门店结合：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;结合线下门店线下活动进行；&lt;/li&gt;
-  &lt;li&gt;活动前：内容作为吸引用户去线下的一种形式（展现利益点）&lt;/li&gt;
-  &lt;li&gt;活动后：线下活动玩法展现，塑造品牌形象，吸引用户。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;内容输出&quot;&gt;内容输出&lt;/h3&gt;
-
-&lt;p&gt;把内容玩出花来，永不停歇&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;日常搭配&amp;amp;宝贝穿搭：引导粉丝进店、搭配根据当季热点走&lt;/li&gt;
-  &lt;li&gt;Gif、视频：用户对直观内容意愿度高，比帖子等意愿度高&lt;/li&gt;
-  &lt;li&gt;攻略、技能、猎奇等：让内容更加有可读性，使粉丝有一定收获&lt;/li&gt;
-  &lt;li&gt;热点明星、搞笑段子：活跃粉丝，追一把热点，讨论度高，提升品牌号质量&lt;/li&gt;
-  &lt;li&gt;纯产品&amp;amp;买手Style：让粉丝持续看到产品及态度&lt;/li&gt;
-  &lt;li&gt;做新品任务优惠：增加店铺搜索权重，快速新品破零&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;数据分析&quot;&gt;数据分析&lt;/h3&gt;
-
-&lt;p&gt;品牌号的运营不以短期成交为目的，注重品牌宣传及粉丝运营。可以通过持续可触达通道，挖掘用户有效价值，提高用户粘性。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;做访客分析，调节内容发布时间，选择高峰期发布&lt;/li&gt;
-  &lt;li&gt;观看效果：图片 &amp;gt; 视频/Gif &amp;gt; 帖子&lt;/li&gt;
-  &lt;li&gt;关注竞品的品牌号热点&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Thu, 21 Mar 2019 12:49:00 +0800</pubDate>
-        <link>http://localhost:4000/%E6%B7%98%E5%AE%9D/2019/03/21/brandhub.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E6%B7%98%E5%AE%9D/2019/03/21/brandhub.html</guid>
-        
-        
-        <category>淘宝</category>
         
       </item>
     
