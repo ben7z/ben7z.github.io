@@ -5,8 +5,8 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 Sep 2019 09:49:11 +0800</pubDate>
-    <lastBuildDate>Tue, 10 Sep 2019 09:49:11 +0800</lastBuildDate>
+    <pubDate>Tue, 10 Sep 2019 15:30:45 +0800</pubDate>
+    <lastBuildDate>Tue, 10 Sep 2019 15:30:45 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -174,9 +174,44 @@
 
 &lt;h3 id=&quot;1-app裂变&quot;&gt;1. App裂变&lt;/h3&gt;
 
-&lt;p&gt;方式一：拉新裂变
-方式二：裂变红包
-方式三：IP裂变&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;方式一：拉新裂变，如邀请有礼活动；&lt;/li&gt;
+  &lt;li&gt;方式二：裂变红包，如饿了么裂变红包、连咖啡福袋；&lt;/li&gt;
+  &lt;li&gt;方式三：IP裂变，如舒淇送你专车券；&lt;/li&gt;
+  &lt;li&gt;方式四：储值裂变，如神州专车亲情账户；&lt;/li&gt;
+  &lt;li&gt;方式五：个体福利裂变，如喜马拉雅“分享免费听”，适合单次体验成本较高的产品；&lt;/li&gt;
+  &lt;li&gt;方式六：团购裂变，如拼多多。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-微信裂变&quot;&gt;2. 微信裂变&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;方式一：分销裂变，如神州优驾拉新奖金；&lt;/li&gt;
+  &lt;li&gt;方式二：众筹裂变，如神州买买车“砍半价车”；&lt;/li&gt;
+  &lt;li&gt;方式三：微信卡券，如朋友共享优惠券；&lt;/li&gt;
+  &lt;li&gt;方式四：微信礼品卡，如星巴克“用星说”。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-线下裂变&quot;&gt;3. 线下裂变&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;方式一：包装裂变，如味全每日C“拼字瓶”、椰树牌“电线杆”包装；&lt;/li&gt;
+  &lt;li&gt;方式二：O2O积分或现金红包，如青岛啤酒一瓶一码、ofo集小黄人卡；&lt;/li&gt;
+  &lt;li&gt;方式三：产品设计的社交化，如可口可乐用瓶盖打电话、校园瓶盖活动、奥利奥音乐盒。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;裂变营销三个起始性关键要素：种子用户、裂变诱饵和分享趣味&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-种子用户&quot;&gt;1. 种子用户&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;活跃度高，影响力大的产品用户&lt;/li&gt;
+  &lt;li&gt;质量高于数量&lt;/li&gt;
+  &lt;li&gt;需要反馈产品建议&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2裂变诱饵&quot;&gt;2.裂变诱饵&lt;/h3&gt;
+
 </description>
         <pubDate>Thu, 29 Aug 2019 01:00:00 +0800</pubDate>
         <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/08/29/flow.html</link>
