@@ -5,8 +5,8 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Nov 2019 19:42:04 +0800</pubDate>
-    <lastBuildDate>Wed, 20 Nov 2019 19:42:04 +0800</lastBuildDate>
+    <pubDate>Sun, 24 Nov 2019 01:07:55 +0800</pubDate>
+    <lastBuildDate>Sun, 24 Nov 2019 01:07:55 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -86,6 +86,11 @@ ssh -T git@company.github
 &lt;p&gt;当你Clone项目时，需要改成：&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone git@personal.github:xxx/xxx.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;重命名文件夹：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mv file_name new_flie_name
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;本地提交：&lt;/p&gt;
