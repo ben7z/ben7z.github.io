@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/static/img/favicon.ico" />
-    <title>【技术】Mac OS下配置多个GitHub账号 - 叨叨</title>
+    <title>【技术】Mac OS下免费看剧软件 - 叨叨</title>
     <meta name="author" content="阿Ben同学" />
-    <meta name="description" content="【技术】Mac OS下配置多个GitHub账号" />
-    <meta name="keywords" content="【技术】Mac OS下配置多个GitHub账号, 叨叨, 技术" />
+    <meta name="description" content="【技术】Mac OS下免费看剧软件" />
+    <meta name="keywords" content="【技术】Mac OS下免费看剧软件, 叨叨, 技术" />
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
     <meta content="" property="fb:app_id">
     <meta content="叨叨" property="og:site_name">
@@ -16,7 +16,7 @@
     
 
     
-      <meta content="【技术】Mac OS下配置多个GitHub账号" property="og:title">
+      <meta content="【技术】Mac OS下免费看剧软件" property="og:title">
       <meta content="article" property="og:type">
     
 
@@ -25,11 +25,11 @@
     
 
     
-      <meta content="http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/11/20/git.html" property="og:url">
+      <meta content="http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/11/29/video.html" property="og:url">
     
 
     
-      <meta content="2019-11-20T19:14:00+08:00" property="article:published_time">
+      <meta content="2019-11-29T13:14:00+08:00" property="article:published_time">
       <meta content="http://localhost:4000/about/" property="article:author">
     
 
@@ -52,11 +52,11 @@
     <meta name="twitter:creator" content="@">
 
     
-      <meta name="twitter:title" content="【技术】Mac OS下配置多个GitHub账号">
+      <meta name="twitter:title" content="【技术】Mac OS下免费看剧软件">
     
 
     
-      <meta name="twitter:url" content="http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/11/20/git.html">
+      <meta name="twitter:url" content="http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/11/29/video.html">
     
 
     
@@ -120,10 +120,10 @@
       </div>
       <div class="col-sm-8 col-offset-1 main-layout">
         <header class="post-header">
-  <h1 class="post-title">【技术】Mac OS下配置多个GitHub账号</h1>
+  <h1 class="post-title">【技术】Mac OS下免费看剧软件</h1>
 </header>
 
-<span class="time">2019-11-20</span>
+<span class="time">2019-11-29</span>
 
   <span class="categories">
     &raquo; <a href="/category/技术">技术</a>
@@ -131,118 +131,13 @@
 
 
 <div class="content">
-  <div class="post"><h2 id="实现原理">实现原理</h2>
+  <div class="post"><p>没什么技术含量的一篇帖子。</p>
 
-<p>在电脑上生成各自配套的SSH Key，这样在Push代码时，可能自动识别是哪个账号。</p>
+<p>VipVideo 是一款 Mac 上的免费看剧软件，支持腾讯、爱奇艺、优酷、乐视、芒果等各大网站的 VIP 视频。</p>
 
-<p>##生成SSH Key</p>
+<p><img src="https://github.com/Hurdery/VVideo/raw/master/snap/QQ20180320-0.png" alt="截图" /></p>
 
-<p>进入<code class="highlighter-rouge">~/.ssh/</code>目录：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd .ssh
-</code></pre></div></div>
-
-<p>生成SSH Key：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen -t rsa -C "youremail@xxx.com"
-</code></pre></div></div>
-
-<p>回车后，需要设置SSH Key名字，比如：id_rsa_personal，id_rsa_compan等。</p>
-
-<p>##在GitHub上添加Key</p>
-
-<p>用记事本打开ssh_key_name.pub，复制里面的内容，登录https://github.com/settings/keys后添加。</p>
-
-<p>##在本地SSH Agent中添加Key</p>
-
-<p>添加Key：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-add -K ~/.ssh/id_rsa_personal`
-`ssh-add -K ~/.ssh/id_rsa_company
-</code></pre></div></div>
-
-<p>查询已添加Key：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-add -l
-</code></pre></div></div>
-
-<p>##配置config文件</p>
-
-<p>在<code class="highlighter-rouge">~/.ssh/</code>中创建：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch config
-</code></pre></div></div>
-
-<p>打开config文件：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>open ~/.ssh
-</code></pre></div></div>
-
-<p>配置config文件：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># personal
-Host personal.github #这个名字可任意设置
-HostName github.com #不修改
-User git #不修改
-IdentityFile ~/.ssh/id_rsa_personal #对应的Key
-
-# company
-Host company.github
-HostName github.com
-User git
-IdentityFile ~/.ssh/id_rsa_company
-</code></pre></div></div>
-
-<p>测试是否配置成功：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh -T git@personal.github
-ssh -T git@company.github
-</code></pre></div></div>
-
-<p>注意@后面是你上面自定义的Host。</p>
-
-<p>##如何使用</p>
-
-<p>当你Clone项目时，需要改成：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@personal.github:xxx/xxx.git
-</code></pre></div></div>
-
-<p>重命名文件夹：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv file_name new_flie_name
-</code></pre></div></div>
-
-<p>本地提交：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
-git commit -m "xxx"
-</code></pre></div></div>
-
-<p>推送：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push origin master
-</code></pre></div></div>
-
-<p>附：对于已经克隆的本地项目，在项目中修改配置：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote rm origin
-git remote add origin git@personal.github:xxx/xxx.git
-</code></pre></div></div>
-
-<p>可以执行 git remote -v 查看是否修改成功。</p>
-
-<p>然后在每个项目中，执行：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config user.email "xxx@xxx.com"
-git config user.name "xxname"
-</code></pre></div></div>
-
-<p>查看是否修改成功：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config user.name
-git config user.email
-</code></pre></div></div>
+<p><a href="https://github.com/Hurdery/VVideo">链接 👈👈👈</a></p>
 </div>
 </div>
 
@@ -250,10 +145,8 @@ git config user.email
 
 <div class="PageNavigation">
   
-    <a class="prev" href="/%E6%8A%80%E6%9C%AF/2019/09/08/vp.html">&laquo; 【技术】一键连接v片</a>
+    <a class="prev" href="/%E6%8A%80%E6%9C%AF/2019/11/20/git.html">&laquo; 【技术】Mac OS下配置多个GitHub账号</a>
   
-  
-    <a class="next" href="/%E6%8A%80%E6%9C%AF/2019/11/29/video.html">【技术】Mac OS下免费看剧软件 &raquo;</a>
   
 </div>
 

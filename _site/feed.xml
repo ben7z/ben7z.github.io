@@ -5,9 +5,28 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 Nov 2019 01:07:55 +0800</pubDate>
-    <lastBuildDate>Sun, 24 Nov 2019 01:07:55 +0800</lastBuildDate>
+    <pubDate>Fri, 29 Nov 2019 13:43:24 +0800</pubDate>
+    <lastBuildDate>Fri, 29 Nov 2019 13:43:24 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>【技术】Mac OS下免费看剧软件</title>
+        <description>&lt;p&gt;没什么技术含量的一篇帖子。&lt;/p&gt;
+
+&lt;p&gt;VipVideo 是一款 Mac 上的免费看剧软件，支持腾讯、爱奇艺、优酷、乐视、芒果等各大网站的 VIP 视频。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/Hurdery/VVideo/raw/master/snap/QQ20180320-0.png&quot; alt=&quot;截图&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Hurdery/VVideo&quot;&gt;链接 👈👈👈&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 29 Nov 2019 13:14:00 +0800</pubDate>
+        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/11/29/video.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/11/29/video.html</guid>
+        
+        
+        <category>技术</category>
+        
+      </item>
     
       <item>
         <title>【技术】Mac OS下配置多个GitHub账号</title>
@@ -494,7 +513,7 @@ git config user.email
 
 &lt;p&gt;官方试用版下载：&lt;/p&gt;
 
-&lt;p&gt;链接:&lt;a href=&quot;https://pan.baidu.com/s/1-7cAlatgoMZ0jkqezj9QUQ&quot;&gt;https://pan.baidu.com/s/1-7cAlatgoMZ0jkqezj9QUQ&lt;/a&gt; 提取码:g74q 复制这段内容后打开百度网盘手机App，操作更方便哦&lt;/p&gt;
+&lt;p&gt;链接:&lt;a href=&quot;https://pan.baidu.com/s/1-7cAlatgoMZ0jkqezj9QUQ&quot;&gt;https://pan.baidu.com/s/1-7cAlatgoMZ0jkqezj9QUQ&lt;/a&gt; 提取码:g74q&lt;/p&gt;
 
 &lt;p&gt;无限试用方案：&lt;/p&gt;
 
@@ -835,53 +854,6 @@ git config user.email
         <pubDate>Tue, 11 Jun 2019 11:00:00 +0800</pubDate>
         <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/06/11/macbook.html</link>
         <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/06/11/macbook.html</guid>
-        
-        
-        <category>技术</category>
-        
-      </item>
-    
-      <item>
-        <title>【技术】在 Mac 上压制带字幕的视频</title>
-        <description>&lt;p&gt;工具：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.jubler.org&quot;&gt;Jubler&lt;/a&gt;：文字字幕编辑工具&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://mkvtoolnix.download/macos/&quot;&gt;MKVToolNix&lt;/a&gt;：字幕封装工具&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://handbrake.fr/downloads.php&quot;&gt;HandBrake&lt;/a&gt;：视频压缩软件&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;步骤：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;使用 Jubler 将 srt 字幕文件转换成 ass 格式；&lt;/li&gt;
-  &lt;li&gt;使用 MKVToolNix 封装 ass 字幕文件：
-    &lt;ul&gt;
-      &lt;li&gt;导入视频源文件和 ass 字幕&lt;/li&gt;
-      &lt;li&gt;仅保留视频、音频、ass字幕这三个频道&lt;/li&gt;
-      &lt;li&gt;点击 start muxing 开始封装&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;使用 HandBrake 压缩视频：
-    &lt;ul&gt;
-      &lt;li&gt;打开 Handbrake 导入封装好的视频&lt;/li&gt;
-      &lt;li&gt;video 属性选择 h.264 1800kbps&lt;/li&gt;
-      &lt;li&gt;audio 属性选择 aac 192kbps&lt;/li&gt;
-      &lt;li&gt;subtitle 属性加载字幕轨道，并选择 Burned In&lt;/li&gt;
-      &lt;li&gt;x.264 高级设置，想要追求质量可按此设置&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;视频教程：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.bilibili.com/video/av5480766/&quot;&gt;在Mac上使用handbrake压制带字幕的视频&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 30 May 2019 21:53:00 +0800</pubDate>
-        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/05/30/video.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/05/30/video.html</guid>
         
         
         <category>技术</category>
