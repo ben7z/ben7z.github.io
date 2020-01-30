@@ -5,9 +5,45 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 19 Dec 2019 19:05:05 +0800</pubDate>
-    <lastBuildDate>Thu, 19 Dec 2019 19:05:05 +0800</lastBuildDate>
+    <pubDate>Thu, 30 Jan 2020 18:33:35 +0800</pubDate>
+    <lastBuildDate>Thu, 30 Jan 2020 18:33:35 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>【技术】DR4使用笔记</title>
+        <description>&lt;h2 id=&quot;智能快修去痘印&quot;&gt;智能快修（去痘印）&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;点击智能快修；&lt;/li&gt;
+  &lt;li&gt;将出现的圆圈路径拉伸覆盖至脸部，打钩；&lt;/li&gt;
+  &lt;li&gt;用画笔在痘印处涂抹即可。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;分频处理高低频磨皮去油去皱纹&quot;&gt;分频处理（高低频磨皮，去油去皱纹）&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;点击分频处理；&lt;/li&gt;
+  &lt;li&gt;隐藏高频层，在低频层用套索圈出脸部，羽化后高斯模糊；&lt;/li&gt;
+  &lt;li&gt;分别用套索圈出下眼睑、上眼睑、额头、脖子等部分，重复第2步；&lt;/li&gt;
+  &lt;li&gt;打开高频层，在高频修改层用套索修补工具去除皱纹。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;db处理双曲线处理调光影&quot;&gt;D&amp;amp;B处理（双曲线处理，调光影）&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;点击D&amp;amp;B处理，选择前三个确定；&lt;/li&gt;
+  &lt;li&gt;打开黑白观察层，在加深和减淡层根据需要涂抹光影（提亮&amp;amp;减淡）。&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Mon, 23 Dec 2019 13:14:00 +0800</pubDate>
+        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/12/23/fund.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/12/23/fund.html</guid>
+        
+        
+        <category>技术</category>
+        
+      </item>
     
       <item>
         <title>【听书笔记】跟熊浩学沟通</title>
@@ -1171,6 +1207,10 @@ git config user.email
 &lt;p&gt;方法：&lt;/p&gt;
 
 &lt;p&gt;日历时间显示是跟随系统时间的，因此只需要在系统设置中的 &lt;em&gt;语言与区域&lt;/em&gt; 设置勾选 24 小时制即可调整。&lt;/p&gt;
+
+&lt;h2 id=&quot;好用的日历订阅&quot;&gt;好用的日历订阅&lt;/h2&gt;
+
+&lt;p&gt;大陆法定节假日：webcal://p42-calendars.icloud.com/published/2/FwgHV75qkmBJROFTOL4UajNB6kChgjvU3OXThGwApQRMHpPeshnDpxSwbQbKUDYpBXoSxIk7PsTa6EXyAjNVn-PvA0hfY5IWlXe_RIwbjvA&lt;/p&gt;
 
 &lt;h2 id=&quot;显示与隐藏所有文件&quot;&gt;显示与隐藏所有文件&lt;/h2&gt;
 

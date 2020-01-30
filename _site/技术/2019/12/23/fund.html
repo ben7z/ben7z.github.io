@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/static/img/favicon.ico" />
-    <title>【技术】MacBook 的一些使用技巧 - 叨叨</title>
+    <title>【技术】DR4使用笔记 - 叨叨</title>
     <meta name="author" content="阿Ben同学" />
-    <meta name="description" content="【技术】MacBook 的一些使用技巧" />
-    <meta name="keywords" content="【技术】MacBook 的一些使用技巧, 叨叨, 技术" />
+    <meta name="description" content="【技术】DR4使用笔记" />
+    <meta name="keywords" content="【技术】DR4使用笔记, 叨叨, 技术" />
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
     <meta content="" property="fb:app_id">
     <meta content="叨叨" property="og:site_name">
@@ -16,7 +16,7 @@
     
 
     
-      <meta content="【技术】MacBook 的一些使用技巧" property="og:title">
+      <meta content="【技术】DR4使用笔记" property="og:title">
       <meta content="article" property="og:type">
     
 
@@ -25,11 +25,11 @@
     
 
     
-      <meta content="http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/06/11/macbook.html" property="og:url">
+      <meta content="http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/12/23/fund.html" property="og:url">
     
 
     
-      <meta content="2019-06-11T11:00:00+08:00" property="article:published_time">
+      <meta content="2019-12-23T13:14:00+08:00" property="article:published_time">
       <meta content="http://localhost:4000/about/" property="article:author">
     
 
@@ -52,11 +52,11 @@
     <meta name="twitter:creator" content="@">
 
     
-      <meta name="twitter:title" content="【技术】MacBook 的一些使用技巧">
+      <meta name="twitter:title" content="【技术】DR4使用笔记">
     
 
     
-      <meta name="twitter:url" content="http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/06/11/macbook.html">
+      <meta name="twitter:url" content="http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/12/23/fund.html">
     
 
     
@@ -120,10 +120,10 @@
       </div>
       <div class="col-sm-8 col-offset-1 main-layout">
         <header class="post-header">
-  <h1 class="post-title">【技术】MacBook 的一些使用技巧</h1>
+  <h1 class="post-title">【技术】DR4使用笔记</h1>
 </header>
 
-<span class="time">2019-06-11</span>
+<span class="time">2019-12-23</span>
 
   <span class="categories">
     &raquo; <a href="/category/技术">技术</a>
@@ -131,61 +131,30 @@
 
 
 <div class="content">
-  <div class="post"><h2 id="校准时间">校准时间</h2>
-
-<p>尝试过切换时间同步服务器无效，最终寻找得到可行的答案：</p>
-
-<p>在终端中输入 <code class="highlighter-rouge">sudo sntp -sS time.apple.com</code> 强制更新系统时间</p>
-
-<h2 id="日历设置为-24-小时制">日历设置为 24 小时制</h2>
-
-<p>习惯使用 24 小时制的时间，但 Mac 的日历默认使用 12 小时制，如下午 10 点，既不习惯，也不方便。</p>
-
-<p>方法：</p>
-
-<p>日历时间显示是跟随系统时间的，因此只需要在系统设置中的 <em>语言与区域</em> 设置勾选 24 小时制即可调整。</p>
-
-<h2 id="好用的日历订阅">好用的日历订阅</h2>
-
-<p>大陆法定节假日：webcal://p42-calendars.icloud.com/published/2/FwgHV75qkmBJROFTOL4UajNB6kChgjvU3OXThGwApQRMHpPeshnDpxSwbQbKUDYpBXoSxIk7PsTa6EXyAjNVn-PvA0hfY5IWlXe_RIwbjvA</p>
-
-<h2 id="显示与隐藏所有文件">显示与隐藏所有文件</h2>
-
-<p>显示：在终端中输入</p>
-
-<p><code class="highlighter-rouge">defaults write com.apple.finder AppleShowAllFiles -bool true</code></p>
-
-<p>隐藏：在终端中输入</p>
-
-<p><code class="highlighter-rouge">defaults write com.apple.finder AppleShowAllFiles -bool false</code></p>
-
-<h2 id="微软雅黑字体标准体与粗体无法同时使用">微软雅黑字体标准体与粗体无法同时使用</h2>
-
-<p>微软雅黑字体有标准体和粗体两种字体，但在 Mac 系统中无法同时使用。要么只能用标准体，粗体报错；要么就是能用粗体，标准体无法使用。很偶然找到了以下MAC技巧，问题终于得以解决。</p>
-
-<p>步骤：</p>
+  <div class="post"><h2 id="智能快修去痘印">智能快修（去痘印）</h2>
 
 <ol>
-  <li>下载 <a href="http://pan.baidu.com/s/1qWHISLQ">微软雅黑forMac.zip</a>；</li>
-  <li>打开Finder，按shift+command+G组合键；</li>
-  <li>在对话框中输入：/Library/Fonts ，把之前的微软雅黑字体删除（名称如：Microsoft Yahei.ttf、msyh.ttf 和 msyhbd.ttf），再把下载好的字体解压后复制到Fonts文件夹，重启电脑后就大功告成了。</li>
+  <li>点击智能快修；</li>
+  <li>将出现的圆圈路径拉伸覆盖至脸部，打钩；</li>
+  <li>用画笔在痘印处涂抹即可。</li>
 </ol>
 
-<h2 id="安装任何来源软件">安装任何来源软件</h2>
-
-<p>安装绿色软件时，系统默认会阻止，有时需要允许安装任何来源软件。</p>
-
-<p>步骤：</p>
+<h2 id="分频处理高低频磨皮去油去皱纹">分频处理（高低频磨皮，去油去皱纹）</h2>
 
 <ol>
-  <li>打开系统设置中的 <em>安全性与隐私</em>，查看 <em>允许从以下位置下载的应用</em> 设置，尝试将其设置为 <em>App Store 和被认可的开发者</em>，如还是不能安装，进入下一步；</li>
-  <li>在终端中输入：<code class="highlighter-rouge">sudo spctl --master-disable</code>；</li>
-  <li>安装完毕后，回到 <em>安全性与隐私</em>，将 <em>任何来源</em> 改为其他的选项，等需要的时候再次开启。</li>
+  <li>点击分频处理；</li>
+  <li>隐藏高频层，在低频层用套索圈出脸部，羽化后高斯模糊；</li>
+  <li>分别用套索圈出下眼睑、上眼睑、额头、脖子等部分，重复第2步；</li>
+  <li>打开高频层，在高频修改层用套索修补工具去除皱纹。</li>
 </ol>
 
-<h2 id="修改显示字号">修改显示字号</h2>
+<h2 id="db处理双曲线处理调光影">D&amp;B处理（双曲线处理，调光影）</h2>
 
-<p>在 <em>系统偏好设置</em> 中的 <em>显示器</em> 中，选择 <em>缩放</em>，点选合适的显示字号即可。</p>
+<ol>
+  <li>点击D&amp;B处理，选择前三个确定；</li>
+  <li>打开黑白观察层，在加深和减淡层根据需要涂抹光影（提亮&amp;减淡）。</li>
+</ol>
+
 </div>
 </div>
 
@@ -193,10 +162,8 @@
 
 <div class="PageNavigation">
   
-    <a class="prev" href="/%E6%8A%80%E6%9C%AF/2019/05/30/video.html">&laquo; 【技术】在 Mac 上压制带字幕的视频</a>
+    <a class="prev" href="/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/12/05/communication.html">&laquo; 【听书笔记】跟熊浩学沟通</a>
   
-  
-    <a class="next" href="/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/07/04/speed.html">【读书笔记】零秒工作 &raquo;</a>
   
 </div>
 
