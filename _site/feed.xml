@@ -5,9 +5,37 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 30 Jan 2020 18:33:35 +0800</pubDate>
-    <lastBuildDate>Thu, 30 Jan 2020 18:33:35 +0800</lastBuildDate>
+    <pubDate>Mon, 27 Apr 2020 10:08:10 +0800</pubDate>
+    <lastBuildDate>Mon, 27 Apr 2020 10:08:10 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>【技术】个人收集的 MacBook 实用软件</title>
+        <description>&lt;h2 id=&quot;应用类&quot;&gt;应用类&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcm9e?_blank&quot;&gt;&lt;strong&gt;anyconnect&lt;/strong&gt;&lt;/a&gt;：越狱软件，安装后需要更新；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzco8f?_blank&quot;&gt;&lt;strong&gt;IINA 1.0.3&lt;/strong&gt;&lt;/a&gt;：Mac 平台上最强的好用万能视频播放器；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.videolan.org?_blank&quot;&gt;&lt;strong&gt;VLC&lt;/strong&gt;&lt;/a&gt;：自由、开源的跨平台多媒体播放器；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcm4j?_blank&quot;&gt;&lt;strong&gt;cDock 1.1.3&lt;/strong&gt;&lt;/a&gt;：Dock美化工具，可对Dock菜单栏进行自定义主题；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcp3g?_blank&quot;&gt;&lt;strong&gt;MindNode 5.1&lt;/strong&gt;&lt;/a&gt;：苹果上广受赞誉的著名思维导图制图应用；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcp9c?_blank&quot;&gt;&lt;strong&gt;Newfile Menu&lt;/strong&gt;&lt;/a&gt;：增强Finder右键新建文件工具，允许右键菜单快速创建各种文件；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcpmf?_blank&quot;&gt;&lt;strong&gt;Noizio&lt;/strong&gt;&lt;/a&gt;：不错的白噪音应用；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcoli?_blank&quot;&gt;&lt;strong&gt;Keka 1.1.26&lt;/strong&gt;&lt;/a&gt;：图标很丑的万能压缩软件；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcocj?_blank&quot;&gt;&lt;strong&gt;Karabiner Elements 12.1.0&lt;/strong&gt;&lt;/a&gt;：改键利器，让键盘变成你想要的样子；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcpoh?_blank&quot;&gt;&lt;strong&gt;Scroll Reverser&lt;/strong&gt;&lt;/a&gt;：Mac鼠标滚轮方向翻转工具；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcpwf?_blank&quot;&gt;&lt;strong&gt;Ulysses 2.8.2&lt;/strong&gt;&lt;/a&gt;：世界上最好的文字编辑器；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzci6h?_blank&quot;&gt;&lt;strong&gt;AirServer&lt;/strong&gt;&lt;/a&gt;：Mac上好用的投屏工具，可以让你的iPhone投屏到电脑&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 27 Apr 2020 01:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2020/04/27/software.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2020/04/27/software.html</guid>
+        
+        
+        <category>技术</category>
+        
+      </item>
     
       <item>
         <title>【技术】DR4使用笔记</title>
@@ -1047,96 +1075,6 @@ git config user.email
         
         
         <category>读书笔记</category>
-        
-      </item>
-    
-      <item>
-        <title>【技术】Google Sheet 的一些使用技巧</title>
-        <description>&lt;p&gt;Google Sheets / Microsoft Excel 就是一套系统，其背后的核心是数据逻辑。&lt;/p&gt;
-
-&lt;h2 id=&quot;基本法则&quot;&gt;基本法则&lt;/h2&gt;
-
-&lt;p&gt;完整的数据系统包含三张表：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;参数表：基础数据的分类及属性；&lt;/li&gt;
-  &lt;li&gt;源数据表：一定是一张一维数据表，俗称“天下第一表”；&lt;/li&gt;
-  &lt;li&gt;各种分类汇总表：是在源数据表基础上抽取关键数据构成的二维汇总表。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;其中，源数据表需要注意：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;一维数据；&lt;/li&gt;
-  &lt;li&gt;只有一个标题行；&lt;/li&gt;
-  &lt;li&gt;同一属性的数据，都应该记录在同一列；&lt;/li&gt;
-  &lt;li&gt;每一列只记录一个属性；&lt;/li&gt;
-  &lt;li&gt;不要使用合并单元格破坏数据结构；&lt;/li&gt;
-  &lt;li&gt;不要插入合并行，因为非常多余；&lt;/li&gt;
-  &lt;li&gt;无分隔行/列；&lt;/li&gt;
-  &lt;li&gt;数据区域中无空白单元格。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;数据透视表&quot;&gt;数据透视表&lt;/h2&gt;
-
-&lt;p&gt;数据透视表是制作二维汇总表最简单的方法，简单摸索一下就很容易掌握了，这里不做展开。其缺点是格式相对固定，如果要更灵活的展示数据，还需要掌握函数的用法。&lt;/p&gt;
-
-&lt;h2 id=&quot;常用的公式&quot;&gt;常用的公式&lt;/h2&gt;
-
-&lt;h3 id=&quot;源数据组织&quot;&gt;源数据组织&lt;/h3&gt;
-
-&lt;p&gt;当我们需要把多张源数据表组织起来，可以使用跨文件导入的 &lt;code class=&quot;highlighter-rouge&quot;&gt;importrange&lt;/code&gt; 函数。&lt;/p&gt;
-
-&lt;p&gt;如：我们将参数表和源数据表作为一个文件，汇总表作为另一个文件；那么汇总表中需要新建一个 Sheet 用 &lt;code class=&quot;highlighter-rouge&quot;&gt;importrange&lt;/code&gt; 将源数据导入再做分析。&lt;em&gt;注意汇总表的数据是跟随源数据表实时变化的。&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;再如：我们希望多个人各自提交数据，同时不希望他们可以看到其他人提交的数据。那么可以给每个人特定的一张源数据表，再将所有数据表汇总成一张总的源数据表，操作如下：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;在一个 Sheet 中，给每个人设定特定的行数范围，在每个范围的首行利用  &lt;code class=&quot;highlighter-rouge&quot;&gt;importrange&lt;/code&gt; 将每个人的源数据导入到同一个 Sheet 中；&lt;/li&gt;
-  &lt;li&gt;新建一个 Sheet， 使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;sort&lt;/code&gt; 对上一步的源数据表进行排序，将空白行排到后面去。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;排序与过滤数组&quot;&gt;排序与过滤数组&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;filter&lt;/code&gt;：根据条件对范围内的进行数据过滤。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sort&lt;/code&gt;：依据一列或多列对指定范围内的数据进行排序。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sortn&lt;/code&gt;：在 sort 基础上只返回数据中的前 n 个。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sort(filter)&lt;/code&gt;：&lt;code class=&quot;highlighter-rouge&quot;&gt;sort&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;filter&lt;/code&gt; 嵌套使用，对过滤后的一组数据进行排序。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;unique&lt;/code&gt;：返回范围中唯一的数据，剔除重复的行。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;有条件地统计数组&quot;&gt;有条件地统计数组&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sumif&lt;/code&gt;：根据一个条件筛选出数据进行求和。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sumifs&lt;/code&gt;：根据一个以上的条件筛选出数据进行求和（可以取代 &lt;code class=&quot;highlighter-rouge&quot;&gt;sumif&lt;/code&gt;）。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;条件格式&quot;&gt;条件格式&lt;/h2&gt;
-
-&lt;h3 id=&quot;多个条件&quot;&gt;多个条件&lt;/h3&gt;
-
-&lt;p&gt;多个条件，用 &lt;code class=&quot;highlighter-rouge&quot;&gt;and&lt;/code&gt;，如：&lt;code class=&quot;highlighter-rouge&quot;&gt;=and($A2=&quot;foo&quot;, D$1&amp;gt;=$B2, D$1&amp;lt;=$C2)&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;变量行列&quot;&gt;变量行/列&lt;/h3&gt;
-
-&lt;p&gt;多行/列依次检查条件格式，可以利用相对位置。但要注意变量行/列相对于范围的开头。如果公式需要检查水平/垂直固定的值，加个美元符号即可。&lt;/p&gt;
-
-&lt;h3 id=&quot;检查一整列&quot;&gt;检查一整列&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;比如检查B列是否是“完成”，应该用：&lt;code class=&quot;highlighter-rouge&quot;&gt;=$B:$B=&quot;完成&quot; &lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;如果B列包含“完成”，则公式改成：&lt;code class=&quot;highlighter-rouge&quot;&gt;=search(&quot;完成&quot;,$B:$B) &lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Mon, 08 Jul 2019 11:00:00 +0800</pubDate>
-        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/07/08/sheets.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/07/08/sheets.html</guid>
-        
-        
-        <category>技术</category>
         
       </item>
     
