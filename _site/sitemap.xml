@@ -5,27 +5,48 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Apr 2020 10:08:10 +0800</pubDate>
-    <lastBuildDate>Mon, 27 Apr 2020 10:08:10 +0800</lastBuildDate>
+    <pubDate>Mon, 27 Apr 2020 15:04:43 +0800</pubDate>
+    <lastBuildDate>Mon, 27 Apr 2020 15:04:43 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>【技术】个人收集的 MacBook 实用软件</title>
-        <description>&lt;h2 id=&quot;应用类&quot;&gt;应用类&lt;/h2&gt;
+        <title>【技术】个人收集的 MacBook 实用软件，持续更新</title>
+        <description>&lt;h3 id=&quot;系统工具&quot;&gt;系统工具&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcm9e?_blank&quot;&gt;&lt;strong&gt;anyconnect&lt;/strong&gt;&lt;/a&gt;：越狱软件，安装后需要更新；&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzco8f?_blank&quot;&gt;&lt;strong&gt;IINA 1.0.3&lt;/strong&gt;&lt;/a&gt;：Mac 平台上最强的好用万能视频播放器；&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.videolan.org?_blank&quot;&gt;&lt;strong&gt;VLC&lt;/strong&gt;&lt;/a&gt;：自由、开源的跨平台多媒体播放器；&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcm4j?_blank&quot;&gt;&lt;strong&gt;cDock 1.1.3&lt;/strong&gt;&lt;/a&gt;：Dock美化工具，可对Dock菜单栏进行自定义主题；&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcp3g?_blank&quot;&gt;&lt;strong&gt;MindNode 5.1&lt;/strong&gt;&lt;/a&gt;：苹果上广受赞誉的著名思维导图制图应用；&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcp9c?_blank&quot;&gt;&lt;strong&gt;Newfile Menu&lt;/strong&gt;&lt;/a&gt;：增强Finder右键新建文件工具，允许右键菜单快速创建各种文件；&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcpmf?_blank&quot;&gt;&lt;strong&gt;Noizio&lt;/strong&gt;&lt;/a&gt;：不错的白噪音应用；&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcoli?_blank&quot;&gt;&lt;strong&gt;Keka 1.1.26&lt;/strong&gt;&lt;/a&gt;：图标很丑的万能压缩软件；&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcocj?_blank&quot;&gt;&lt;strong&gt;Karabiner Elements 12.1.0&lt;/strong&gt;&lt;/a&gt;：改键利器，让键盘变成你想要的样子；&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcpoh?_blank&quot;&gt;&lt;strong&gt;Scroll Reverser&lt;/strong&gt;&lt;/a&gt;：Mac鼠标滚轮方向翻转工具；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcp9c?_blank&quot;&gt;&lt;strong&gt;Newfile Menu&lt;/strong&gt;&lt;/a&gt;：增强Finder右键新建文件工具，允许右键菜单快速创建各种文件；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcm9e?_blank&quot;&gt;&lt;strong&gt;anyconnect&lt;/strong&gt;&lt;/a&gt;：越狱软件，安装后需要更新；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcm4j?_blank&quot;&gt;&lt;strong&gt;cDock 1.1.3&lt;/strong&gt;&lt;/a&gt;：Dock美化工具，可对Dock菜单栏进行自定义主题；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzqiej?_blank&quot;&gt;&lt;strong&gt;Omni Disk Sweeper 1.12.1&lt;/strong&gt;&lt;/a&gt;：好用的Mac电脑清理软件；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzrkyh?_blank&quot;&gt;&lt;strong&gt;ThundePatch&lt;/strong&gt;&lt;/a&gt;：给迅雷精简功能的神奇补丁；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;办公软件&quot;&gt;办公软件&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcp3g?_blank&quot;&gt;&lt;strong&gt;MindNode 5.1&lt;/strong&gt;&lt;/a&gt;：苹果上广受赞誉的著名思维导图制图应用；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcpmf?_blank&quot;&gt;&lt;strong&gt;Noizio&lt;/strong&gt;&lt;/a&gt;：不错的白噪音应用；&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcpwf?_blank&quot;&gt;&lt;strong&gt;Ulysses 2.8.2&lt;/strong&gt;&lt;/a&gt;：世界上最好的文字编辑器；&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzci6h?_blank&quot;&gt;&lt;strong&gt;AirServer&lt;/strong&gt;&lt;/a&gt;：Mac上好用的投屏工具，可以让你的iPhone投屏到电脑&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://macromates.com/?_blank&quot;&gt;&lt;strong&gt;TextMate 2.0.6&lt;/strong&gt;&lt;/a&gt;：著名的文本编辑器软件，免费又好用；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzci6h?_blank&quot;&gt;&lt;strong&gt;AirServer&lt;/strong&gt;&lt;/a&gt;：Mac上好用的投屏工具，可以让你的iPhone投屏到电脑；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzrbmb?_blank&quot;&gt;&lt;strong&gt;OmniFocus 3.6.3&lt;/strong&gt;&lt;/a&gt;：Mac平台最好用的时间管理工具；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;媒体工具&quot;&gt;媒体工具&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzco8f?_blank&quot;&gt;&lt;strong&gt;IINA 1.0.3&lt;/strong&gt;&lt;/a&gt;：Mac 平台上最强的好用万能视频播放器；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.videolan.org?_blank&quot;&gt;&lt;strong&gt;VLC&lt;/strong&gt;&lt;/a&gt;：自由、开源的跨平台多媒体播放器；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;图形设计&quot;&gt;图形设计&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzrwid?_blank&quot;&gt;&lt;strong&gt;Couleurs&lt;/strong&gt;&lt;/a&gt;：取色值的小工具；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzs6ch?_blank&quot;&gt;&lt;strong&gt;Super PhotoCut Pro 2.7.5&lt;/strong&gt;&lt;/a&gt;：一键抠图不再是梦；&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 27 Apr 2020 01:00:00 +0800</pubDate>
