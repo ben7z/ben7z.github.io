@@ -5,8 +5,8 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 May 2020 11:07:30 +0800</pubDate>
-    <lastBuildDate>Fri, 15 May 2020 11:07:30 +0800</lastBuildDate>
+    <pubDate>Fri, 15 May 2020 14:55:52 +0800</pubDate>
+    <lastBuildDate>Fri, 15 May 2020 14:55:52 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -1391,7 +1391,10 @@ git config user.email
 
 &lt;h2 id=&quot;好用的日历订阅&quot;&gt;好用的日历订阅&lt;/h2&gt;
 
-&lt;p&gt;大陆法定节假日：webcal://p42-calendars.icloud.com/published/2/FwgHV75qkmBJROFTOL4UajNB6kChgjvU3OXThGwApQRMHpPeshnDpxSwbQbKUDYpBXoSxIk7PsTa6EXyAjNVn-PvA0hfY5IWlXe_RIwbjvA&lt;/p&gt;
+&lt;p&gt;大陆法定节假日：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;webcal://p42-calendars.icloud.com/published/2/FwgHV75qkmBJROFTOL4UajNB6kChgjvU3OXThGwApQRMHpPeshnDpxSwbQbKUDYpBXoSxIk7PsTa6EXyAjNVn-PvA0hfY5IWlXe\_RIwbjvA
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;显示与隐藏所有文件&quot;&gt;显示与隐藏所有文件&lt;/h2&gt;
 
@@ -1410,7 +1413,7 @@ git config user.email
 &lt;p&gt;步骤：&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;下载 &lt;a href=&quot;http://pan.baidu.com/s/1qWHISLQ&quot;&gt;微软雅黑forMac.zip&lt;/a&gt;；&lt;/li&gt;
+  &lt;li&gt;下载 &lt;a href=&quot;https://lanzous.com/icnis6h?_blank&quot;&gt;微软雅黑forMac.zip&lt;/a&gt;；&lt;/li&gt;
   &lt;li&gt;打开Finder，按shift+command+G组合键；&lt;/li&gt;
   &lt;li&gt;在对话框中输入：/Library/Fonts ，把之前的微软雅黑字体删除（名称如：Microsoft Yahei.ttf、msyh.ttf 和 msyhbd.ttf），再把下载好的字体解压后复制到Fonts文件夹，重启电脑后就大功告成了。&lt;/li&gt;
 &lt;/ol&gt;
@@ -1434,6 +1437,7 @@ git config user.email
 &lt;h2 id=&quot;mac-微信检测不到摄像头&quot;&gt;Mac 微信检测不到摄像头&lt;/h2&gt;
 
 &lt;p&gt;检查 App 是否获得摄像头权限，方法是：系统偏好设置 - 安全与隐私 - 摄像头 - 微信（打勾勾）。&lt;/p&gt;
+
 </description>
         <pubDate>Tue, 11 Jun 2019 11:00:00 +0800</pubDate>
         <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/06/11/macbook.html</link>
