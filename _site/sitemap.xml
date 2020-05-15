@@ -5,9 +5,136 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Apr 2020 15:04:43 +0800</pubDate>
-    <lastBuildDate>Mon, 27 Apr 2020 15:04:43 +0800</lastBuildDate>
+    <pubDate>Fri, 15 May 2020 11:07:30 +0800</pubDate>
+    <lastBuildDate>Fri, 15 May 2020 11:07:30 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>【技术】Google Sheets设置联动菜单</title>
+        <description>&lt;h3 id=&quot;场景&quot;&gt;场景&lt;/h3&gt;
+
+&lt;p&gt;所谓联动菜单，就是后一个下拉框的选项是根据前一个下拉框被选中的值来决定的。一个典型的应用就是省市联动菜单，选择省份之后，根据此决定市的选项。&lt;/p&gt;
+
+&lt;h3 id=&quot;设定选项层级&quot;&gt;设定选项层级&lt;/h3&gt;
+
+&lt;p&gt;新建一张Sheet，命名为shelf, 将第一层级选项（Primary）作为第一行，第二层级选项（Second）作为各列细项，做出菜单项数据源表。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./../../../../static/img/public/shelf.png&quot; alt=&quot;截图&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;动态生成second数据&quot;&gt;动态生成Second数据&lt;/h3&gt;
+
+&lt;p&gt;新建一个临时文件表，命名为temp。在临时表中根据用户选择的Primary数据，动态生成一行Second数据，然后设置Second的数据源为对应的一行动态数据。&lt;/p&gt;
+
+&lt;p&gt;1.在temp表A1输入公式：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;=transpose(arrayformula(if(MainSheet!$A2='_shelf'!$A$1,'_shelf'!$A$2:$A$100,if(MainSheet!$A2='_shelf'!$B$1,'_shelf'!$B$2:$B$100,if(MainSheet!$A2='_shelf'!$C$1,'_shelf'!$C$2:$C$100,&quot;&quot;)))))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;./../../../../static/img/public/temp.png&quot; alt=&quot;截图&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2.将A1的公式复制到整个A列。&lt;/p&gt;
+
+&lt;h3 id=&quot;设置second的数据验证源&quot;&gt;设置Second的数据验证源&lt;/h3&gt;
+
+&lt;p&gt;每一个Second单元格对应每一行temp表的数据源，在此利用脚本批量设置。&lt;/p&gt;
+
+&lt;p&gt;1.选择“工具-脚本编辑器”新建脚本文件，代码如下：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/* Validation+ Script copied from:
+ * https://productforums.google.com/forum/#!topic/docs/pBDeCGqzlMI
+ * @author AD:AM
+ *
+ *
+ * Example how to use this:
+ * 1. Input the proper data validation to the top-most cell of a vertical group
+ *    of cells (ie. one columnd-wide; as many rows as you want).
+ * 2. Select the group of cells, making sure the top cell is the one with data
+ *    validation.
+ * 3. Choose the Validation+ menu and click &quot;Copy validation (relative rows,
+ *    absolute columns)&quot;
+ * Voila!
+ */
+
+/**
+ * Build menu on open
+ */
+function onOpen()
+{
+  SpreadsheetApp.getActiveSpreadsheet().addMenu
+  (
+    &quot;Validation+&quot;,
+    [
+      {name: &quot;Copy validation (all relative references)&quot;, functionName: &quot;copyValidation&quot;},
+      {name: &quot;Copy validation (relative rows, absolute columns)&quot;, functionName: &quot;copyValidationColumnsAbsolute&quot;},
+      {name: &quot;Copy validation (absolute rows, relative columns)&quot;, functionName: &quot;copyValidationRowsAbsolute&quot;}
+    ]
+  );
+}
+
+/**
+ * Copies the data validation from the top-left most cell of the current
+ * selection of cells to the remaining cells in the selection.
+ * 
+ * 1. Apply &quot;data validation&quot; to the top-left cell of a group of cells
+ * 2. Select that group of cells
+ * 3. Choose the applicable Validation+ menu item
+ * 4. Done.
+ */
+function copyValidation(rowsAbsolute, columnsAbsolute)
+{
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var r = ss.getActiveRange();
+  var dv = r.getDataValidations();
+  var dvt = dv[0][0].getCriteriaType();
+  if (dvt != SpreadsheetApp.DataValidationCriteria.VALUE_IN_RANGE) return;
+  var dvv = dv[0][0].getCriteriaValues();
+  for (var i = 0; i &amp;lt; dv.length; i++)
+  {
+    for (var j = i ? 0 : 1; j &amp;lt; dv[0].length; j++)
+    {
+      
+      dv[i][j] = dv[0][0].copy().withCriteria(dvt, [dvv[0].offset(rowsAbsolute ? 0 : i, columnsAbsolute ? 0 : j), dvv[1]]).build();
+    }
+  }
+  r.setDataValidations(dv);
+}
+
+/**
+ * Copies data validation, keeping the rows absolute.
+ */ 
+function copyValidationRowsAbsolute()
+{
+  copyValidation(true, false);
+}
+
+
+/**
+ * Copies data validation, keeping the columns absolute.
+ */
+function copyValidationColumnsAbsolute()
+{
+  copyValidation(false, true);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;2.保存后点击运行，授权新建脚本，回到表格可以看到菜单栏多出一个Validation+按钮。&lt;/p&gt;
+
+&lt;p&gt;3.设置好Second第一个单元格的数据源，之后全选本列（如果第一格是标题，需要排除掉），点击Validation+按钮下的Copy validation(relative rows, absolute columns)，复制本列第一个单元格的数据源设置。&lt;/p&gt;
+
+&lt;p&gt;搞定。&lt;/p&gt;
+
+&lt;p&gt;参考：
+&lt;a href=&quot;http://leeon.net/197&quot;&gt;风格生活 Google Sheet（谷歌表格） 设置联动数据验证功能&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 12 May 2020 01:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2020/05/12/sheet.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2020/05/12/sheet.html</guid>
+        
+        
+        <category>技术</category>
+        
+      </item>
     
       <item>
         <title>【技术】个人收集的 MacBook 实用软件，持续更新</title>
@@ -22,6 +149,8 @@
   &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzcm4j?_blank&quot;&gt;&lt;strong&gt;cDock 1.1.3&lt;/strong&gt;&lt;/a&gt;：Dock美化工具，可对Dock菜单栏进行自定义主题；&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzqiej?_blank&quot;&gt;&lt;strong&gt;Omni Disk Sweeper 1.12.1&lt;/strong&gt;&lt;/a&gt;：好用的Mac电脑清理软件；&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzrkyh?_blank&quot;&gt;&lt;strong&gt;ThundePatch&lt;/strong&gt;&lt;/a&gt;：给迅雷精简功能的神奇补丁；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ic08n1e?_blank&quot;&gt;&lt;strong&gt;Unite 3.0.2&lt;/strong&gt;&lt;/a&gt;：一款将网址转换为应用程序的工具；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/icesmij&quot;&gt;&lt;strong&gt;MacGesture&lt;/strong&gt;&lt;/a&gt;：Mac鼠标手势；&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;办公软件&quot;&gt;办公软件&lt;/h3&gt;
@@ -38,7 +167,7 @@
 &lt;h3 id=&quot;媒体工具&quot;&gt;媒体工具&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzco8f?_blank&quot;&gt;&lt;strong&gt;IINA 1.0.3&lt;/strong&gt;&lt;/a&gt;：Mac 平台上最强的好用万能视频播放器；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzco8f?_blank&quot;&gt;&lt;strong&gt;IINA 1.0.3&lt;/strong&gt;&lt;/a&gt;：Mac平台上最强的好用万能视频播放器；&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.videolan.org?_blank&quot;&gt;&lt;strong&gt;VLC&lt;/strong&gt;&lt;/a&gt;：自由、开源的跨平台多媒体播放器；&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -47,7 +176,9 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzrwid?_blank&quot;&gt;&lt;strong&gt;Couleurs&lt;/strong&gt;&lt;/a&gt;：取色值的小工具；&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzs6ch?_blank&quot;&gt;&lt;strong&gt;Super PhotoCut Pro 2.7.5&lt;/strong&gt;&lt;/a&gt;：一键抠图不再是梦；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ic08tod?_blank&quot;&gt;&lt;strong&gt;Image2Icon&lt;/strong&gt;&lt;/a&gt;：方便的图标制作软件；&lt;/li&gt;
 &lt;/ul&gt;
+
 </description>
         <pubDate>Mon, 27 Apr 2020 01:00:00 +0800</pubDate>
         <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2020/04/27/software.html</link>
@@ -443,6 +574,7 @@
   &lt;li&gt;对话时发现共同的交织；&lt;/li&gt;
   &lt;li&gt;如果给反馈和建议，尽量让对方有所选择。&lt;/li&gt;
 &lt;/ol&gt;
+
 </description>
         <pubDate>Thu, 05 Dec 2019 13:14:00 +0800</pubDate>
         <link>http://localhost:4000/%E5%90%AC%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/12/05/communication.html</link>
