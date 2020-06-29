@@ -5,9 +5,91 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 May 2020 14:55:52 +0800</pubDate>
-    <lastBuildDate>Fri, 15 May 2020 14:55:52 +0800</lastBuildDate>
+    <pubDate>Mon, 29 Jun 2020 13:28:38 +0800</pubDate>
+    <lastBuildDate>Mon, 29 Jun 2020 13:28:38 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>【广告】从策略到创意</title>
+        <description>
+</description>
+        <pubDate>Wed, 27 May 2020 01:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E5%B9%BF%E5%91%8A/2020/05/27/creative.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E5%B9%BF%E5%91%8A/2020/05/27/creative.html</guid>
+        
+        
+        <category>广告</category>
+        
+      </item>
+    
+      <item>
+        <title>【技术】实用的小链接</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://it365.gitlab.io/zh-cn/link-finder&quot;&gt;提取网页中的URL&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Wed, 27 May 2020 01:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2020/05/27/url.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2020/05/27/url.html</guid>
+        
+        
+        <category>技术</category>
+        
+      </item>
+    
+      <item>
+        <title>【读书笔记】方案收集贴</title>
+        <description>&lt;h3 id=&quot;平台介绍&quot;&gt;平台介绍&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/iczbgdc?_blank&quot;&gt;抖音企业号2020&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/iczbofc?_blank&quot;&gt;差评2020&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/iczbrsd?_blank&quot;&gt;机核2020&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/iczbura?_blank&quot;&gt;有道营销2020&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/iczbved?_blank&quot;&gt;一条2020&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/iczd8gj?_blank&quot;&gt;回形针2020&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;刊例&quot;&gt;刊例&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/iczbxja%0A?_blank&quot;&gt;知乎2020品牌广告&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/iczbxij?_blank&quot;&gt;知乎2020非标广告&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 25 May 2020 01:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2020/05/25/pdf.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2020/05/25/pdf.html</guid>
+        
+        
+        <category>读书笔记</category>
+        
+      </item>
+    
+      <item>
+        <title>【技术】Markdown+Jekyll流畅协作</title>
+        <description>&lt;h3 id=&quot;让链接在新窗口打开&quot;&gt;让链接在新窗口打开&lt;/h3&gt;
+
+&lt;p&gt;1.将以下代码中插入至script中：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  var aTagArr = [].slice.apply(document.getElementsByTagName(&quot;a&quot;));
+  aTagArr.forEach(function (e, i) {
+e.href.indexOf(&quot;_blank&quot;) &amp;gt; -1 ? e.target = &quot;_blank&quot; : null;
+  });
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;2.在URL后加入&lt;code class=&quot;highlighter-rouge&quot;&gt;?_blank&lt;/code&gt;即可实现在新窗口打开链接。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 May 2020 01:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2020/05/15/md.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2020/05/15/md.html</guid>
+        
+        
+        <category>技术</category>
+        
+      </item>
     
       <item>
         <title>【技术】Google Sheets设置联动菜单</title>
@@ -162,6 +244,7 @@ function copyValidationColumnsAbsolute()
   &lt;li&gt;&lt;a href=&quot;https://macromates.com/?_blank&quot;&gt;&lt;strong&gt;TextMate 2.0.6&lt;/strong&gt;&lt;/a&gt;：著名的文本编辑器软件，免费又好用；&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzci6h?_blank&quot;&gt;&lt;strong&gt;AirServer&lt;/strong&gt;&lt;/a&gt;：Mac上好用的投屏工具，可以让你的iPhone投屏到电脑；&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzrbmb?_blank&quot;&gt;&lt;strong&gt;OmniFocus 3.6.3&lt;/strong&gt;&lt;/a&gt;：Mac平台最好用的时间管理工具；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/itnmcdhveoj&quot;&gt;&lt;strong&gt;PDF Expert&lt;/strong&gt;&lt;/a&gt;：好用的PDF标注软件；&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;媒体工具&quot;&gt;媒体工具&lt;/h3&gt;
@@ -722,391 +805,6 @@ git config user.email
         <pubDate>Wed, 20 Nov 2019 19:14:00 +0800</pubDate>
         <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/11/20/git.html</link>
         <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/11/20/git.html</guid>
-        
-        
-        <category>技术</category>
-        
-      </item>
-    
-      <item>
-        <title>【技术】一键连接v片</title>
-        <description>&lt;p&gt;前提：电脑上已经安装了Cisco AnyConnect Secure Mobility Client，而且至少连接成功过1次。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;下载一键连接 &lt;a href=&quot;./../../../../static/img/public/一键连接.dmg&quot;&gt;脚本文件&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;将anyconnect拖到右边进行安装&lt;/li&gt;
-  &lt;li&gt;依次打开&lt;code class=&quot;highlighter-rouge&quot;&gt;系统偏好设置&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;安全性与隐私&lt;/code&gt;，在&lt;code class=&quot;highlighter-rouge&quot;&gt;隐私&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;辅助功能&lt;/code&gt;那里，点击下面的锁图标，输入密码之后点击右边的加号，将anyconnect添加到列表中&lt;/li&gt;
-  &lt;li&gt;可以使用anyconnect一键连接v片啦！&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;./../../../../static/img/public/vp1.jpg&quot; alt=&quot;vp1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;./../../../../static/img/public/vp2.jpg&quot; alt=&quot;vp2&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 08 Sep 2019 21:53:00 +0800</pubDate>
-        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/09/08/vp.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/09/08/vp.html</guid>
-        
-        
-        <category>技术</category>
-        
-      </item>
-    
-      <item>
-        <title>【读书笔记】流量池</title>
-        <description>&lt;p&gt;流量池是一本写给巨头之外的企业营销人员看的，对于这样的企业来说，流量来之不易，更需要精耕细作，让流量带来更多购买。以下是一些摘抄和笔记。&lt;/p&gt;
-
-&lt;h2 id=&quot;为什么需要流量池思维&quot;&gt;为什么需要流量池思维？&lt;/h2&gt;
-
-&lt;p&gt;任何品牌传播行为，都需要有效果思维。单纯的品牌传播时代已经一去不复返，对于企业、尤其是创业企业，必须依靠一切可以借助的手段蓄积流量。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;头部移动互联网巨头已经形成，进而形成对剩余流量的进一步控制，留给其他App机会可能只能在 &lt;strong&gt;垂直人群或应用场景&lt;/strong&gt;；&lt;/li&gt;
-  &lt;li&gt;线上流量的减少和价格疯涨，使很多企业转而再次寻找传统流量的突破。无论是线下门店、传统广告，还是最古老的地推，都成为挖掘流量的手段；&lt;/li&gt;
-  &lt;li&gt;企业和品牌对于实际效果的要求越来越高，甚至到了苛刻的程度；&lt;/li&gt;
-  &lt;li&gt;技术与营销结合速度加快，广告技术化和甲方去乙方化都成为趋势。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;——在多年的营销工作中，我深刻地感受到两点：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;企业营销不仅要品牌，更需要效果；&lt;/li&gt;
-  &lt;li&gt;在移动互联网上做营销，必须追求品效合一。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;用流量池实现 &lt;strong&gt;”急功近利“&lt;/strong&gt;：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;急功：要快速建立品牌，打响知名度，切入市场，获得流量；&lt;/li&gt;
-  &lt;li&gt;近利：获得流量的同时，快速转化成销量，带来实际的效果。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;流量池的三个思维层次&quot;&gt;流量池的三个思维层次&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;如何获得流量&lt;/li&gt;
-  &lt;li&gt;流量如何高效转化&lt;/li&gt;
-  &lt;li&gt;流量运营与再发掘&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;./../../../../static/img/public/flowpool.jpg&quot; alt=&quot;流量池&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;在流量池思维的图谱中，列举了七种入水口：品牌、裂变、微信、事件、数字广告、直播、BD。&lt;/p&gt;
-
-&lt;h2 id=&quot;品牌流量之井&quot;&gt;品牌：流量之井&lt;/h2&gt;
-
-&lt;p&gt;在我看来，不能直接导向购买的营销行为都是 &lt;strong&gt;品牌营销&lt;/strong&gt;，即使其最终目的是导购。但是此类营销路线较长、周期较长，目标可能也会在这个过程中变得模糊。——&lt;em&gt;我知道我的广告费至少有一半浪费了，但我并不知道是哪一半。&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;但今天一个市场总监的知识结构已远不止品牌部分了。用户运营知识、产品经理的技术视野、数字效果广告、社交媒体玩法，只有掌握这些新知板块，才能更好地武装一个市场总监，让传统意识升级。&lt;/p&gt;
-
-&lt;p&gt;如何理解品牌？一般来说，品牌解决的是认知（心智占有）、认同（文化信仰）、认购（信任）。在移动互联网时代，&lt;strong&gt;品牌就是流量&lt;/strong&gt;。通过关注和粉丝，可以获得源源不断的流量。如何做——1定位；2符号；3场景。&lt;/p&gt;
-
-&lt;h3 id=&quot;定位&quot;&gt;定位&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;1. 对立型定位&lt;/strong&gt;：一般在广告语言上使用 &lt;em&gt;更、比、没有、增加、不是……而是……&lt;/em&gt; 等字眼，体现对比优势。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;瓜子二手车直卖网，没有中间商赚差价&lt;/li&gt;
-  &lt;li&gt;我们不生产水，我们只是大自然的搬运工&lt;/li&gt;
-  &lt;li&gt;不是所有的牛奶都叫特仑苏&lt;/li&gt;
-  &lt;li&gt;百度更懂中文&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;2. USP定位&lt;/strong&gt;：独特销售主张，集中强调产品具体的特殊功效和利益（物理型定位）。一般采用场景性口号，如“……就用……”。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;胃痛胃酸胃胀，就用斯达舒&lt;/li&gt;
-  &lt;li&gt;困了累了，喝红牛&lt;/li&gt;
-  &lt;li&gt;农夫山泉有点甜&lt;/li&gt;
-  &lt;li&gt;充电5分钟，通话两小时&lt;/li&gt;
-  &lt;li&gt;横扫饥饿，做回自己&lt;/li&gt;
-  &lt;li&gt;把1000首歌装进口袋&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;3. 升维定位&lt;/strong&gt;：最常见的表现形式是 &lt;em&gt;行业开创者、重新定义、革命&lt;/em&gt; 等比较大的字眼。&lt;/p&gt;
-
-&lt;h3 id=&quot;强化视觉符号&quot;&gt;强化视觉符号&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;1.视觉&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;品牌工作的本质就是打造符号、强化符号、保护符号。好的视觉符号能够给用户留下深刻印象，包含产品LOGO、产品包装、代表品牌的传播形状和人物代言。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2.听觉&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;听觉主要形式有：口号（Slogan）和韵曲（Jingle）。在移动互联网时代，好的广告语一定要说人话。弱化广告腔，不要说大话、空话，更不要说大家听不懂的话。&lt;/p&gt;
-
-&lt;h3 id=&quot;品牌如何做出实效&quot;&gt;品牌如何做出实效？&lt;/h3&gt;
-
-&lt;p&gt;国际品牌的定位其实并没有国内创新品牌那些犀利和有进攻性，更偏于情感和价值观，是很难迅速见效的。国内品牌欠缺的不是定位问题，而是品牌落地执行。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1.场景&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;案例：神州专车主打六个细分场景：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;接送机（金色星期天，免费接送机；新用户千元接送机券）&lt;/li&gt;
-  &lt;li&gt;会务用车（头等舱计划、G20峰会官方指定用车）&lt;/li&gt;
-  &lt;li&gt;夜晚加班（放心睡、加班限时券）&lt;/li&gt;
-  &lt;li&gt;孕妇（孕妈专车）&lt;/li&gt;
-  &lt;li&gt;异地出差&lt;/li&gt;
-  &lt;li&gt;带子出行&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;2.品牌触点&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;品牌触点是品牌展示与传达的机会，都是可以精心策划的。如神州专车品牌触点分为线下司机和车辆，以及线上App；因此神州做了：1司机SOP标准、2车辆标准化、3App的UI设计标准。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3.产品为定位赋能&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;创业期产品，品牌定位服务必须要与产品设计同步。产品主义至少正在成为这个时代的成功法则。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;小黄车大眼萌&lt;/li&gt;
-  &lt;li&gt;神州虚拟电话、OBD、孕妈专车、无霾专车&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;4.传统广告升级&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;明确投放场景，素材简单直接（反例：知乎走心广告）&lt;/li&gt;
-  &lt;li&gt;传统广告也要提供互动形式&lt;/li&gt;
-  &lt;li&gt;多用产品活动带品牌，品牌广告也可带上促销信息&lt;/li&gt;
-  &lt;li&gt;广告投放同步事件营销，避免墙纸效应&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;传统广告4件套：强化客服电话、放置二维码、推荐关注微信、给出百度搜索关键词。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;品牌在创牌阶段，确实可以多打些纯形象广告，提出鲜明的消费主张（比如神州专车创牌时就是主打安全形象），让用户知道你、认可你，待品牌有了知名度以后，就可以多用产品活动带品牌，让品牌在产品和活动中变得更加丰满、落地、有血有肉。&lt;/p&gt;
-
-&lt;h2 id=&quot;裂变营销&quot;&gt;裂变营销&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;裂变目的：获客（品牌宣传、销售、体验召集、文章传播、H5传播、游戏传播、App下载安装）&lt;/li&gt;
-    &lt;li&gt;中心思路：分裂&lt;/li&gt;
-    &lt;li&gt;核心要素：种子用户、福利设计、裂变玩法设计、分享渠道、分享引导设计、落地页路径&lt;/li&gt;
-    &lt;li&gt;裂变形式：公众号文章福利、线上订单消费后裂变、线下实物产品类裂变、二维码海报裂变、现金红包裂变&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;裂变营销要点：强调分享、后付奖励&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;1-app裂变&quot;&gt;1. App裂变&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;方式一：拉新裂变，如邀请有礼活动；&lt;/li&gt;
-  &lt;li&gt;方式二：裂变红包，如饿了么裂变红包、连咖啡福袋；&lt;/li&gt;
-  &lt;li&gt;方式三：IP裂变，如舒淇送你专车券；&lt;/li&gt;
-  &lt;li&gt;方式四：储值裂变，如神州专车亲情账户；&lt;/li&gt;
-  &lt;li&gt;方式五：个体福利裂变，如喜马拉雅“分享免费听”，适合单次体验成本较高的产品；&lt;/li&gt;
-  &lt;li&gt;方式六：团购裂变，如拼多多。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;2-微信裂变&quot;&gt;2. 微信裂变&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;方式一：分销裂变，如神州优驾拉新奖金；&lt;/li&gt;
-  &lt;li&gt;方式二：众筹裂变，如神州买买车“砍半价车”；&lt;/li&gt;
-  &lt;li&gt;方式三：微信卡券，如朋友共享优惠券；&lt;/li&gt;
-  &lt;li&gt;方式四：微信礼品卡，如星巴克“用星说”。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;3-线下裂变&quot;&gt;3. 线下裂变&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;方式一：包装裂变，如味全每日C“拼字瓶”、椰树牌“电线杆”包装；&lt;/li&gt;
-  &lt;li&gt;方式二：O2O积分或现金红包，如青岛啤酒一瓶一码、ofo集小黄人卡；&lt;/li&gt;
-  &lt;li&gt;方式三：产品设计的社交化，如可口可乐用瓶盖打电话、校园瓶盖活动、奥利奥音乐盒。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;裂变营销三个起始性关键要素：种子用户、裂变诱饵和分享趣味&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;1-种子用户&quot;&gt;1. 种子用户&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;活跃度高，影响力大的产品用户&lt;/li&gt;
-  &lt;li&gt;质量高于数量&lt;/li&gt;
-  &lt;li&gt;需要反馈产品建议&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;2裂变诱饵&quot;&gt;2.裂变诱饵&lt;/h3&gt;
-
-&lt;p&gt;可以简单理解为“福利补贴”，如神州专车裂变型H5“花式发券”。&lt;/p&gt;
-
-&lt;h3 id=&quot;3分享趣味&quot;&gt;3.分享趣味&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;提供互动谈资&lt;/li&gt;
-  &lt;li&gt;塑造个人形象&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;游戏化思维&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;积分&lt;/li&gt;
-  &lt;li&gt;徽章&lt;/li&gt;
-  &lt;li&gt;排行榜&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;总结：流量裂变=平台+创意+福利+技术&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;——核心要义：存量带增量，高频带高频。&lt;/p&gt;
-
-&lt;h2 id=&quot;微信营销&quot;&gt;微信营销&lt;/h2&gt;
-
-&lt;p&gt;90%的公众号都在自嗨。&lt;/p&gt;
-
-&lt;h3 id=&quot;把微信服务号做成超级app&quot;&gt;把微信服务号做成超级App&lt;/h3&gt;
-
-&lt;p&gt;对于一款企业App产品来说，它承载着三大功能：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;业务的基本产品功能&lt;/li&gt;
-  &lt;li&gt;客服咨询反馈的功能&lt;/li&gt;
-  &lt;li&gt;营销信息的展示告知&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;所有具有即兴消费属性的企业，如出行行业、快消行业、商超便利店等，都适合把微信服务号打造成超级App。&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 29 Aug 2019 01:00:00 +0800</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/08/29/flow.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/08/29/flow.html</guid>
-        
-        
-        <category>读书笔记</category>
-        
-      </item>
-    
-      <item>
-        <title>【读书笔记】零售的哲学</title>
-        <description>&lt;p&gt;铃木敏文的《零售的哲学》是一本讲述7-11发展史和零售经验总结的书。阅读这本书，我在两方面获得了收益：一是铃木先生40多年宝贵的零售行业经验；二是铃木先生思考问题的防范。&lt;/p&gt;
-
-&lt;h2 id=&quot;上篇零售&quot;&gt;上篇：零售&lt;/h2&gt;
-
-&lt;p&gt;铃木先生将 7-11 成功的原因归结为三点：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;密集型选择战略；&lt;/li&gt;
-  &lt;li&gt;产品研发与供应体系；&lt;/li&gt;
-  &lt;li&gt;与员工直接沟通。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;密集型选址&quot;&gt;密集型选址&lt;/h3&gt;
-
-&lt;p&gt;7-11 从诞生之日起就制定和贯彻密集型选址战略，目的是为了提高小规模便利店的生产效率，其优势有三：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;集中地提高品牌效应，加深消费者认知；&lt;/li&gt;
-  &lt;li&gt;较短的距离能够提升物流和配送效率；&lt;/li&gt;
-  &lt;li&gt;广告和宣传更见成效。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;产品研发与供应&quot;&gt;产品研发与供应&lt;/h3&gt;
-
-&lt;p&gt;一切以消费者为导向。造成产品滞销、生意萧条的原因只有一个：即现在的工作方法已经无法满足时代和消费者需求的变化。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1. 单品策略&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;掌握每一个单品的销售情况，提高备货的精准度，让消费者购买到真正想要的商品。引入POS系统后，还需要对数据分析结果加入自己的思考，而不能一味依靠数据。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2. 物流改革&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;小额配送更有利于优化库存；共同配送降低了成本，更保证了食物品质。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3. 充实服务内容&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;7-11 的终极目标是提供便利，它在提升产品品质的同时，不断充实和完善“服务”的内容：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;提供 ATM 服务（也带动了店内消费）；&lt;/li&gt;
-  &lt;li&gt;开发 7-Premium&lt;/li&gt;
-  &lt;li&gt;地震救济点（&lt;em&gt;更邻近的依靠，深刻的品牌洞察&lt;/em&gt;）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;4. 研究方法&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;以团队形式研发产品&lt;/em&gt;，一款新品只有所有人（包括高层董事）试吃后对味道满意才能正式允许对外发售。&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;集中专家的力量&lt;/em&gt;，协同多个企业一起研发产品。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;协同多个企业研发产品时，绝对不能成为“好朋友”。如果工作伙伴间的关系太过亲密的话，面对没有达到标准的新产品，也会产生“算了，大家都不容易，这一次姑且让他通过”的松懈思想。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;与员工直接沟通&quot;&gt;与员工直接沟通&lt;/h3&gt;
-
-&lt;p&gt;保证每个加盟点店长与员工正确地理解管理层的经营思路。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;让临时工也拥有订货的权力；&lt;/li&gt;
-  &lt;li&gt;面对面讨论让公司全员共享理念，即“理念的渗透”。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;下篇哲学&quot;&gt;下篇：哲学&lt;/h2&gt;
-
-&lt;h3 id=&quot;假设---执行---验证&quot;&gt;假设 - 执行 - 验证&lt;/h3&gt;
-
-&lt;p&gt;铃木先生的思考过程其实就是麦肯锡方法“以假设为导向，以事实为依据，严格进行结构化思考”的过程。&lt;/p&gt;
-
-&lt;p&gt;案例1：近距离的便利&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;观察：老龄化、少子化，家庭平均人数减少，双职工家庭增加&lt;/li&gt;
-  &lt;li&gt;假设：老年人与妇女增加，不愿意远距离购买商品，想就近购物&lt;/li&gt;
-  &lt;li&gt;执行+验证：定义品牌为“近距离的便利”、作为“生活基础设施”&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;案例2：Seven Meal&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;观察：老龄化、少子化，家庭平均人数减少，双职工家庭增加&lt;/li&gt;
-  &lt;li&gt;假设：老年人、双职工需要安心的三餐、分量适中的食材&lt;/li&gt;
-  &lt;li&gt;执行+验证：开发好吃有营养的正餐视频、送餐服务&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;案例3：统一化&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;观察：日本贫富化差距小，国民受教育程度平均&lt;/li&gt;
-  &lt;li&gt;假设：未来趋势是统一化，人气总是集中在某几样商品上&lt;/li&gt;
-  &lt;li&gt;执行：集中力量研发别人难以复制的产品&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Fri, 09 Aug 2019 11:00:00 +0800</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/08/09/seven.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2019/08/09/seven.html</guid>
-        
-        
-        <category>读书笔记</category>
-        
-      </item>
-    
-      <item>
-        <title>【技术】Small PDF Mac 无限试用方案</title>
-        <description>&lt;p&gt;Small PDF 是一款这么多款压缩软件里面压缩率最高的神器，没有之一。除了 &lt;a href=&quot;https://smallpdf.com/compress-pdf&quot;&gt;在线版本&lt;/a&gt; 之外，离线版省却了上传大文件的麻烦，不过目前有 7 天试用限制。个人多次试验后，找到了无限试用的方法。&lt;/p&gt;
-
-&lt;p&gt;官方试用版下载：&lt;/p&gt;
-
-&lt;p&gt;链接:&lt;a href=&quot;https://pan.baidu.com/s/1-7cAlatgoMZ0jkqezj9QUQ&quot;&gt;https://pan.baidu.com/s/1-7cAlatgoMZ0jkqezj9QUQ&lt;/a&gt; 提取码:g74q&lt;/p&gt;
-
-&lt;p&gt;无限试用方案：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;./../../../../static/img/public/smallpdf.jpg&quot; alt=&quot;SmallPDF&quot; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;在 Finder 中找到 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/Library/Application Support/Smallpdf/preferences.json&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;打开 &lt;code class=&quot;highlighter-rouge&quot;&gt;preferences.json&lt;/code&gt;，找到以下代码：&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;system.trial_duration_limit&quot;: 7&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;将 7 改为一个超大的数字，保存即可；&lt;/li&gt;
-  &lt;li&gt;删掉除  &lt;code class=&quot;highlighter-rouge&quot;&gt;preferences.json&lt;/code&gt; 之外文件夹中的其他所有文件。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;参考：&lt;a href=&quot;https://blog.cat73.org/20190528/2019052801.surge3-crack/&quot;&gt;Surge Mac 3 无限试用方案&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 05 Aug 2019 11:00:00 +0800</pubDate>
-        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/08/05/smallpdf.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/08/05/smallpdf.html</guid>
         
         
         <category>技术</category>

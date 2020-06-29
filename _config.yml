@@ -1,7 +1,7 @@
 title: 叨叨
 description: 读书，搞机与其他
 author: 阿Ben同学
-github: https://aben.ml
+github: https://ben7z.github.io
 about: 乏善可陈
 disqus_shortname: stackproblems
 google_analytics: UA-XXXXXXXX-Y
@@ -19,13 +19,13 @@ social:
     - icon: fa-linkedin
       link: "https://www.linkedin.com/in/ben7z"
     - icon: fa-github
-      link: "https://aben.ml"
+      link: "https://ben7z.github.io"
 
 urls:
     - text: About Me
       url: /about/
 
-url: "https://aben.ml"
+url: "https://ben7z.github.io"
 baseurl: ""
 paginate: 20
 per_page: 20

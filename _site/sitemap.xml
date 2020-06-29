@@ -5,9 +5,91 @@
     <description>读书，搞机与其他</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 May 2020 14:55:52 +0800</pubDate>
-    <lastBuildDate>Fri, 15 May 2020 14:55:52 +0800</lastBuildDate>
+    <pubDate>Mon, 29 Jun 2020 13:28:38 +0800</pubDate>
+    <lastBuildDate>Mon, 29 Jun 2020 13:28:38 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>【广告】从策略到创意</title>
+        <description>
+</description>
+        <pubDate>Wed, 27 May 2020 01:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E5%B9%BF%E5%91%8A/2020/05/27/creative.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E5%B9%BF%E5%91%8A/2020/05/27/creative.html</guid>
+        
+        
+        <category>广告</category>
+        
+      </item>
+    
+      <item>
+        <title>【技术】实用的小链接</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://it365.gitlab.io/zh-cn/link-finder&quot;&gt;提取网页中的URL&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Wed, 27 May 2020 01:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2020/05/27/url.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2020/05/27/url.html</guid>
+        
+        
+        <category>技术</category>
+        
+      </item>
+    
+      <item>
+        <title>【读书笔记】方案收集贴</title>
+        <description>&lt;h3 id=&quot;平台介绍&quot;&gt;平台介绍&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/iczbgdc?_blank&quot;&gt;抖音企业号2020&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/iczbofc?_blank&quot;&gt;差评2020&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/iczbrsd?_blank&quot;&gt;机核2020&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/iczbura?_blank&quot;&gt;有道营销2020&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/iczbved?_blank&quot;&gt;一条2020&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/iczd8gj?_blank&quot;&gt;回形针2020&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;刊例&quot;&gt;刊例&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/iczbxja%0A?_blank&quot;&gt;知乎2020品牌广告&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/iczbxij?_blank&quot;&gt;知乎2020非标广告&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 25 May 2020 01:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2020/05/25/pdf.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/2020/05/25/pdf.html</guid>
+        
+        
+        <category>读书笔记</category>
+        
+      </item>
+    
+      <item>
+        <title>【技术】Markdown+Jekyll流畅协作</title>
+        <description>&lt;h3 id=&quot;让链接在新窗口打开&quot;&gt;让链接在新窗口打开&lt;/h3&gt;
+
+&lt;p&gt;1.将以下代码中插入至script中：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  var aTagArr = [].slice.apply(document.getElementsByTagName(&quot;a&quot;));
+  aTagArr.forEach(function (e, i) {
+e.href.indexOf(&quot;_blank&quot;) &amp;gt; -1 ? e.target = &quot;_blank&quot; : null;
+  });
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;2.在URL后加入&lt;code class=&quot;highlighter-rouge&quot;&gt;?_blank&lt;/code&gt;即可实现在新窗口打开链接。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 May 2020 01:00:00 +0800</pubDate>
+        <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2020/05/15/md.html</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8A%80%E6%9C%AF/2020/05/15/md.html</guid>
+        
+        
+        <category>技术</category>
+        
+      </item>
     
       <item>
         <title>【技术】Google Sheets设置联动菜单</title>
@@ -162,6 +244,7 @@ function copyValidationColumnsAbsolute()
   &lt;li&gt;&lt;a href=&quot;https://macromates.com/?_blank&quot;&gt;&lt;strong&gt;TextMate 2.0.6&lt;/strong&gt;&lt;/a&gt;：著名的文本编辑器软件，免费又好用；&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzci6h?_blank&quot;&gt;&lt;strong&gt;AirServer&lt;/strong&gt;&lt;/a&gt;：Mac上好用的投屏工具，可以让你的iPhone投屏到电脑；&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://lanzous.com/ibzrbmb?_blank&quot;&gt;&lt;strong&gt;OmniFocus 3.6.3&lt;/strong&gt;&lt;/a&gt;：Mac平台最好用的时间管理工具；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lanzous.com/itnmcdhveoj&quot;&gt;&lt;strong&gt;PDF Expert&lt;/strong&gt;&lt;/a&gt;：好用的PDF标注软件；&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;媒体工具&quot;&gt;媒体工具&lt;/h3&gt;
@@ -729,11 +812,11 @@ git config user.email
       </item>
     
       <item>
-        <title>【技术】一键连接v片</title>
+        <title>【技术】一键连接v片（已失效）</title>
         <description>&lt;p&gt;前提：电脑上已经安装了Cisco AnyConnect Secure Mobility Client，而且至少连接成功过1次。&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;下载一键连接 &lt;a href=&quot;./../../../../static/img/public/一键连接.dmg&quot;&gt;脚本文件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;下载一键连接 &lt;a href=&quot;./../../../../static/img/public/%E4%B8%80%E9%94%AE%E8%BF%9E%E6%8E%A5.dmg&quot;&gt;脚本文件&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;将anyconnect拖到右边进行安装&lt;/li&gt;
   &lt;li&gt;依次打开&lt;code class=&quot;highlighter-rouge&quot;&gt;系统偏好设置&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;安全性与隐私&lt;/code&gt;，在&lt;code class=&quot;highlighter-rouge&quot;&gt;隐私&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;辅助功能&lt;/code&gt;那里，点击下面的锁图标，输入密码之后点击右边的加号，将anyconnect添加到列表中&lt;/li&gt;
   &lt;li&gt;可以使用anyconnect一键连接v片啦！&lt;/li&gt;
@@ -742,6 +825,7 @@ git config user.email
 &lt;p&gt;&lt;img src=&quot;./../../../../static/img/public/vp1.jpg&quot; alt=&quot;vp1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;./../../../../static/img/public/vp2.jpg&quot; alt=&quot;vp2&quot; /&gt;&lt;/p&gt;
+
 </description>
         <pubDate>Sun, 08 Sep 2019 21:53:00 +0800</pubDate>
         <link>http://localhost:4000/%E6%8A%80%E6%9C%AF/2019/09/08/vp.html</link>
@@ -1437,6 +1521,12 @@ git config user.email
 &lt;h2 id=&quot;mac-微信检测不到摄像头&quot;&gt;Mac 微信检测不到摄像头&lt;/h2&gt;
 
 &lt;p&gt;检查 App 是否获得摄像头权限，方法是：系统偏好设置 - 安全与隐私 - 摄像头 - 微信（打勾勾）。&lt;/p&gt;
+
+&lt;h2 id=&quot;proxy_conf_helper-正在尝试修改系统网络配置&quot;&gt;proxy_conf_helper 正在尝试修改系统网络配置&lt;/h2&gt;
+
+&lt;p&gt;软件启动/退出、打开/关闭ShadowSocks、切换状态等操作都会弹出输入密码的窗口。&lt;/p&gt;
+
+&lt;p&gt;解决办法：删除目录 &lt;code class=&quot;highlighter-rouge&quot;&gt;/Library/Application Support/ShadowsocksX-NG/&lt;/code&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 11 Jun 2019 11:00:00 +0800</pubDate>

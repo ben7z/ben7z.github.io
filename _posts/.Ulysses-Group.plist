@@ -336,6 +336,46 @@
 					<integer>3</integer>
 				</dict>
 			</dict>
+			<key>2020-05-15-md.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>611218902.869012</real>
+				<key>version</key>
+				<dict>
+					<key>b2c02c8d49f161f9062faada4ec0182488812b5ec001d947d770b3bfb0365e84</key>
+					<integer>7</integer>
+				</dict>
+			</dict>
+			<key>2020-05-25-pdf.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>612078388.79926097</real>
+				<key>version</key>
+				<dict>
+					<key>b2c02c8d49f161f9062faada4ec0182488812b5ec001d947d770b3bfb0365e84</key>
+					<integer>11</integer>
+				</dict>
+			</dict>
+			<key>2020-05-27-url.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>612235590.87361002</real>
+				<key>version</key>
+				<dict>
+					<key>b2c02c8d49f161f9062faada4ec0182488812b5ec001d947d770b3bfb0365e84</key>
+					<integer>15</integer>
+				</dict>
+			</dict>
+			<key>2020-06-02-creative.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>612778020.82713306</real>
+				<key>version</key>
+				<dict>
+					<key>b2c02c8d49f161f9062faada4ec0182488812b5ec001d947d770b3bfb0365e84</key>
+					<integer>19</integer>
+				</dict>
+			</dict>
 			<key>shoot.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -362,6 +402,18 @@
 	</dict>
 	<key>sheetClusters</key>
 	<array>
+		<array>
+			<string>2020-06-02-creative.md</string>
+		</array>
+		<array>
+			<string>2020-05-27-url.md</string>
+		</array>
+		<array>
+			<string>2020-05-25-pdf.md</string>
+		</array>
+		<array>
+			<string>2020-05-15-md.md</string>
+		</array>
 		<array>
 			<string>2020-05-12-sheet.md</string>
 		</array>
@@ -477,7 +529,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>b2c02c8d49f161f9062faada4ec0182488812b5ec001d947d770b3bfb0365e84</key>
-			<integer>4</integer>
+			<integer>20</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
