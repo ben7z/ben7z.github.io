@@ -1318,3 +1318,19 @@ figure.dotted-bg {
 .untree_co-section .col-6 {
 	padding-bottom: 3rem !important;
 }
+
+.hero-img {
+	padding-top: 36px;
+}
+
+@media (max-width: 768px) {
+  .service img {
+    width: 60vw; /* 视口宽度的50% */
+    max-height: 40vh; /* 限制最大高度 */
+    object-fit: contain; /* 保持比例填充 */
+  }
+  .service p {
+    padding-left: 20px;
+	padding-right: 20px;
+  }
+}
